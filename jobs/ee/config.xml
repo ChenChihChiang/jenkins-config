@@ -30,6 +30,15 @@
     <hudson.tasks.Shell>
       <command>echo &quot;Hello World&quot;</command>
     </hudson.tasks.Shell>
+    <sp.sd.nexusartifactuploader.NexusArtifactUploader plugin="nexus-artifact-uploader@2.9">
+      <nexusVersion>nexus2</nexusVersion>
+      <protocol>http</protocol>
+      <nexusUrl>192.168.1.232:8081/nexus/content/repositories/ee/</nexusUrl>
+      <groupId>1</groupId>
+      <version>1</version>
+      <repository>1</repository>
+      <credentialsId>nexus_admin</credentialsId>
+    </sp.sd.nexusartifactuploader.NexusArtifactUploader>
   </builders>
   <publishers>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
