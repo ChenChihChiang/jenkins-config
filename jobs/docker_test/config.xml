@@ -20,8 +20,7 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>docker</assignedNode>
-  <canRoam>false</canRoam>
+  <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -33,10 +32,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>touch /var/lib/jenkins/dummy #For skipping cache of building docker image
-docker build -t myservice /var/lib/jenkins #Re-build docker container
-docker ps |grep myservice |awk &apos;{print $1}&apos; |xargs -i docker stop {} #Stop old container
-docker run -d -p 80:80 myservice  #start container</command>
+      <command>echo &quot;Success&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
