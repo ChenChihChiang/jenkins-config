@@ -44,7 +44,7 @@
           <coordinate>
             <groupId>org.jenkins-ci.main</groupId>
             <artifactId>jenkins-jar</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
             <packaging>jar</packaging>
           </coordinate>
           <assets>
