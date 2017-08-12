@@ -37,6 +37,8 @@
       <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
   </builders>
-  <publishers/>
+  <publishers>
+    <com.nirima.jenkins.update.UpdaterPublisher plugin="repository@1.3"/>
+  </publishers>
   <buildWrappers/>
 </project>
