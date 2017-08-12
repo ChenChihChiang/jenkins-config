@@ -18,8 +18,8 @@
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
   <jdks>
     <jdk>
-      <name>jdk_1.8.0</name>
-      <home>/etc/alternatives/jre_1.8.0</home>
+      <name>jdk_1.8.0_144</name>
+      <home>/usr/java/jdk1.8.0_144</home>
       <properties/>
     </jdk>
   </jdks>
