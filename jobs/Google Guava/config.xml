@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description>Google Guava</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -27,7 +28,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>clean complie jar:jar</targets>
+      <targets>clean compile jar:jar</targets>
       <mavenName>M3</mavenName>
       <pom>guava/pom.xml</pom>
       <usePrivateRepository>false</usePrivateRepository>
