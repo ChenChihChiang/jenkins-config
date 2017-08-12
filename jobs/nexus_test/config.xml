@@ -30,10 +30,9 @@
     <hudson.tasks.Maven>
       <targets>clean install -V -B</targets>
       <mavenName>M3</mavenName>
+      <pom>maven/simple-project/pom.xml</pom>
       <usePrivateRepository>false</usePrivateRepository>
-      <settings class="org.jenkinsci.plugins.configfiles.maven.job.MvnSettingsProvider" plugin="config-file-provider@2.16.2">
-        <settingsConfigId>02aaa570-0bb5-4af9-9486-b32b21ec001a</settingsConfigId>
-      </settings>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
