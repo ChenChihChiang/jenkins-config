@@ -37,9 +37,7 @@
       <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
   </builders>
-  <publishers>
-    <com.nirima.jenkins.update.UpdaterPublisher plugin="repository@1.3"/>
-  </publishers>
+  <publishers/>
   <buildWrappers>
     <org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator plugin="artifactory@2.12.2">
       <details>
