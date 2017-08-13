@@ -46,7 +46,7 @@
       <caseSensitive>true</caseSensitive>
     </hudson.tasks.ArtifactArchiver>
     <hudson.tasks.BuildTrigger>
-      <childProjects>deploy-to-staging</childProjects>
+      <childProjects>deploy-to-staging,static-analysis</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
