@@ -22,6 +22,17 @@
     </hudson.plugins.copyartifact.CopyArtifact>
   </builders>
   <publishers>
+    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
+      <adapters>
+        <hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
+          <credentialsId>tomcat</credentialsId>
+          <url>http://localhost:8090</url>
+        </hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
+      </adapters>
+      <contextPath></contextPath>
+      <war>**/*.war</war>
+      <onFailure>false</onFailure>
+    </hudson.plugins.deploy.DeployPublisher>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
       <baseUrl></baseUrl>
       <teamDomain></teamDomain>
