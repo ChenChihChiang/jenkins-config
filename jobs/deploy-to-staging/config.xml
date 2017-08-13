@@ -23,6 +23,10 @@
     </hudson.plugins.copyartifact.CopyArtifact>
   </builders>
   <publishers>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.trigger.BuildPipelineTrigger plugin="build-pipeline-plugin@1.5.7.1">
+      <configs/>
+      <downstreamProjectNames>deploy-to-prod</downstreamProjectNames>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.trigger.BuildPipelineTrigger>
     <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
       <adapters>
         <hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
