@@ -67,7 +67,14 @@
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
-      <componentSpecs/>
+      <componentSpecs>
+        <se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+          <name>delivery</name>
+          <firstJob>package</firstJob>
+          <lastJob></lastJob>
+          <showUpstream>true</showUpstream>
+        </se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+      </componentSpecs>
       <noOfPipelines>3</noOfPipelines>
       <showAggregatedPipeline>false</showAggregatedPipeline>
       <noOfColumns>1</noOfColumns>
