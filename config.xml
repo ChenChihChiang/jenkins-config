@@ -44,7 +44,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>job/package/</firstJobLink>
+        <firstJobLink>view/delivery%20pipeline/job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -67,6 +67,7 @@
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
+      <componentSpecs/>
       <noOfPipelines>3</noOfPipelines>
       <showAggregatedPipeline>false</showAggregatedPipeline>
       <noOfColumns>1</noOfColumns>
@@ -75,9 +76,9 @@
       <updateInterval>2</updateInterval>
       <showChanges>false</showChanges>
       <allowManualTriggers>false</allowManualTriggers>
-      <showTotalBuildTime>false</showTotalBuildTime>
-      <allowRebuild>false</allowRebuild>
-      <allowPipelineStart>false</allowPipelineStart>
+      <showTotalBuildTime>true</showTotalBuildTime>
+      <allowRebuild>true</allowRebuild>
+      <allowPipelineStart>true</allowPipelineStart>
       <showDescription>false</showDescription>
       <showPromotions>false</showPromotions>
       <showTestResults>false</showTestResults>
@@ -85,9 +86,12 @@
       <linkRelative>false</linkRelative>
       <pagingEnabled>false</pagingEnabled>
       <showAggregatedChanges>false</showAggregatedChanges>
+      <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
       <theme>default</theme>
       <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
+      <regexpFirstJobs/>
       <linkToConsoleLog>false</linkToConsoleLog>
+      <description></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
   </views>
   <primaryView>all</primaryView>
