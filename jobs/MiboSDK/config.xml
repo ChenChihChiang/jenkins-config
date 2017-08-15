@@ -39,7 +39,7 @@ export ANDROID_HOME
 cd /root/git/MiboSDK
 git pull
 ./gradlew assembleDebug
-cp -r /home/git/MiboSDK/* /var/jenkins/workspace/MiboSDK
+cp -r /root/git/MiboSDK/* /var/jenkins/workspace/MiboSDK
 </command>
     </hudson.tasks.Shell>
   </builders>
