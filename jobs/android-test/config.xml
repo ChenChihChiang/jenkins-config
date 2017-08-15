@@ -45,7 +45,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /root/git/MiboSDK
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
+cd /root/git/MiboSDK
 ./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
   </builders>
