@@ -6,11 +6,12 @@
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <hudson.model.TextParameterDefinition>
+        <hudson.model.RunParameterDefinition>
           <name>ANDROID_HOME</name>
-          <description></description>
-          <defaultValue>ANDROID_HOME=/usr/local/Android-SDK</defaultValue>
-        </hudson.model.TextParameterDefinition>
+          <description>ANDROID_HOME=/usr/local/Android-SDK</description>
+          <projectName>ANDROID_HOME=/usr/local/Android-SDK</projectName>
+          <filter>ALL</filter>
+        </hudson.model.RunParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
