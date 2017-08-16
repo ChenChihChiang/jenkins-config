@@ -62,13 +62,21 @@
       <role name="f4" pattern=".*">
         <permissions>
           <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Delete</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Create</permission>
+          <permission>hudson.model.Item.Workspace</permission>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Move</permission>
+          <permission>hudson.model.Item.Configure</permission>
+          <permission>hudson.model.Item.Discover</permission>
         </permissions>
         <assignedSIDs>
           <sid>pao.chueh</sid>
         </assignedSIDs>
       </role>
     </roleMap>
-    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
