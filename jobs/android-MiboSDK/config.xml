@@ -38,7 +38,7 @@
 export ANDROID_HOME
 cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git 
-./gradlew assembleDebug</command>
+./gradlew assembleRelease</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -46,14 +46,14 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.mibosdk</groupId>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
             <artifactId>app</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>app/build/outputs/apk/app-debug.apk</filePath>
+              <filePath>app/build/outputs/apk/app-release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -61,7 +61,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.mibosdk</groupId>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
             <artifactId>connection</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
@@ -69,6 +69,81 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
               <filePath>connection/build/outputs/aar/nuwarobotics_connection_lib-0.3.13.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <artifactId>connectionsample</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>connectionsample/build/outputs/apk/connectionsample-release.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <artifactId>mqtt</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>mqtt/build/outputs/aar/mqtt-release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <artifactId>mqttsample</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>mqttsample/build/outputs/apk/mqttsample-release.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <artifactId>nuwaoauthjavaclient</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>nuwaoauthjavaclient/build/outputs/aar/nuwarobotics_oauth_client_lib_v0.8.0_2017-08-16.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <artifactId>nuwaoauthjavaclientsample</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>nuwaoauthjavaclientsample/build/outputs/apk/nuwaoauthjavaclientsample-release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
