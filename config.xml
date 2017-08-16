@@ -9,15 +9,13 @@
     <roleMap type="projectRoles">
       <role name="f4" pattern="android.*">
         <permissions>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Read</permission>
           <permission>hudson.model.Item.Create</permission>
           <permission>hudson.model.Run.Delete</permission>
           <permission>hudson.model.Item.Workspace</permission>
-          <permission>hudson.model.Run.Replay</permission>
-          <permission>hudson.model.Item.Configure</permission>
-          <permission>hudson.model.Item.Cancel</permission>
-          <permission>hudson.model.Item.Delete</permission>
-          <permission>hudson.model.Item.Read</permission>
           <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Run.Replay</permission>
           <permission>hudson.scm.SCM.Tag</permission>
           <permission>hudson.model.Item.Move</permission>
           <permission>hudson.model.Item.Discover</permission>
@@ -123,7 +121,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>view/android-build-pipeline/job/package/</firstJobLink>
+        <firstJobLink>job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -143,6 +141,7 @@
     <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.0.3">
       <owner class="hudson" reference="../../.."/>
       <name>delivery pipeline</name>
+      <description></description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
@@ -177,7 +176,7 @@
       <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
       <regexpFirstJobs/>
       <linkToConsoleLog>false</linkToConsoleLog>
-      <description></description>
+      <description defined-in="se.diabol.jenkins.pipeline.DeliveryPipelineView"></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
     <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
       <owner class="hudson" reference="../../.."/>
@@ -187,6 +186,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>android-KiwiSDK</firstJob>
+        <firstJobLink>job/android-KiwiSDK/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
