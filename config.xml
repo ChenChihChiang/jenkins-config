@@ -59,6 +59,16 @@
           <sid>admin</sid>
         </assignedSIDs>
       </role>
+      <role name="f4" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.View.Create</permission>
+          <permission>hudson.model.View.Delete</permission>
+          <permission>hudson.model.View.Configure</permission>
+          <permission>hudson.model.View.Read</permission>
+        </permissions>
+        <assignedSIDs/>
+      </role>
     </roleMap>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
