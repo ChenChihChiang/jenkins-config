@@ -47,7 +47,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>app</artifactId>
+            <artifactId>app-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -62,7 +62,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>connection</artifactId>
+            <artifactId>connection-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -77,7 +77,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>connectionsample</artifactId>
+            <artifactId>connectionsample-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -92,7 +92,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>mqtt</artifactId>
+            <artifactId>mqtt-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -107,7 +107,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>mqttsample</artifactId>
+            <artifactId>mqttsample-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -122,7 +122,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>nuwaoauthjavaclient</artifactId>
+            <artifactId>nuwaoauthjavaclient-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -137,7 +137,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>nuwaoauthjavaclientsample</artifactId>
+            <artifactId>nuwaoauthjavaclientsample-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
