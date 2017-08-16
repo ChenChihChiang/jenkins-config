@@ -84,6 +84,21 @@ git pull ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
           </assets>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.FaceHome2</groupId>
+            <artifactId>FaceHome2</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>utility/build/outputs/aar/utility-release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
