@@ -36,7 +36,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cd /var/jenkins/workspace/android-KiwiSDK
+cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/NuwaCore/KiwiSDK.git 
 ./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
@@ -53,7 +53,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/KiwiSDK.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>build/outputs/aar/android-KiwiSDK-debug.aar</filePath>
+              <filePath>build/outputs/aar/android-KiwiSDK-debug-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
