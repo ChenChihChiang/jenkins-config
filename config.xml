@@ -61,7 +61,6 @@
       </role>
       <role name="f4" pattern=".*">
         <permissions>
-          <permission>hudson.model.Hudson.Read</permission>
           <permission>hudson.model.Item.Read</permission>
           <permission>hudson.model.Item.Create</permission>
           <permission>hudson.model.Item.Workspace</permission>
