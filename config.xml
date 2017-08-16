@@ -78,7 +78,9 @@
           <permission>hudson.model.View.Configure</permission>
           <permission>hudson.model.View.Read</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>pao.chueh</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
     <roleMap type="slaveRoles"/>
