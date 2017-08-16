@@ -41,7 +41,7 @@
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>android-MiboSDK/app/build/outputs/apk/app-debug.apk</filePath>
+              <filePath>app/build/outputs/apk/app-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
