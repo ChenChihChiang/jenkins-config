@@ -59,20 +59,6 @@
           <sid>admin</sid>
         </assignedSIDs>
       </role>
-      <role name="f4" pattern=".*">
-        <permissions>
-          <permission>hudson.model.Item.Read</permission>
-          <permission>hudson.model.Item.Create</permission>
-          <permission>hudson.model.Item.Workspace</permission>
-          <permission>hudson.model.Item.Build</permission>
-          <permission>hudson.model.Item.Move</permission>
-          <permission>hudson.model.Item.Configure</permission>
-          <permission>hudson.model.Item.Discover</permission>
-        </permissions>
-        <assignedSIDs>
-          <sid>pao.chueh</sid>
-        </assignedSIDs>
-      </role>
     </roleMap>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
