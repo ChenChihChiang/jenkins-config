@@ -57,7 +57,7 @@ git pull ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.FaceHome2</groupId>
-            <artifactId>app</artifactId>
+            <artifactId>app-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -72,7 +72,7 @@ git pull ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.FaceHome2</groupId>
-            <artifactId>pet</artifactId>
+            <artifactId>pet-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -87,7 +87,7 @@ git pull ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.FaceHome2</groupId>
-            <artifactId>utility</artifactId>
+            <artifactId>utility-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
