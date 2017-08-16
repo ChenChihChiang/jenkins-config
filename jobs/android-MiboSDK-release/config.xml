@@ -83,7 +83,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>connectionsample/build/outputs/apk/connectionsample-debug.apk</filePath>
+              <filePath>connectionsample/build/outputs/apk/connectionsample-release-unsigned.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
