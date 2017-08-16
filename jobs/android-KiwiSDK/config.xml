@@ -34,7 +34,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo $WORKSPACE</command>
+      <command>cd $WORKSPACE
+git pull
+./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
