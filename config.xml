@@ -12,7 +12,9 @@
           <permission>hudson.model.Item.Read</permission>
           <permission>hudson.model.Item.Workspace</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>pao.chueh</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
     <roleMap type="globalRoles">
@@ -58,6 +60,7 @@
         </assignedSIDs>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
