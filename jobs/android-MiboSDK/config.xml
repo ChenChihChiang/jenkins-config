@@ -36,11 +36,9 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cd /root/git/MiboSDK
-git pull
-./gradlew assembleDebug
-cp -r /root/git/MiboSDK/* /var/jenkins/workspace/MiboSDK
-</command>
+cd $WORKSPACE
+git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git 
+./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
