@@ -67,6 +67,7 @@
         <assignedSIDs>
           <sid>daniel.chang</sid>
           <sid>admin</sid>
+          <sid>john.chen</sid>
         </assignedSIDs>
       </role>
       <role name="f4" pattern=".*">
