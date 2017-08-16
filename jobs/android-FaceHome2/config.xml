@@ -93,7 +93,7 @@ git pull ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>utility/build/outputs/aar/utility-release.aar</filePath>
+              <filePath>utility/build/outputs/aar/utility-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
