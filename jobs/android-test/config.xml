@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>git@github.com:johncchen/nexus.git</url>
+        <url>ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -20,7 +20,8 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <canRoam>true</canRoam>
+  <assignedNode>android</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -42,14 +43,14 @@
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>org.jenkins-ci.main</groupId>
-            <artifactId>jenkins-war</artifactId>
-            <version>2.23</version>
-            <packaging>war</packaging>
+            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <artifactId>app-debug.apk</artifactId>
+            <version>1.00</version>
+            <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>war/target/jenkins.war</filePath>
+              <filePath>android-MiboSDK/app/build/outputs/apk/app-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -57,6 +58,13 @@
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
+    <hudson.tasks.Shell>
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
+cd $WORKSPACE
+git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git 
+./gradlew assembleDebug</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>
