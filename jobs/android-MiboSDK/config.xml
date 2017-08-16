@@ -53,7 +53,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>app/build/outputs/apk/app-release.apk</filePath>
+              <filePath>app/build/outputs/apk/app-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
