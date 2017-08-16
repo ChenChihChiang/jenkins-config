@@ -65,6 +65,7 @@
           <permission>hudson.model.Run.Update</permission>
         </permissions>
         <assignedSIDs>
+          <sid>daniel.chang</sid>
           <sid>admin</sid>
         </assignedSIDs>
       </role>
@@ -81,6 +82,7 @@
         </assignedSIDs>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
@@ -186,7 +188,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>android-KiwiSDK-release</firstJob>
-        <firstJobLink>job/android-KiwiSDK/</firstJobLink>
+        <firstJobLink>job/android-KiwiSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
