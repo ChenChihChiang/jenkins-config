@@ -35,7 +35,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd $WORKSPACE
-git pull
+git pull ssh://jk@192.168.1.29:29418/NuwaCore/KiwiSDK.git 
 ./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
   </builders>
