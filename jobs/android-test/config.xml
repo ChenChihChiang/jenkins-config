@@ -34,8 +34,8 @@
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>app-debug.apk</artifactId>
+            <groupId>com.nuwarobotics.android</groupId>
+            <artifactId>MiboSDK</artifactId>
             <version>1.00</version>
             <packaging>apk</packaging>
           </coordinate>
