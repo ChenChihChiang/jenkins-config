@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git</url>
+        <url>ssh://jk@192.168.1.29:29418/NuwaCore/KiwiSDK.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -34,13 +34,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-cd /root/git/MiboSDK
-git pull
-./gradlew assembleDebug
-cp -r /root/git/MiboSDK/* /var/jenkins/workspace/MiboSDK
-</command>
+      <command>echo $WORKSPACE</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
