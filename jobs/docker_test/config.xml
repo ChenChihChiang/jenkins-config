@@ -36,9 +36,34 @@
     <hudson.tasks.Shell>
       <command>cd $WORKSPACE
 docker build . -t 192.168.1.234:8083/centos6:latest
-docker build . -t 192.168.1.234:8083/centos6:$BUILD_ID</command>
+docker build . -t 192.168.1.234:8083/centos6:$BUILD_ID
+docker push 192.168.1.234:8083/centos6:latest
+docker push 192.168.1.234:8083/centos6:$BUILD_ID</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
+      <baseUrl></baseUrl>
+      <teamDomain></teamDomain>
+      <authToken></authToken>
+      <authTokenCredentialId></authTokenCredentialId>
+      <botUser>false</botUser>
+      <room></room>
+      <startNotification>true</startNotification>
+      <notifySuccess>true</notifySuccess>
+      <notifyAborted>true</notifyAborted>
+      <notifyNotBuilt>true</notifyNotBuilt>
+      <notifyUnstable>true</notifyUnstable>
+      <notifyRegression>true</notifyRegression>
+      <notifyFailure>true</notifyFailure>
+      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyRepeatedFailure>false</notifyRepeatedFailure>
+      <includeTestSummary>false</includeTestSummary>
+      <includeFailedTests>false</includeFailedTests>
+      <commitInfoChoice>NONE</commitInfoChoice>
+      <includeCustomMessage>false</includeCustomMessage>
+      <customMessage></customMessage>
+    </jenkins.plugins.slack.SlackNotifier>
+  </publishers>
   <buildWrappers/>
 </project>
