@@ -33,20 +33,11 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <com.nirima.jenkins.plugins.docker.builder.DockerBuilderPublisher plugin="docker-plugin@0.16.2">
-      <dockerFileDirectory>./Dockerfile</dockerFileDirectory>
-      <tags class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
-        <c class="list">
-          <string>192.168.1.234:8083/test:latest</string>
-          <string>192.168.1.234:8083/test:$BUILD_ID</string>
-        </c>
-        <list reference="../c"/>
-      </tags>
-      <pushOnSuccess>true</pushOnSuccess>
-      <cleanImages>false</cleanImages>
-      <cleanupWithJenkinsJobDelete>false</cleanupWithJenkinsJobDelete>
-      <cloud></cloud>
-    </com.nirima.jenkins.plugins.docker.builder.DockerBuilderPublisher>
+    <hudson.tasks.Shell>
+      <command>cd $WORKSPACE
+docker build . -t 192.168.1.234:8083/centos6:latest
+docker build . -t 192.168.1.234:8083/centos6:$BUILD_ID</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>
