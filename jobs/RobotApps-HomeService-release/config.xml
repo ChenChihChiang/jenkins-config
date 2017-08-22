@@ -76,6 +76,36 @@ mv homeservice-common_* homeservice-common_release.aar
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
           </assets>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.HomeService-client</groupId>
+            <artifactId>HomeService-client_release</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>homeservice-common/build/outputs/aar/homeservice-client_release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.HomeService-common</groupId>
+            <artifactId>HomeService-common_release</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>homeservice-common/build/outputs/aar/homeservice-common_release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
