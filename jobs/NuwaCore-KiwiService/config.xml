@@ -36,8 +36,6 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-GIT_ACCOUNT=jk
-export GIT_ACCOUNT
 cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/NuwaCore/KiwiService.git 
 ./build.sh</command>
