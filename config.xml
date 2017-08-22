@@ -187,7 +187,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
-        <firstJob>android-KiwiSDK-release</firstJob>
+        <firstJob>NuwaCore-KiwiSDK-release</firstJob>
         <firstJobLink>job/android-KiwiSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
