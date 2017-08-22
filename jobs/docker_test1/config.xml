@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>git@github.com:johncchen/docker.git</url>
+        <url>ssh://jk@192.168.1.29:29418/Backend/OtaAdmin</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -35,10 +35,10 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd $WORKSPACE
-docker build . -t 192.168.1.234:8083/centos6:latest
-docker build . -t 192.168.1.234:8083/centos6:$BUILD_ID
-docker push 192.168.1.234:8083/centos6:latest
-docker push 192.168.1.234:8083/centos6:$BUILD_ID</command>
+docker build . -t 192.168.1.234:8083/nuwa:latest
+docker build . -t 192.168.1.234:8083/nuwa:$BUILD_ID
+docker push 192.168.1.234:8083/nuwa:latest
+docker push 192.168.1.234:8083/nuwa:$BUILD_ID</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
