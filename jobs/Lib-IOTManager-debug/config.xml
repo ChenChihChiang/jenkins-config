@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://chen.john@192.168.1.29:29418/Lib/IOTManager.git</url>
+        <url>ssh://jk@192.168.1.29:29418/Lib/IOTManager.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
