@@ -37,6 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
+rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
 git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git 
 ./gradlew assembleRelease
 cd $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/
