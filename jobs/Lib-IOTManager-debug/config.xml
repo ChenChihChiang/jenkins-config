@@ -38,7 +38,7 @@
 export ANDROID_HOME
 rm -rf $WORKSPACE/app/build/outputs/apk/
 cd $WORKSPACE
-git reset --hard FETCH_HEAD
+#git reset --hard FETCH_HEAD
 git checkout dev
 git pull ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
 ./gradlew assembleDebug
