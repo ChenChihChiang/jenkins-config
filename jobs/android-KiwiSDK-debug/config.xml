@@ -9,7 +9,7 @@
         <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.8.0">
           <name>BRANCH</name>
           <description></description>
-          <uuid>2dcdb03c-f018-46e6-846b-53fd3b471651</uuid>
+          <uuid>bac30685-65c6-43c9-866f-8fb3a6ef176d</uuid>
           <type>PT_BRANCH</type>
           <branch>origin/dev</branch>
           <tagFilter>*</tagFilter>
@@ -71,7 +71,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/KiwiSDK.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>build/outputs/aar/android-KiwiSDK-debug-debug.aar</filePath>
+              <filePath>build/outputs/aar/NuwaCore-KiwiSDK-debug-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
