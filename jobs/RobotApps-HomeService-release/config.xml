@@ -85,7 +85,7 @@ mv homeservice-common_* homeservice-common_release.aar
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>homeservice-common/build/outputs/aar/homeservice-client_release.aar</filePath>
+              <filePath>homeservice-client/build/outputs/aar/homeservice-client_release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
