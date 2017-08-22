@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/dev</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -38,9 +38,8 @@
 export ANDROID_HOME
 cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/AndroidApps/KiwiGarden.git
-git checkout release
-./gradlew assembleProdDebug
-./gradlew assembleProdRelease</command>
+git checkout dev
+./gradlew assembleDevDebug</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
