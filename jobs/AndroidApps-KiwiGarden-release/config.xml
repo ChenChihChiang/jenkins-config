@@ -39,6 +39,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/AndroidApps/KiwiGarden.git
 git checkout release
+git pull ssh://jk@192.168.1.29:29418/AndroidApps/KiwiGarden.git
 ./gradlew assembleProdDebug
 ./gradlew assembleProdRelease</command>
     </hudson.tasks.Shell>
