@@ -36,6 +36,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+rm -rf $WORKSPACE/app/build/outputs/apk/
 cd $WORKSPACE
 git reset --hard FETCH_HEAD
 git checkout dev
