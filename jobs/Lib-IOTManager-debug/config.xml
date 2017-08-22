@@ -37,6 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
+git checkout dev
 git pull ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
 ./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
