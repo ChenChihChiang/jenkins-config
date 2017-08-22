@@ -79,7 +79,7 @@ mv homeservice-common_* homeservice-common_debug.aar
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.HomeService-client</groupId>
-            <artifactId>HomeService-client_release</artifactId>
+            <artifactId>HomeService-client_debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -94,7 +94,7 @@ mv homeservice-common_* homeservice-common_debug.aar
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.HomeService-common</groupId>
-            <artifactId>HomeService-common_release</artifactId>
+            <artifactId>HomeService-common_debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
