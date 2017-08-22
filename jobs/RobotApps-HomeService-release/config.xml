@@ -64,13 +64,13 @@ mv homeservice-common_* homeservice-common_debug.aar
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.HomeService</groupId>
-            <artifactId>HomeService</artifactId>
+            <artifactId>HomeService_debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>homeservice/build/outputs/apk/homeservice_release.apk</filePath>
+              <filePath>homeservice/build/outputs/apk/homeservice_debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
