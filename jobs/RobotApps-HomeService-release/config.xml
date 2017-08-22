@@ -45,7 +45,7 @@ cd $WORKSPACE
 git reset --hard FETCH_HEAD
 git pull ssh://jk@192.168.1.29:29418/RobotApps/HomeService.git
 git checkout release
-./gradlew assembledRelease
+./gradlew assembleRelease
 
 cd $WORKSPACE/homeservice/build/outputs/apk/
 mv homeservice_* homeservice_release.apk
