@@ -39,7 +39,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/NuwaCore/KiwiService.git 
 ./build.sh
-cd cd $WORKSPACE/build/outputs/apk
+cd $WORKSPACE/build/outputs/apk
 mv KiwiService_mibo_debug* KiwiService_mibo_debug.apk
 mv KiwiService_mibo_release* KiwiService_mibo_release.apk
 </command>
