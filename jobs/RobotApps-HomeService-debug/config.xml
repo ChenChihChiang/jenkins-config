@@ -51,10 +51,10 @@ cd $WORKSPACE/homeservice/build/outputs/apk/
 mv homeservice_* homeservice_debug.apk
 
 cd $WORKSPACE/homeservice-client/build/outputs/aar/
-mv homeservice-client_* homeservice-client_debug.aar
+mv homeservice-client_*debug* homeservice-client_debug.aar
 
 cd $WORKSPACE/homeservice-common/build/outputs/aar/
-mv homeservice-common_* homeservice-common_debug.aar
+mv homeservice-common_*debug* homeservice-common_debug.aar
 </command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
