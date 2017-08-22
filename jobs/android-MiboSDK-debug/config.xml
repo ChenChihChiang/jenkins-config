@@ -128,7 +128,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>nuwaoauthjavaclient/build/outputs/aar/nuwarobotics_oauth_client_lib_v0.8.0_2017-08-16.aar</filePath>
+              <filePath>nuwaoauthjavaclient/build/outputs/aar/*</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
