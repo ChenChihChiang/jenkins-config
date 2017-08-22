@@ -3,7 +3,17 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.TextParameterDefinition>
+          <name>version</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.TextParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
@@ -38,7 +48,8 @@
 export ANDROID_HOME
 cd $WORKSPACE
 git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git 
-./gradlew assembleDebug</command>
+./gradlew assembleDebug
+ls ./nuwaoauthjavaclient/build/outputs/aar &gt; ${version}</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -128,7 +139,7 @@ git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>nuwaoauthjavaclient/build/outputs/aar/*</filePath>
+              <filePath>nuwaoauthjavaclient/build/outputs/aar/${version}</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
