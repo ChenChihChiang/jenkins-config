@@ -9,7 +9,7 @@
         <hudson.model.StringParameterDefinition>
           <name>BRANCH</name>
           <description></description>
-          <defaultValue>dev</defaultValue>
+          <defaultValue>origin/dev</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
