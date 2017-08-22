@@ -188,7 +188,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>NuwaCore-KiwiSDK-release</firstJob>
-        <firstJobLink>job/android-KiwiSDK-release/</firstJobLink>
+        <firstJobLink>job/NuwaCore-KiwiSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -205,6 +205,27 @@
       <refreshFrequency>3</refreshFrequency>
       <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
     </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>NuwaCore</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>false</recurse>
+    </listView>
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>-1</slaveAgentPort>
