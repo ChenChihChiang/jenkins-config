@@ -38,7 +38,6 @@
 export ANDROID_HOME
 cd $WORKSPACE
 rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
-git pull origin dev
 ./gradlew assembleDebug
 cd $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar
 mv * nuwarobotics_oauth_client_lib.aar</command>
