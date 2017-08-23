@@ -38,13 +38,19 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-rm -rf $WORKSPACE/app/build/outputs/apk/*
+
+#rm -rf $WORKSPACE/app/build/outputs/apk/*
+
 cd $WORKSPACE
+rm -rf IOTManager
+
 #git reset --hard FETCH_HEAD
-git pull ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
+
+git clone ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
+cd IOTManager
 git checkout release
 ./gradlew assembleRelease
-cd $WORKSPACE/app/build/outputs/apk/
+cd $WORKSPACE/IOTManager/app/build/outputs/apk/
 mv iotmanager_* iotmanager_release.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
@@ -60,7 +66,7 @@ mv iotmanager_* iotmanager_release.apk</command>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>app/build/outputs/apk/iotmanager_release.apk</filePath>
+              <filePath>IOTManager/app/build/outputs/apk/iotmanager_release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
