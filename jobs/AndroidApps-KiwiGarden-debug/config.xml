@@ -37,7 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-git pull ssh://jk@192.168.1.29:29418/AndroidApps/KiwiGarden.git
+git pull origin dev
 git checkout dev
 ./gradlew assembleDevDebug</command>
     </hudson.tasks.Shell>
