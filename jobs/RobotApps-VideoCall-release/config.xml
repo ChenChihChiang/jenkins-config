@@ -38,7 +38,6 @@
 export ANDROID_HOME
 cd $WORKSPACE
 #git reset --hard FETCH_HEAD
-#git rebase --continue
 git pull ssh://jk@192.168.1.29:29418/RobotApps/VideoCall.git
 git branch release
 ./gradlew assembleRelease</command>
