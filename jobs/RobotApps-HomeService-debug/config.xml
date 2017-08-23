@@ -42,9 +42,6 @@ rm -rf $WORKSPACE/homeservice-client/build/outputs/aar/
 rm -rf $WORKSPACE/homeservice-common/build/outputs/aar/
 
 cd $WORKSPACE
-git reset --hard FETCH_HEAD
-git pull ssh://jk@192.168.1.29:29418/RobotApps/HomeService.git
-git checkout dev
 ./gradlew assembleDebug
 
 cd $WORKSPACE/homeservice/build/outputs/apk/
