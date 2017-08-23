@@ -38,8 +38,7 @@
 export ANDROID_HOME
 cd $WORKSPACE
 rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
-git pull ssh://jk@192.168.1.29:29418/NuwaCore/MiboSDK.git
-git checkout release
+git pull origin release
 ./gradlew assembleRelease
 cd $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/
 mv * nuwarobotics_oauth_client_lib.aar</command>
