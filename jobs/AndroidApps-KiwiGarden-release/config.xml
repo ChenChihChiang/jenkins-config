@@ -39,7 +39,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 git pull origin release
 ./gradlew assembleProdDebug
-./gradlew assembleProdRelease</command>
+#./gradlew assembleProdRelease</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
