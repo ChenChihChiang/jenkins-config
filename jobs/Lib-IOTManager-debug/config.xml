@@ -56,7 +56,7 @@ mv iotmanager_* iotmanager_debug.apk</command>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>IOTManager/app/build/outputs/apk/iotmanager_debug.apk</filePath>
+              <filePath>app/build/outputs/apk/iotmanager_debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
