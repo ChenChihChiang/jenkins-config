@@ -36,17 +36,9 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-
-#rm -rf $WORKSPACE/app/build/outputs/apk/*
-
+rm -rf $WORKSPACE/app/build/outputs/apk/*
 cd $WORKSPACE
-rm -rf IOTManager
-
-#git reset --hard FETCH_HEAD
-
-git clone ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
-cd IOTManager
-git checkout release
+git pull origin release
 ./gradlew assembleRelease
 cd $WORKSPACE/IOTManager/app/build/outputs/apk/
 mv iotmanager_* iotmanager_release.apk</command>
@@ -64,7 +56,7 @@ mv iotmanager_* iotmanager_release.apk</command>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>IOTManager/app/build/outputs/apk/iotmanager_release.apk</filePath>
+              <filePath>app/build/outputs/apk/iotmanager_release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
