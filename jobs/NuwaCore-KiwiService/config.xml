@@ -37,7 +37,6 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-git pull origin master
 ./build.sh
 cd $WORKSPACE/build/outputs/apk
 mv KiwiService_mibo_debug* KiwiService_mibo_debug.apk
