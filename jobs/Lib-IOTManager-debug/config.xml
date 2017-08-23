@@ -40,12 +40,15 @@ export ANDROID_HOME
 #rm -rf $WORKSPACE/app/build/outputs/apk/
 
 cd $WORKSPACE
-rm -rf IOTManager
-#git reset --hard FETCH_HEAD
 
-git clone ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
-cd IOTManager
-git checkout dev
+#rm -rf IOTManager
+#git reset --hard FETCH_HEAD
+git pull origin dev
+#cd IOTManager
+#git clone ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
+#cd IOTManager
+#git checkout dev
+
 ./gradlew assembleDebug
 cd $WORKSPACE/IOTManager/app/build/outputs/apk/
 mv iotmanager_* iotmanager_debug.apk</command>
