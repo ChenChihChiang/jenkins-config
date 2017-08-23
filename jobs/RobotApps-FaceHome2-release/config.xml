@@ -47,7 +47,6 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-git pull ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git
 ./gradlew assembleRelease</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
