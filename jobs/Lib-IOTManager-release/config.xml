@@ -38,9 +38,9 @@
 export ANDROID_HOME
 rm -rf $WORKSPACE/app/build/outputs/apk/*
 cd $WORKSPACE
-#git reset --hard FETCH_HEAD
-git checkout release
+git reset --hard FETCH_HEAD
 git pull ssh://jk@192.168.1.29:29418/Lib/IOTManager.git
+git checkout release
 ./gradlew assembleRelease
 cd $WORKSPACE/app/build/outputs/apk/
 mv iotmanager_* iotmanager_release.apk</command>
