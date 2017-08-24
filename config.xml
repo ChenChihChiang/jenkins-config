@@ -105,7 +105,19 @@
   </jdks>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds/>
+  <clouds>
+    <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.36">
+      <name>ec2-Chen</name>
+      <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
+      <credentialsId>Chen</credentialsId>
+      <privateKey>
+        <privateKey>{AQAAABAAAAAQiKEbXhsx3vR0wC69tjSONbYmkhcJ+qMvOSQf9XH7JSs=}</privateKey>
+      </privateKey>
+      <instanceCap>2147483647</instanceCap>
+      <templates class="empty-list"/>
+      <region></region>
+    </hudson.plugins.ec2.EC2Cloud>
+  </clouds>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
@@ -124,7 +136,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>view/AndroidApps/job/package/</firstJobLink>
+        <firstJobLink>job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -188,7 +200,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>NuwaCore-KiwiSDK-release</firstJob>
-        <firstJobLink>view/AndroidApps/job/NuwaCore-KiwiSDK-release/</firstJobLink>
+        <firstJobLink>job/NuwaCore-KiwiSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
