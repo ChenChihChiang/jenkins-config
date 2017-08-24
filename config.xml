@@ -111,7 +111,7 @@
       <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
       <credentialsId>Chen</credentialsId>
       <privateKey>
-        <privateKey>{AQAAABAAAAAQiKEbXhsx3vR0wC69tjSONbYmkhcJ+qMvOSQf9XH7JSs=}</privateKey>
+        <privateKey>{AQAAABAAAAAQBjsLSRSA1rit525WWEY8W2yJG4agS5/UoAQ0Fq+JZ6k=}</privateKey>
       </privateKey>
       <instanceCap>2147483647</instanceCap>
       <templates class="empty-list"/>
