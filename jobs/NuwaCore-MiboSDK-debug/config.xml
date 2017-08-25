@@ -129,7 +129,7 @@ mv * nuwarobotics_oauth_client_lib.aar</command>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
             <artifactId>nuwaoauthjavaclient-debug</artifactId>
-            <version>$nuwaoauthjavaclient</version>
+            <version>${nuwaoauthjavaclient}</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
