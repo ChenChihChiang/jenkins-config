@@ -36,6 +36,10 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+
+nuwaoauthjavaclient=nuwaoauthjavaclient/build/build.gradle  | grep &quot;versionName &quot; | awk &apos;{print $2}&apos;
+export nuwaoauthjavaclient
+
 cd $WORKSPACE
 rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
 ./gradlew assembleDebug
@@ -125,7 +129,7 @@ mv * nuwarobotics_oauth_client_lib.aar</command>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
             <artifactId>nuwaoauthjavaclient-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$nuwaoauthjavaclient</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
