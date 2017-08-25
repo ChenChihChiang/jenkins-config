@@ -46,7 +46,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.KiwiSDK</groupId>
-            <artifactId>KiwiSDK-release</artifactId>
+            <artifactId>KiwiSDK_release</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
