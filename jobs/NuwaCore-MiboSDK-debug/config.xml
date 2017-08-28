@@ -138,7 +138,7 @@ echo $APP_VERSION</command>
           <coordinate>
             <groupId>com.nuwarobotics.MiboSDK</groupId>
             <artifactId>nuwaoauthjavaclient-debug</artifactId>
-            <version>$AAPP_VERSION</version>
+            <version>$APP_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
