@@ -3,7 +3,17 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>abc</name>
+          <description></description>
+          <defaultValue>1.2.3</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
@@ -51,7 +61,7 @@ mv iotmanager*release.apk iotmanager_release.apk</command>
           <coordinate>
             <groupId>com.nuwarobotics.IOTManager</groupId>
             <artifactId>IOTManager-release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$abc</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
