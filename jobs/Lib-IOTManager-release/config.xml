@@ -9,7 +9,7 @@
         <hudson.model.StringParameterDefinition>
           <name>abc</name>
           <description></description>
-          <defaultValue>1.2.3</defaultValue>
+          <defaultValue></defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
