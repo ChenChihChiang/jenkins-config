@@ -33,8 +33,7 @@
 docker build -t 192.168.1.234:8083/otaadmin:latest .
 docker build -t 192.168.1.234:8083/otaadmin:$BUILD_ID .
 docker push 192.168.1.234:8083/otaadmin:latest
-docker push 192.168.1.234:8083/otaadmin:$BUILD_ID
-docker rmi -f $(docker images -q)</command>
+docker push 192.168.1.234:8083/otaadmin:$BUILD_ID</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
