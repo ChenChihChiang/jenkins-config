@@ -37,9 +37,6 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 
-nuwaoauthjavaclient=nuwaoauthjavaclient/build/build.gradle  | grep &quot;versionName &quot; | awk &apos;{print $2}&apos;
-export nuwaoauthjavaclient
-
 cd $WORKSPACE
 rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
 ./gradlew assembleDebug
