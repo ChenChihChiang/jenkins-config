@@ -37,7 +37,7 @@ echo $APP_VERSION</command>
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <scriptFilePath>/var/jenkins/workspace/env/env.properties</scriptFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/env/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
