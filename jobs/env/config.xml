@@ -44,7 +44,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;!&quot;</command>
+      <command>echo &quot;!&quot;
+echo $APP_VERSION</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
