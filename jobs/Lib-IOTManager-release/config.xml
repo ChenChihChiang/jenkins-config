@@ -61,7 +61,7 @@ mv iotmanager*release.apk iotmanager_release.apk</command>
           <coordinate>
             <groupId>com.nuwarobotics.IOTManager</groupId>
             <artifactId>IOTManager-release</artifactId>
-            <version>$abc</version>
+            <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
