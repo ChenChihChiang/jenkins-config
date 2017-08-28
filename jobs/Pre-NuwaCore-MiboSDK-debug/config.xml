@@ -38,7 +38,7 @@
         <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
           <configs>
             <hudson.plugins.parameterizedtrigger.FileBuildParameters>
-              <propertiesFile>env.properties</propertiesFile>
+              <propertiesFile>/var/jenkins/workspace/Pre-NuwaCore-MiboSDK-debug/env.properties</propertiesFile>
               <failTriggerOnMissing>false</failTriggerOnMissing>
               <useMatrixChild>false</useMatrixChild>
               <onlyExactRuns>false</onlyExactRuns>
