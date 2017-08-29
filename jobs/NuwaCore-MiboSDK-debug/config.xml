@@ -61,7 +61,7 @@ echo $APP_VERSION</command>
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>app-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>apk</packaging>
@@ -76,8 +76,8 @@ echo $APP_VERSION</command>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>connection-debug</artifactId>
+            <groupId>com.nuwarobotics.lib</groupId>
+            <artifactId>connection</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -91,22 +91,7 @@ echo $APP_VERSION</command>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>connectionsample-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>connectionsample/build/outputs/apk/connectionsample-debug.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>mqtt-debug</artifactId>
             <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
@@ -121,22 +106,7 @@ echo $APP_VERSION</command>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>mqttsample-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>mqttsample/build/outputs/apk/mqttsample-debug.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
+            <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>nuwaoauthjavaclient-debug</artifactId>
             <version>$APP_VERSION</version>
             <packaging>aar</packaging>
@@ -151,18 +121,12 @@ echo $APP_VERSION</command>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>nuwaoauthjavaclientsample-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
-            <packaging>apk</packaging>
+            <groupId>com.nuwarobotics.lib</groupId>
+            <artifactId></artifactId>
+            <version></version>
+            <packaging></packaging>
           </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>nuwaoauthjavaclientsample/build/outputs/apk/nuwaoauthjavaclientsample-debug.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
+          <assets/>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
