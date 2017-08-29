@@ -108,7 +108,7 @@ echo $APP_VERSION</command>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>nuwaoauthjavaclient-debug</artifactId>
-            <version>$APP_VERSION</version>
+            <version>$BUILD_NUMBER</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -118,15 +118,6 @@ echo $APP_VERSION</command>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
           </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId></artifactId>
-            <version></version>
-            <packaging></packaging>
-          </coordinate>
-          <assets/>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
