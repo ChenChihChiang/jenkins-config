@@ -26,16 +26,6 @@
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
-    <jenkins.triggers.ReverseBuildTrigger>
-      <spec></spec>
-      <upstreamProjects>Pre-NuwaCore-MiboSDK-release</upstreamProjects>
-      <threshold>
-        <name>SUCCESS</name>
-        <ordinal>0</ordinal>
-        <color>BLUE</color>
-        <completeBuild>true</completeBuild>
-      </threshold>
-    </jenkins.triggers.ReverseBuildTrigger>
     <hudson.triggers.SCMTrigger>
       <spec>H H/2 * * *</spec>
       <ignorePostCommitHooks>false</ignorePostCommitHooks>
@@ -57,7 +47,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>basebackendclient-release</artifactId>
-            <version>$BASEBACKENDCLIENT_VERSION</version>
+            <version>25.0.2_2017-08-30_1653</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
