@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://bitbucket.org/eric_nuwa/otaadmin.git</url>
+        <url>git@bitbucket.org:eric_nuwa/fps.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -30,10 +30,10 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd $WORKSPACE
-docker build -t 192.168.1.234:8083/otaadmin:latest .
-docker build -t 192.168.1.234:8083/otaadmin:$BUILD_ID .
-docker push 192.168.1.234:8083/otaadmin:latest
-docker push 192.168.1.234:8083/otaadmin:$BUILD_ID</command>
+docker build -t 192.168.1.234:8083/fps:latest .
+docker build -t 192.168.1.234:8083/fps:$BUILD_ID .
+docker push 192.168.1.234:8083/fps:latest
+docker push 192.168.1.234:8083/fps:$BUILD_ID</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
