@@ -78,7 +78,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>miboserviceclient-release</artifactId>
-            <version>$MIBOSERVICECLIENT</version>
+            <version>$MIBOSERVICECLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -108,7 +108,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>nuwaoauthjavaclient-release</artifactId>
-            <version>$NUWAOAUTHJAVACLIENT</version>
+            <version>$NUWAOAUTHJAVACLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -123,7 +123,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>assetupdater-release</artifactId>
-            <version>$ASSETUPDATER</version>
+            <version>$ASSETUPDATER_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
