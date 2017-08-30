@@ -30,8 +30,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd $WORKSPACE
-docker build -t 192.168.1.234:8083/airtablesync:latest .
-docker build -t 192.168.1.234:8083/airtablesync:$BUILD_ID .
+docker build -t . 192.168.1.234:8083/airtablesync:latest
+docker build -t . 192.168.1.234:8083/airtablesync:$BUILD_ID
 docker push 192.168.1.234:8083/airtablesync:latest
 docker push 192.168.1.234:8083/airtablesync:$BUILD_ID</command>
     </hudson.tasks.Shell>
