@@ -48,7 +48,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>basebackendclient-release</artifactId>
-            <version>$BUILD_TIME</version>
+            <version>$BASEBACKENDCLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -86,5 +86,16 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
+      <info>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-NuwaCore-MiboSDK-release/env.properties</propertiesFilePath>
+        <secureGroovyScript plugin="script-security@1.31">
+          <script></script>
+          <sandbox>false</sandbox>
+        </secureGroovyScript>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
 </project>
