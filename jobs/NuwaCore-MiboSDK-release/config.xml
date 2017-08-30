@@ -47,7 +47,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>basebackendclient-release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$BASEBACKENDCLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
