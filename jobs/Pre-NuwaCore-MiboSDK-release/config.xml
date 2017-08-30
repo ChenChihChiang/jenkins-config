@@ -34,7 +34,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>./env.sh</command>
+      <command>./env.sh
+cat /var/jenkins/workspace/Pre-NuwaCore-MiboSDK-release/env.properties</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
