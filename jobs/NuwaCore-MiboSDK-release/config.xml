@@ -123,7 +123,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>assetupdater-release</artifactId>
-            <version>$ASSETUPDATER_VERSION</version>
+            <version>$ASSESTUPDATER_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
