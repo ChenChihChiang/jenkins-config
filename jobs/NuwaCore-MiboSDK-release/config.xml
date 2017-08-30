@@ -45,14 +45,14 @@ cd $WORKSPACE
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.MiboSDK</groupId>
-            <artifactId>app-release</artifactId>
+            <groupId>com.nuwarobotics.lib</groupId>
+            <artifactId>basebackendclient-release</artifactId>
             <version>$BUILD_NUMBER</version>
-            <packaging>apk</packaging>
+            <packaging>aar</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>app/build/outputs/apk/app-release-unsigned.apk</filePath>
+              <filePath>basebackendclient/build/outputs/aar/basebackendclient-release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
