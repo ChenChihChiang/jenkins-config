@@ -53,7 +53,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>basebackendclient/build/outputs/aar/basebackendclient-release.aar</filePath>
+              <filePath>basebackendclient/build/outputs/aar/basebackendclient-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -83,7 +83,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>miboserviceclient/build/outputs/aar/miboserviceclient-release.aar</filePath>
+              <filePath>miboserviceclient/build/outputs/aar/miboserviceclient-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -98,7 +98,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>mqtt/build/outputs/aar/mqtt-release.aar</filePath>
+              <filePath>mqtt/build/outputs/aar/mqtt-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -128,7 +128,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>assetupdater/build/outputs/aar/assetupdater-release.aar</filePath>
+              <filePath>assetupdater/build/outputs/aar/assetupdater-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
