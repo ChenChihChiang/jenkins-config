@@ -390,7 +390,7 @@
     </listView>
     <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
       <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-MiboSDK-Pipeline-View</name>
+      <name>NuwaCore-MiboSDK-release-Pipeline-View</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
