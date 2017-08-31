@@ -36,7 +36,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cat env.properties
+cat /var/jenkins/workspace/Pre-NuwaCore-MiboSDK-release/env.properties
 cd $WORKSPACE
 ./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
