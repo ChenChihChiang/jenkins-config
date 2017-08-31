@@ -170,7 +170,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>job/package/</firstJobLink>
+        <firstJobLink>view/NuwaCore-MiboSDK/job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -235,7 +235,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>NuwaCore-KiwiSDK-release</firstJob>
-        <firstJobLink>job/NuwaCore-KiwiSDK-release/</firstJobLink>
+        <firstJobLink>view/NuwaCore-MiboSDK/job/NuwaCore-KiwiSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -370,6 +370,11 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
+        <string>NuwaCore-MiboSDK-debug</string>
+        <string>NuwaCore-MiboSDK-debug-release</string>
+        <string>NuwaCore-MiboSDK-release</string>
+        <string>Pre-NuwaCore-MiboSDK-debug</string>
+        <string>Pre-NuwaCore-MiboSDK-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
