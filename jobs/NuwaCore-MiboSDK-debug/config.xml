@@ -38,12 +38,11 @@
 export ANDROID_HOME
 
 cd $WORKSPACE
-rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
+#rm -rf $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar/*
 ./gradlew assembleDebug
-cd $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar
-mv * nuwarobotics_oauth_client_lib.aar
-
-echo $APP_VERSION</command>
+#cd $WORKSPACE/nuwaoauthjavaclient/build/outputs/aar
+#mv * nuwarobotics_oauth_client_lib.aar
+</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -52,8 +51,23 @@ echo $APP_VERSION</command>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>connection</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <artifactId>basebackendclient-debug</artifactId>
+            <version>$BASEBACKENDCLIENT_VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>basebackendclient/build/outputs/aar/basebackendclient-debug.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.lib</groupId>
+            <artifactId>connection-debug</artifactId>
+            <version>$CONNECTION_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -67,8 +81,23 @@ echo $APP_VERSION</command>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
+            <artifactId>miboserviceclient-debug</artifactId>
+            <version>$MIBOSERVICECLIENT_VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>miboserviceclient/build/outputs/aar/miboserviceclient-debug.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>mqtt-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$MQTT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -83,12 +112,27 @@ echo $APP_VERSION</command>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>nuwaoauthjavaclient-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$NUWAOAUTHJAVACLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>nuwaoauthjavaclient/build/outputs/aar/nuwarobotics_oauth_client_lib.aar</filePath>
+              <filePath>nuwaoauthjavaclient/build/outputs/aar/nuwarobotics_oauth_client_lib_v0.8.0_2017-08-30.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.lib</groupId>
+            <artifactId>assetupdater-debug</artifactId>
+            <version>$ASSESTUPDATER_VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>assetupdater/build/outputs/aar/assetupdater-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
