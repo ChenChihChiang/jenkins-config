@@ -170,7 +170,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>view/docker/job/package/</firstJobLink>
+        <firstJobLink>job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -235,7 +235,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>NuwaCore-KiwiSDK-release</firstJob>
-        <firstJobLink>view/docker/job/NuwaCore-KiwiSDK-release/</firstJobLink>
+        <firstJobLink>job/NuwaCore-KiwiSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -360,6 +360,27 @@
         <hudson.views.BuildButtonColumn/>
       </columns>
       <includeRegex>docker.*</includeRegex>
+      <recurse>false</recurse>
+    </listView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>NuwaCore-MiboSDK</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
       <recurse>false</recurse>
     </listView>
   </views>
