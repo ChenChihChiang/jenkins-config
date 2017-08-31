@@ -35,28 +35,19 @@
   <builders>
     <hudson.tasks.Shell>
       <command>./env.sh
-cat /var/jenkins/workspace/Pre-NuwaCore-MiboSDK-release/env.properties</command>
+cat env.properties</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.35.1">
-      <configs>
-        <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-          <configs>
-            <hudson.plugins.parameterizedtrigger.FileBuildParameters>
-              <propertiesFile>/var/jenkins/workspace/Pre-NuwaCore-MiboSDK-release/env.properties</propertiesFile>
-              <failTriggerOnMissing>false</failTriggerOnMissing>
-              <useMatrixChild>false</useMatrixChild>
-              <onlyExactRuns>false</onlyExactRuns>
-            </hudson.plugins.parameterizedtrigger.FileBuildParameters>
-          </configs>
-          <projects>NuwaCore-MiboSDK-release</projects>
-          <condition>SUCCESS</condition>
-          <triggerWithNoParameters>false</triggerWithNoParameters>
-          <triggerFromChildProjects>false</triggerFromChildProjects>
-        </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-      </configs>
-    </hudson.plugins.parameterizedtrigger.BuildTrigger>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>NuwaCore-MiboSDK-debug-release, NuwaCore-MiboSDK-release</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
   </publishers>
   <buildWrappers/>
 </project>
