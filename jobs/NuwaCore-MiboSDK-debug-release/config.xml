@@ -92,7 +92,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>mqrr-debug</artifactId>
+            <artifactId>mqtt-debug</artifactId>
             <version>$MQTT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
