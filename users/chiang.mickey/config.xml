@@ -28,6 +28,9 @@
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$Vqpv1KynIX9yuRhRndSVluC2my3c..onpq4uUZuImlIGCr.3PBViG</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.20">
       <emailAddress>chiang.mickey@nuwarobotics.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
