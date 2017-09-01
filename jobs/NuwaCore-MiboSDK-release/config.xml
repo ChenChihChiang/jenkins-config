@@ -47,7 +47,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>basebackendclient</artifactId>
+            <artifactId>basebackendclient-$GIT_COMMIT</artifactId>
             <version>$BASEBACKENDCLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
