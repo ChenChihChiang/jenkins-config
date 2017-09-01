@@ -47,7 +47,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>basebackendclient-release</artifactId>
+            <artifactId>basebackendclient</artifactId>
             <version>$BASEBACKENDCLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -62,7 +62,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>connection-release</artifactId>
+            <artifactId>connection</artifactId>
             <version>$CONNECTION_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -77,7 +77,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>miboserviceclient-release</artifactId>
+            <artifactId>miboserviceclient</artifactId>
             <version>$MIBOSERVICECLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -92,7 +92,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>mqtt-release</artifactId>
+            <artifactId>mqtt</artifactId>
             <version>$MQTT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -107,7 +107,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>nuwaoauthjavaclient-release</artifactId>
+            <artifactId>nuwaoauthjavaclient</artifactId>
             <version>$NUWAOAUTHJAVACLIENT_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -122,7 +122,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>assetupdater-release</artifactId>
+            <artifactId>assetupdater</artifactId>
             <version>$ASSESTUPDATER_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
