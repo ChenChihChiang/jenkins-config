@@ -40,7 +40,7 @@ cat env.properties</command>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>NuwaCore-KiwiService</childProjects>
+      <childProjects>NuwaCore-KiwiService-release</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
