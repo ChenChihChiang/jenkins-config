@@ -32,7 +32,14 @@
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
+cd $WORKSPACE
+./gradlew assembleDebug</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
