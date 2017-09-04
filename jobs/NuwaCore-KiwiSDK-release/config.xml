@@ -36,6 +36,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+cat /var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-release/env.properties
 cd $WORKSPACE
 ./gradlew assembleRelease</command>
     </hudson.tasks.Shell>
@@ -46,7 +47,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>KiwiSDK_release</artifactId>
+            <artifactId>KiwiSDK</artifactId>
             <version>$KIWISDK_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
