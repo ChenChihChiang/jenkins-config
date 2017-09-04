@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/HomeService.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/release</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <assignedNode>android</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec>H H/2 * * *</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
+
+rm -rf $WORKSPACE/homeservice/build/outputs/apk/
+rm -rf $WORKSPACE/homeservice-client/build/outputs/aar/
+rm -rf $WORKSPACE/homeservice-common/build/outputs/aar/
+
+cd $WORKSPACE
+./gradlew assembleRelease
+
+cd $WORKSPACE/homeservice/build/outputs/apk/
+mv homeservice_* homeservice_release.apk
+
+cd $WORKSPACE/homeservice-client/build/outputs/aar/
+mv homeservice-client_* homeservice-client_release.aar
+
+cd $WORKSPACE/homeservice-common/build/outputs/aar/
+mv homeservice-common_* homeservice-common_release.aar
+</command>
+    </hudson.tasks.Shell>
+    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
+      <nexusInstanceId>nexus</nexusInstanceId>
+      <nexusRepositoryId>releases</nexusRepositoryId>
+      <packages>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.HomeService</groupId>
+            <artifactId>HomeService_release</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>homeservice/build/outputs/apk/homeservice_release.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.HomeService-client</groupId>
+            <artifactId>HomeService-client_release</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>homeservice-client/build/outputs/aar/homeservice-client_release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.HomeService-common</groupId>
+            <artifactId>HomeService-common_release</artifactId>
+            <version>$BUILD_NUMBER</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>homeservice-common/build/outputs/aar/homeservice-common_release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+      </packages>
+    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
+  </builders>
+  <publishers>
+    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
+      <baseUrl></baseUrl>
+      <teamDomain></teamDomain>
+      <authToken></authToken>
+      <authTokenCredentialId></authTokenCredentialId>
+      <botUser>false</botUser>
+      <room></room>
+      <startNotification>true</startNotification>
+      <notifySuccess>true</notifySuccess>
+      <notifyAborted>true</notifyAborted>
+      <notifyNotBuilt>true</notifyNotBuilt>
+      <notifyUnstable>true</notifyUnstable>
+      <notifyRegression>true</notifyRegression>
+      <notifyFailure>true</notifyFailure>
+      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyRepeatedFailure>false</notifyRepeatedFailure>
+      <includeTestSummary>false</includeTestSummary>
+      <includeFailedTests>false</includeFailedTests>
+      <commitInfoChoice>NONE</commitInfoChoice>
+      <includeCustomMessage>false</includeCustomMessage>
+      <customMessage></customMessage>
+    </jenkins.plugins.slack.SlackNotifier>
+  </publishers>
+  <buildWrappers/>
+</project>
