@@ -449,6 +449,7 @@
         <string>NuwaCore-KiwiSDK-debug</string>
         <string>NuwaCore-KiwiSDK-release</string>
         <string>Pre-NuwaCore-KiwiSDK-debug</string>
+        <string>Pre-NuwaCore-KiwiSDK-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
