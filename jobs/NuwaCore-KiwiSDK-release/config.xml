@@ -47,7 +47,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.KiwiSDK</groupId>
             <artifactId>KiwiSDK_release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$KIWISDK_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
