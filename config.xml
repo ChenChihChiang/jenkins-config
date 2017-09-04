@@ -495,6 +495,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
+        <string>Pre-RobotApps-NuwaCamera2-debug</string>
+        <string>Pre-RobotApps-NuwaCamera2-release</string>
         <string>RobotApps-NuwaCamera2-debug</string>
         <string>RobotApps-NuwaCamera2-debug-release</string>
         <string>RobotApps-NuwaCamera2-release</string>
