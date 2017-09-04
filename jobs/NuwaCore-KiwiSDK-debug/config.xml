@@ -47,7 +47,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.KiwiSDK</groupId>
             <artifactId>KiwiSDK-debug</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$KIWISDK_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -85,5 +85,16 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
+      <info>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties</propertiesFilePath>
+        <secureGroovyScript plugin="script-security@1.31">
+          <script></script>
+          <sandbox>false</sandbox>
+        </secureGroovyScript>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
 </project>
