@@ -80,7 +80,7 @@ cd $WORKSPACE
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-Algorithms-ObjectRecModule-debug/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
