@@ -79,7 +79,6 @@
         </permissions>
         <assignedSIDs>
           <sid>pao.chueh</sid>
-          <sid>bella.wu</sid>
         </assignedSIDs>
       </role>
       <role name="she" pattern=".*">
@@ -90,9 +89,14 @@
           <permission>hudson.model.View.Configure</permission>
           <permission>hudson.model.View.Read</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>tim.weng</sid>
+          <sid>bella.wu</sid>
+          <sid>mickey.chiang</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
@@ -407,7 +411,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-release</firstJob>
-        <firstJobLink>view/NuwaCore-MiboSDK/job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
+        <firstJobLink>job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
