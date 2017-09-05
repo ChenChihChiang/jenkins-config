@@ -536,8 +536,6 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>Algorithms-FaceRecognition2-debug</string>
-        <string>Algorithms-FaceRecognition2-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -549,6 +547,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
+      <includeRegex>Algorithms.*</includeRegex>
       <recurse>false</recurse>
     </listView>
   </views>
