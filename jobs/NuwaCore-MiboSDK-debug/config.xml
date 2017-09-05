@@ -57,7 +57,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>connection-debug</artifactId>
+            <artifactId>connectionmanager-debug</artifactId>
             <version>$CONNECTION_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
