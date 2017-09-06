@@ -276,6 +276,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
         <string>Lib-IOTManager-debug</string>
+        <string>Lib-IOTManager-debug-release</string>
         <string>Lib-IOTManager-release</string>
         <string>Pre-Lib-IOTManager-debug</string>
         <string>Pre-Lib-IOTManager-release</string>
