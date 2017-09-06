@@ -54,7 +54,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-NuwaCamera2-release/app/build/outputs/apk/app-debug.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-NuwaCamera2-debug-release/app/build/outputs/apk/app-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
