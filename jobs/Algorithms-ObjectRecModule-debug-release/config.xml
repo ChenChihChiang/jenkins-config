@@ -36,6 +36,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+cat /var/jenkins/workspace/Pre-Algorithms-ObjectRecModule-release/env.properties
 cd $WORKSPACE
 ./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
