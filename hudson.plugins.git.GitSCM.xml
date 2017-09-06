@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.plugins.git.GitSCM_-DescriptorImpl plugin="git@3.5.1">
-  <generation>398</generation>
+  <generation>492</generation>
   <globalConfigName>jk</globalConfigName>
   <globalConfigEmail>chen.john@nuwarobotics.com</globalConfigEmail>
   <createAccountBasedOnEmail>false</createAccountBasedOnEmail>
