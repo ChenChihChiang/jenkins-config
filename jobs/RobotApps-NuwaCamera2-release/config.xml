@@ -36,6 +36,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+cat /var/jenkins/workspace/Pre-RobotApps-NuwaCamera2-release/env.properties
 cd $WORKSPACE
 chmod +x ./gradlew
 ./gradlew assembleRelease</command>
