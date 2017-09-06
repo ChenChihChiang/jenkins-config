@@ -166,7 +166,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>job/package/</firstJobLink>
+        <firstJobLink>view/android%20build/job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -223,31 +223,6 @@
       <linkToConsoleLog>false</linkToConsoleLog>
       <description defined-in="se.diabol.jenkins.pipeline.DeliveryPipelineView"></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
-    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
-      <owner class="hudson" reference="../../.."/>
-      <name>android build</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
-        <firstJob>NuwaCore-KiwiSDK-release</firstJob>
-        <firstJobLink>job/NuwaCore-KiwiSDK-release/</firstJobLink>
-      </gridBuilder>
-      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
-      <buildViewTitle></buildViewTitle>
-      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
-      <cssUrl></cssUrl>
-      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
-      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
-      <showPipelineParameters>false</showPipelineParameters>
-      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
-      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
-      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
-      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
-      <startsWithParameters>false</startsWithParameters>
-      <refreshFrequency>3</refreshFrequency>
-      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
-    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
     <listView>
       <owner class="hudson" reference="../../.."/>
       <name>NuwaCore</name>
@@ -392,7 +367,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-release</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
+        <firstJobLink>view/android%20build/job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -417,7 +392,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-debug</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
+        <firstJobLink>view/android%20build/job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
