@@ -48,13 +48,13 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>nuwacamera</artifactId>
+            <artifactId>nuwacamera-debug</artifactId>
             <version>$NUWACAMERA2_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-NuwaCamera2-release/app/build/outputs/apk/app-release-unsigned.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-NuwaCamera2-release/app/build/outputs/apk/app-debug-unsigned.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
