@@ -7,15 +7,41 @@
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
     <roleMap type="projectRoles">
-      <role name="f4" pattern="android.*">
+      <role name="f4" pattern=".*">
         <permissions>
-          <permission>hudson.model.Item.Cancel</permission>
-          <permission>hudson.model.Item.Read</permission>
           <permission>hudson.model.Item.Create</permission>
           <permission>hudson.model.Run.Delete</permission>
+          <permission>org.jfrog.hudson.ArtifactoryPlugin.Release</permission>
           <permission>hudson.model.Item.Workspace</permission>
-          <permission>hudson.model.Item.Build</permission>
+          <permission>org.jfrog.hudson.ArtifactoryPlugin.PushToBintray</permission>
           <permission>hudson.model.Run.Replay</permission>
+          <permission>hudson.model.Item.Configure</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Delete</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>org.jfrog.hudson.ArtifactoryPlugin.Promote</permission>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.scm.SCM.Tag</permission>
+          <permission>hudson.model.Item.Move</permission>
+          <permission>hudson.model.Item.Discover</permission>
+          <permission>hudson.model.Run.Update</permission>
+        </permissions>
+        <assignedSIDs/>
+      </role>
+      <role name="she" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Item.Create</permission>
+          <permission>hudson.model.Run.Delete</permission>
+          <permission>org.jfrog.hudson.ArtifactoryPlugin.Release</permission>
+          <permission>hudson.model.Item.Workspace</permission>
+          <permission>org.jfrog.hudson.ArtifactoryPlugin.PushToBintray</permission>
+          <permission>hudson.model.Run.Replay</permission>
+          <permission>hudson.model.Item.Configure</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Delete</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>org.jfrog.hudson.ArtifactoryPlugin.Promote</permission>
+          <permission>hudson.model.Item.Build</permission>
           <permission>hudson.scm.SCM.Tag</permission>
           <permission>hudson.model.Item.Move</permission>
           <permission>hudson.model.Item.Discover</permission>
@@ -86,6 +112,7 @@
           <permission>hudson.model.Hudson.Read</permission>
           <permission>hudson.model.View.Create</permission>
           <permission>hudson.model.View.Delete</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create</permission>
           <permission>hudson.model.View.Configure</permission>
           <permission>hudson.model.View.Read</permission>
         </permissions>
@@ -96,7 +123,6 @@
         </assignedSIDs>
       </role>
     </roleMap>
-    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
