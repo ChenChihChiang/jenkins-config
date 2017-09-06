@@ -64,7 +64,7 @@ cd $WORKSPACE
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-NuwaCamera2-debug-release</childProjects>
+      <childProjects>RobotApps-NuwaCamera2-release</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
