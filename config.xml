@@ -62,9 +62,7 @@
           <permission>hudson.model.View.Configure</permission>
           <permission>hudson.model.View.Read</permission>
         </permissions>
-        <assignedSIDs>
-          <sid>pao.chueh</sid>
-        </assignedSIDs>
+        <assignedSIDs/>
       </role>
       <role name="she" pattern=".*">
         <permissions>
