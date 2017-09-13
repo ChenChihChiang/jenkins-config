@@ -36,7 +36,6 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cat env.properties
 cd $WORKSPACE
 ./build.sh</command>
     </hudson.tasks.Shell>
