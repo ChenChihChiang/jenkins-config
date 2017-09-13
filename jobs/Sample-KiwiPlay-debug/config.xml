@@ -8,19 +8,19 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/NuwaCore/KiwiSDK.git</url>
+        <url>ssh://jk@192.168.1.29:29418/Sample/KiwiPlay.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/dev</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>android</assignedNode>
+  <assignedNode>jenkins-3</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -36,31 +36,10 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cat /var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties
+#cat /var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties
 cd $WORKSPACE
-./gradlew assembleDebug</command>
+./gradlew clean build</command>
     </hudson.tasks.Shell>
-    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
-      <nexusInstanceId>nexus</nexusInstanceId>
-      <nexusRepositoryId>snapshots</nexusRepositoryId>
-      <packages>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.lib</groupId>
-            <artifactId>KiwiSDK-debug</artifactId>
-            <version>$KIWISDK_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>build/outputs/aar/NuwaCore-KiwiSDK-debug-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-      </packages>
-    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
@@ -86,16 +65,5 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
-      <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties</propertiesFilePath>
-        <secureGroovyScript plugin="script-security@1.31">
-          <script></script>
-          <sandbox>false</sandbox>
-        </secureGroovyScript>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
