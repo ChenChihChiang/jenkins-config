@@ -597,6 +597,7 @@
         <string>NuwaCore-KiwiController-debug</string>
         <string>NuwaCore-KiwiController-release</string>
         <string>Pre-NuwaCore-KiwiController-debug</string>
+        <string>Pre-NuwaCore-KiwiController-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
