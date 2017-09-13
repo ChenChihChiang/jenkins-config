@@ -47,7 +47,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/KiwiPl
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.kiwiPlay</groupId>
+            <groupId>com.nuwarobotics.KiwiPlay</groupId>
             <artifactId>KiwiPlay_singed</artifactId>
             <version>$KIWIPLAY_VERSION</version>
             <packaging>apk</packaging>
