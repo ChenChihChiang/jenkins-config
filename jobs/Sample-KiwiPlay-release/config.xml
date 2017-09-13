@@ -54,7 +54,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/KiwiPl
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Sample-KiwiPlay-debug/build/outputs/apk/kiwiPlay_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/Sample-KiwiPlay-release/build/outputs/apk/kiwiPlay_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
