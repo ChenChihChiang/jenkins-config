@@ -40,7 +40,7 @@ cat env.properties</command>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>Sample-KiwiPlay-release</childProjects>
+      <childProjects>Sample-KiwiPlay-debug</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
