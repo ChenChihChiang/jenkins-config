@@ -34,11 +34,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-#cat /var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties
-cd $WORKSPACE
-./build.sh</command>
+      <command>./env.sh
+cat env</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
