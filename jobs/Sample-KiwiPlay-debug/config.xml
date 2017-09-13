@@ -38,7 +38,7 @@
 export ANDROID_HOME
 #cat /var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties
 cd $WORKSPACE
-./gradlew clean build</command>
+./build.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
