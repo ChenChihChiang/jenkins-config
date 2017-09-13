@@ -596,6 +596,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
         <string>NuwaCore-KiwiController-debug</string>
         <string>NuwaCore-KiwiController-release</string>
+        <string>Pre-NuwaCore-KiwiController-debug</string>
       </jobNames>
       <jobFilters/>
       <columns>
