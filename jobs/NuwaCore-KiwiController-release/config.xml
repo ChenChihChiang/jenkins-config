@@ -46,8 +46,8 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.KiwiController</groupId>
-            <artifactId>KiwiController-release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <artifactId>KiwiController</artifactId>
+            <version>$KIWICONTROLER_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -85,5 +85,16 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
+      <info>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-NuwaCore-KiwiController-release/env.properties</propertiesFilePath>
+        <secureGroovyScript plugin="script-security@1.31">
+          <script></script>
+          <sandbox>false</sandbox>
+        </secureGroovyScript>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
 </project>
