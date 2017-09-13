@@ -38,8 +38,8 @@
 export ANDROID_HOME
 cd $WORKSPACE
 ./build.sh
-cd /var/jenkins/workspace/Sample-KiwiPlay-release/build/outputs/apk
-java -jar signapk.jar platform.x509.pem platform.pk8 KiwiPlay.apk kiwiPlay_signed.apk</command>
+cd /var/jenkins/workspace/Sample-KiwiPlay-release/signed
+java -jar signapk.jar platform.x509.pem platform.pk8 ../build/output/apk/KiwiPlay.apk ../build/output/apk/kiwiPlay_signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
