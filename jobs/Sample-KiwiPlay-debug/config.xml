@@ -46,7 +46,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.kiwiPlay</groupId>
-            <artifactId>KiwiPlay</artifactId>
+            <artifactId>KiwiPlay_debug</artifactId>
             <version>$KIWIPLAY_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
