@@ -53,6 +53,7 @@
           <sid>bella.wu</sid>
           <sid>john.chen</sid>
           <sid>mickey.chiang</sid>
+          <sid>Joshua.Sun</sid>
         </assignedSIDs>
       </role>
       <role name="f4" pattern=".*">
@@ -166,7 +167,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>view/NuwaCore-KiwiController/job/package/</firstJobLink>
+        <firstJobLink>view/NuwaCore-KiwiSDK/job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -371,7 +372,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-release</firstJob>
-        <firstJobLink>view/NuwaCore-KiwiController/job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
+        <firstJobLink>view/NuwaCore-KiwiSDK/job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -396,7 +397,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-debug</firstJob>
-        <firstJobLink>view/NuwaCore-KiwiController/job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
+        <firstJobLink>view/NuwaCore-KiwiSDK/job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
