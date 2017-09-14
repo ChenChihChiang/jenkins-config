@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/Algorithms/FaceRecognition2.git</url>
+        <url>ssh://jk@192.168.1.29:29418/Algorithms/VisualTracking.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -20,7 +20,7 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>jenkins-3</assignedNode>
+  <assignedNode>jenkins-6</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -37,7 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-./gradlew assembleDebug</command>
+./build.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
