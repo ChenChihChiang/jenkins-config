@@ -47,13 +47,14 @@
         </permissions>
         <assignedSIDs>
           <sid>daniel.chang</sid>
+          <sid>james.chen</sid>
           <sid>admin</sid>
           <sid>pao.chueh</sid>
           <sid>tim.weng</sid>
           <sid>bella.wu</sid>
           <sid>joshua.sun</sid>
-          <sid>john.chen</sid>
           <sid>chiang.mickey</sid>
+          <sid>john.chen</sid>
         </assignedSIDs>
       </role>
       <role name="f4" pattern=".*">
