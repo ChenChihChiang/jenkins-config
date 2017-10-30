@@ -36,8 +36,11 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+rm -rf cd /var/jenkins/workspace/Lib-IOTManager-release/app/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew assembleRelease
+cd /var/jenkins/workspace/Lib-IOTManager-release/app/build/outputs/apk
+mv iotmanager* iotmanager_release.apk
 cd /var/jenkins/workspace/Lib-IOTManager-release/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/iotmanager_release.apk ../app/build/outputs/apk/iotmanager_release_signed.apk</command>
     </hudson.tasks.Shell>
