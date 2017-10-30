@@ -110,7 +110,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera</groupId>
-            <artifactId>app</artifactId>
+            <artifactId>app_signed</artifactId>
             <version>$APP_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
