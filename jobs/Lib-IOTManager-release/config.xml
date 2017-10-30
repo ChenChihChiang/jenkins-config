@@ -54,7 +54,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/io
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>app/build/outputs/apk/iotmanager_release.apk</filePath>
+              <filePath>app/build/outputs/apk/iotmanager_release_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
