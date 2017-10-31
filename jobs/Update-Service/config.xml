@@ -37,7 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 
-rm -rf /var/jenkins/workspace/update-service/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/Update-Service/build/outputs/apk/*
 
 ./gradlew clean build
 
