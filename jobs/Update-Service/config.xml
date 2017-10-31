@@ -41,12 +41,12 @@ rm -rf /var/jenkins/workspace/update-service/build/outputs/apk/*
 
 ./gradlew clean build
 
-cd /var/jenkins/workspace/update-service/build/outputs/apk
+cd /var/jenkins/workspace/Update-Service/build/outputs/apk
 
 mv UpdateService_debug* UpdateService_debug.apk
 mv UpdateService_release* UpdateService_replease.apk
 
-cd /var/jenkins/workspace/update-service/signed
+cd /var/jenkins/workspace/Update-Service/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/UpdateService_replease.apk ../build/outputs/apk/UpdateService_signed.apk</command>
     </hudson.tasks.Shell>
   </builders>
