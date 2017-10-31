@@ -55,8 +55,8 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/Update
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com</groupId>
-            <artifactId>nuwarobotics.service.update</artifactId>
+            <groupId>com.nuwarobotics.service</groupId>
+            <artifactId>update</artifactId>
             <version>$UPDATE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -76,8 +76,8 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/Update
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com</groupId>
-            <artifactId>nuwarobotics.service.update</artifactId>
+            <groupId>com.nuwarobotics.service</groupId>
+            <artifactId>update</artifactId>
             <version>$UPDATE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
