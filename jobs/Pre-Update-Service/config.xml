@@ -40,7 +40,7 @@ cat env.properties</command>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>update-service</childProjects>
+      <childProjects>Update-Service</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
