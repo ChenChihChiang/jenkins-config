@@ -45,8 +45,8 @@ cd $WORKSPACE
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics</groupId>
-            <artifactId>app</artifactId>
+            <groupId>com.nuwarobotics.app</groupId>
+            <artifactId>FaceRecognition2_debug</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
