@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/RobotApps/VideoCall.git</url>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/BluetoothReceiver.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -37,7 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-./gradlew assembleProdDebug</command>
+./gradlew assembleDebug</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
