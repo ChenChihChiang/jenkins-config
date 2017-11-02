@@ -37,7 +37,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-./gradlew assembleUatJenkins</command>
+./gradlew assembleUatRelease</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
