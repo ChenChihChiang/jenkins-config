@@ -42,7 +42,7 @@ rm -rf $WORKSPACE/homeservice-client/build/outputs/aar/
 rm -rf $WORKSPACE/homeservice-common/build/outputs/aar/
 
 cd $WORKSPACE
-./gradlew assembleDebug
+./gradlew assembleUatDebug
 
 cd $WORKSPACE/homeservice/build/outputs/apk/
 mv homeservice_* homeservice_debug.apk
