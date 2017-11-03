@@ -3,7 +3,7 @@
   <fullName>lin.eric</fullName>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwroMX5qkpzXvvQx35j9wLezAObHQS8dR7+tcsbf88c96t3JWmMa8P/3AroqO4ZWGrnyrs6kxrGDUNj5aySOjuWg==}</apiToken>
+      <apiToken>{AQAAABAAAAAwdWUTg0ZZM2DkurcwYQoz6SzbVjwC82wfiKOVreljq1X3Y57iU9oHwld1LY7GZq2Zkg+6fnfaSxTN5LCqoxYFBA==}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.14">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
