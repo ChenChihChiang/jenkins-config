@@ -2,7 +2,7 @@
 <hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.61">
   <defaultSuffix>@nuwarobotics.com</defaultSuffix>
   <smtpAuthUsername>jk@nuwarobotics.com</smtpAuthUsername>
-  <smtpAuthPassword>{AQAAABAAAAAQMtFEkkATdee2LfdOGPHdlMBQNPO+Vyl7gQ4e+wSLrOw=}</smtpAuthPassword>
+  <smtpAuthPassword>{AQAAABAAAAAQnIhJztmZVReLxrp/wLcLFsAMlye4tKIilGIPaMlZ7Bk=}</smtpAuthPassword>
   <smtpHost>smtp.mxhichina.com</smtpHost>
   <useSsl>true</useSsl>
   <smtpPort>465</smtpPort>
