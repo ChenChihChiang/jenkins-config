@@ -3,7 +3,7 @@
   <fullName>gib886886</fullName>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwkPQeGFUQV1cG0+sGBtSvqHNsOH9F6U2tdMEj49rytKcBll9zw45cQxfvqomNVcJyJHClmPkwZhtrIwHEVJMLUg==}</apiToken>
+      <apiToken>{AQAAABAAAAAwuuTJguoPfCrozCNF7l28EZKewQudfEtMc38zopEbOHm6S9qa4NqiCWwnCyLkAHxz47md/lDysC7MlAEJ/PZR9w==}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.14">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
