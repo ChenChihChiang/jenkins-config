@@ -2,7 +2,7 @@
 <hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.61">
   <defaultSuffix>@nuwarobotics.com</defaultSuffix>
   <smtpAuthUsername>jk@nuwarobotics.com</smtpAuthUsername>
-  <smtpAuthPassword>{AQAAABAAAAAQUyDj0HhmdFSwrsDt2Xsj0PLWQBPf+mOauVPQXfItGNM=}</smtpAuthPassword>
+  <smtpAuthPassword>{AQAAABAAAAAQcRo8nQe8y4TM0qd19W9IykWLfbKH8TLuhfiP0xWN+fE=}</smtpAuthPassword>
   <smtpHost>smtp.mxhichina.com</smtpHost>
   <useSsl>true</useSsl>
   <smtpPort>465</smtpPort>
@@ -40,7 +40,7 @@ Check console output at $BUILD_URL to view the results.</defaultBody>
   </defaultTriggerIds>
   <emergencyReroute>chen.john@nuwarobotics.com</emergencyReroute>
   <maxAttachmentSize>-1</maxAttachmentSize>
-  <recipientList>chen.john@nuwarobotics.com</recipientList>
+  <recipientList></recipientList>
   <defaultReplyTo></defaultReplyTo>
   <excludedCommitters></excludedCommitters>
   <overrideGlobalSettings>true</overrideGlobalSettings>
