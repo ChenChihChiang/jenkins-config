@@ -39,7 +39,7 @@ export ANDROID_HOME
 ANDROID_NDK_HOME=/usr/local/Android-SDK/ndk-bundle
 export ANDROID_NDK_HOME
 cd $WORKSPACE
-./build.sh</command>
+./gradlew assembleRelease</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
