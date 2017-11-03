@@ -36,6 +36,8 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+ANDROID_NDK_HOME=/opt/android-ndk-r15c
+export ANDROID_NDK_HOME
 cd $WORKSPACE
 ./build.sh</command>
     </hudson.tasks.Shell>
