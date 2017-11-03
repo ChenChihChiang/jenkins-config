@@ -11,11 +11,32 @@ Check console output at $BUILD_URL to view the results.</defaultBody>
   <defaultPostsendScript></defaultPostsendScript>
   <defaultClasspath/>
   <defaultTriggerIds>
+    <string>hudson.plugins.emailext.plugins.trigger.AbortedTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.AlwaysTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.PreBuildTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.FirstFailureTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.SecondFailureTrigger</string>
     <string>hudson.plugins.emailext.plugins.trigger.FailureTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.StillFailingTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.XNthFailureTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.BuildingTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.FixedTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.NotBuiltTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.ScriptTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.PreBuildScriptTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.StatusChangedTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.SuccessTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.ImprovementTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.RegressionTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.UnstableTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.FirstUnstableTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.StillUnstableTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.FixedUnhealthyTrigger</string>
   </defaultTriggerIds>
   <emergencyReroute>chen.john@nuwarobotics.com</emergencyReroute>
   <maxAttachmentSize>-1</maxAttachmentSize>
   <recipientList>chen.john@nuwarobotics.com</recipientList>
+  <defaultReplyTo></defaultReplyTo>
   <excludedCommitters></excludedCommitters>
   <overrideGlobalSettings>true</overrideGlobalSettings>
   <precedenceBulk>false</precedenceBulk>
