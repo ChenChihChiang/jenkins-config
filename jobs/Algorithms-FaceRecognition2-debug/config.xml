@@ -63,7 +63,7 @@ cd $WORKSPACE
   </builders>
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>$DEFAULT_RECIPIENTS, chiang.mickey@nuwarobotics.com</recipientList>
+      <recipientList> chiang.mickey@nuwarobotics.com, cc:$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AbortedTrigger>
           <email>
