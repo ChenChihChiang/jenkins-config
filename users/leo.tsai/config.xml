@@ -19,7 +19,7 @@
       <timestamp>1509690985226</timestamp>
     </jenkins.security.LastGrantedAuthoritiesProperty>
     <hudson.model.MyViewsProperty>
-      <primaryViewName></primaryViewName>
+      <primaryViewName>all</primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
