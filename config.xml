@@ -172,7 +172,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>job/package/</firstJobLink>
+        <firstJobLink>view/Pre/job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -376,7 +376,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-release</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
+        <firstJobLink>view/Pre/job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -401,7 +401,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-debug</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
+        <firstJobLink>view/Pre/job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -635,6 +635,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
+      <includeRegex>Pre-*.</includeRegex>
       <recurse>false</recurse>
     </listView>
   </views>
