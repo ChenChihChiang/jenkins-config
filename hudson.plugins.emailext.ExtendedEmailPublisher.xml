@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.61">
-  <useSsl>false</useSsl>
+  <defaultSuffix>@nuwarobotics.com</defaultSuffix>
+  <smtpAuthUsername>jk@nuwarobotics.com</smtpAuthUsername>
+  <smtpAuthPassword>{AQAAABAAAAAQP1dGrklXg0N5vs+K5NvdFGxyilmYmr8DEeZ/CwID07g=}</smtpAuthPassword>
+  <smtpHost>smtp.mxhichina.com</smtpHost>
+  <useSsl>true</useSsl>
+  <smtpPort>465</smtpPort>
   <charset>UTF-8</charset>
   <defaultContentType>text/html</defaultContentType>
   <defaultSubject>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!</defaultSubject>
