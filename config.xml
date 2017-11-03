@@ -635,7 +635,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
-      <includeRegex>Pre-*.</includeRegex>
+      <includeRegex>Pre-.*</includeRegex>
       <recurse>false</recurse>
     </listView>
   </views>
