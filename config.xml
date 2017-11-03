@@ -1,12 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <disabledAdministrativeMonitors/>
-  <version>2.75</version>
+  <version>2.73</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
-    <roleMap type="projectRoles"/>
+    <roleMap type="projectRoles">
+      <role name="f4" pattern="android.*">
+        <permissions>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Create</permission>
+          <permission>hudson.model.Run.Delete</permission>
+          <permission>hudson.model.Item.Workspace</permission>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Run.Replay</permission>
+          <permission>hudson.scm.SCM.Tag</permission>
+          <permission>hudson.model.Item.Move</permission>
+          <permission>hudson.model.Item.Discover</permission>
+          <permission>hudson.model.Run.Update</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>pao.chueh</sid>
+        </assignedSIDs>
+      </role>
+    </roleMap>
     <roleMap type="globalRoles">
       <role name="admin" pattern=".*">
         <permissions>
@@ -47,17 +66,7 @@
         </permissions>
         <assignedSIDs>
           <sid>daniel.chang</sid>
-          <sid>leo.tsai</sid>
           <sid>admin</sid>
-          <sid>tim.weng</sid>
-          <sid>daniel.huang</sid>
-          <sid>wj.lee</sid>
-          <sid>james.chen</sid>
-          <sid>tommy.yu</sid>
-          <sid>pao.chueh</sid>
-          <sid>bella.wu</sid>
-          <sid>joshua.sun</sid>
-          <sid>chiang.mickey</sid>
           <sid>john.chen</sid>
         </assignedSIDs>
       </role>
@@ -69,18 +78,9 @@
           <permission>hudson.model.View.Configure</permission>
           <permission>hudson.model.View.Read</permission>
         </permissions>
-        <assignedSIDs/>
-      </role>
-      <role name="she" pattern=".*">
-        <permissions>
-          <permission>hudson.model.Hudson.Read</permission>
-          <permission>hudson.model.View.Create</permission>
-          <permission>hudson.model.View.Delete</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create</permission>
-          <permission>hudson.model.View.Configure</permission>
-          <permission>hudson.model.View.Read</permission>
-        </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>pao.chueh</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
     <roleMap type="slaveRoles"/>
@@ -93,7 +93,6 @@
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
-  <systemMessage>NUWAROBOTICS</systemMessage>
   <markupFormatter class="hudson.markup.RawHtmlMarkupFormatter" plugin="antisamy-markup-formatter@1.5">
     <disableSyntaxHighlighting>false</disableSyntaxHighlighting>
   </markupFormatter>
@@ -112,7 +111,7 @@
       <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
       <credentialsId>Chen</credentialsId>
       <privateKey>
-        <privateKey>{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}</privateKey>
+        <privateKey>{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}</privateKey>
       </privateKey>
       <instanceCap>2147483647</instanceCap>
       <templates>
@@ -228,6 +227,31 @@
       <linkToConsoleLog>false</linkToConsoleLog>
       <description></description>
     </se.diabol.jenkins.pipeline.DeliveryPipelineView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
+      <owner class="hudson" reference="../../.."/>
+      <name>android build</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>NuwaCore-KiwiSDK-release</firstJob>
+        <firstJobLink>job/NuwaCore-KiwiSDK-release/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
     <listView>
       <owner class="hudson" reference="../../.."/>
       <name>NuwaCore</name>
@@ -280,11 +304,6 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
-        <string>Lib-IOTManager-debug</string>
-        <string>Lib-IOTManager-debug-release</string>
-        <string>Lib-IOTManager-release</string>
-        <string>Pre-Lib-IOTManager-debug</string>
-        <string>Pre-Lib-IOTManager-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -296,6 +315,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
+      <includeRegex>Lib.*</includeRegex>
       <recurse>false</recurse>
     </listView>
     <listView>
@@ -320,309 +340,9 @@
       <includeRegex>AndroidApps.*</includeRegex>
       <recurse>false</recurse>
     </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>docker</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator"/>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <includeRegex>docker.*</includeRegex>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-MiboSDK</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>NuwaCore-MiboSDK-debug</string>
-        <string>NuwaCore-MiboSDK-debug-release</string>
-        <string>NuwaCore-MiboSDK-release</string>
-        <string>Pre-NuwaCore-MiboSDK-debug</string>
-        <string>Pre-NuwaCore-MiboSDK-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
-    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
-      <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-MiboSDK-release-Pipeline-View</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
-        <firstJob>Pre-NuwaCore-MiboSDK-release</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
-      </gridBuilder>
-      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
-      <buildViewTitle></buildViewTitle>
-      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
-      <cssUrl></cssUrl>
-      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
-      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
-      <showPipelineParameters>false</showPipelineParameters>
-      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
-      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
-      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
-      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
-      <startsWithParameters>false</startsWithParameters>
-      <refreshFrequency>3</refreshFrequency>
-      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
-    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
-      <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-MiboSDK-debug-Pipeline-View</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
-        <firstJob>Pre-NuwaCore-MiboSDK-debug</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
-      </gridBuilder>
-      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
-      <buildViewTitle></buildViewTitle>
-      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
-      <cssUrl></cssUrl>
-      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
-      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
-      <showPipelineParameters>false</showPipelineParameters>
-      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
-      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
-      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
-      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
-      <startsWithParameters>false</startsWithParameters>
-      <refreshFrequency>3</refreshFrequency>
-      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
-    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-KiwiSDK</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>NuwaCore-KiwiSDK-debug</string>
-        <string>NuwaCore-KiwiSDK-release</string>
-        <string>Pre-NuwaCore-KiwiSDK-debug</string>
-        <string>Pre-NuwaCore-KiwiSDK-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-KiwiService</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>NuwaCore-KiwiService-debug</string>
-        <string>NuwaCore-KiwiService-release</string>
-        <string>Pre-NuwaCore-KiwiService</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>RobotApps-NuwaCamera2</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>Pre-RobotApps-NuwaCamera2-debug</string>
-        <string>Pre-RobotApps-NuwaCamera2-release</string>
-        <string>RobotApps-NuwaCamera2-debug</string>
-        <string>RobotApps-NuwaCamera2-debug-release</string>
-        <string>RobotApps-NuwaCamera2-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>Algorithms</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <includeRegex>Algorithms.*</includeRegex>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>Algorithms-ObjectRecModule</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>Algorithms-ObjectRecModule-debug</string>
-        <string>Algorithms-ObjectRecModule-debug-release</string>
-        <string>Algorithms-ObjectRecModule-release</string>
-        <string>Pre-Algorithms-ObjectRecModule-debug</string>
-        <string>Pre-Algorithms-ObjectRecModule-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>RobotApps-CameraService</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>Pre-RobotApps-CameraService-debug</string>
-        <string>Pre-RobotApps-CameraService-release</string>
-        <string>RobotApps-CameraService-debug</string>
-        <string>RobotApps-CameraService-debug-release</string>
-        <string>RobotApps-CameraService-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>Sample</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>Pre-Sample-KiwiPlay-debug</string>
-        <string>Pre-Sample-KiwiPlay-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <includeRegex>Sample.*</includeRegex>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
-      <name>NuwaCore-KiwiController</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[5]/jobNames/comparator"/>
-        <string>NuwaCore-KiwiController-debug</string>
-        <string>NuwaCore-KiwiController-release</string>
-        <string>Pre-NuwaCore-KiwiController-debug</string>
-        <string>Pre-NuwaCore-KiwiController-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <recurse>false</recurse>
-    </listView>
   </views>
   <primaryView>all</primaryView>
-  <slaveAgentPort>0</slaveAgentPort>
-  <disabledAgentProtocols>
-    <string>JNLP-connect</string>
-    <string>JNLP2-connect</string>
-  </disabledAgentProtocols>
+  <slaveAgentPort>-1</slaveAgentPort>
   <label>master</label>
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
     <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
