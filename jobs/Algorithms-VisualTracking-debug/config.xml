@@ -39,6 +39,7 @@ export ANDROID_HOME
 ANDROID_NDK_HOME=/opt/android-ndk-r15c
 export ANDROID_NDK_HOME
 cd $WORKSPACE
+chmod 755 ./build.sh
 ./build.sh</command>
     </hudson.tasks.Shell>
   </builders>
