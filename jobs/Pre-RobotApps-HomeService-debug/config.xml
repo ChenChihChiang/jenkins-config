@@ -34,79 +34,19 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-
-rm -rf $WORKSPACE/homeservice/build/outputs/apk/
-rm -rf $WORKSPACE/homeservice-client/build/outputs/aar/
-rm -rf $WORKSPACE/homeservice-common/build/outputs/aar/
-
-cd $WORKSPACE
-./gradlew assembleUatDebug
-
-cd $WORKSPACE/homeservice/build/outputs/apk/
-mv homeservice_* homeservice_debug.apk
-
-cd $WORKSPACE/homeservice-client/build/outputs/aar/
-mv homeservice-client_* homeservice-client_debug.aar
-
-cd $WORKSPACE/homeservice-common/build/outputs/aar/
-mv homeservice-common_* homeservice-common_debug.aar
-</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
-    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
-      <nexusInstanceId>nexus</nexusInstanceId>
-      <nexusRepositoryId>releases</nexusRepositoryId>
-      <packages>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.HomeService</groupId>
-            <artifactId>HomeService_debug</artifactId>
-            <version>$BUILD_NUMBER</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>homeservice/build/outputs/apk/homeservice_debug.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.HomeService-client</groupId>
-            <artifactId>HomeService-client_debug</artifactId>
-            <version>$BUILD_NUMBER</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>homeservice-client/build/outputs/aar/homeservice-client_debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.HomeService-common</groupId>
-            <artifactId>HomeService-common_debug</artifactId>
-            <version>$BUILD_NUMBER</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>homeservice-common/build/outputs/aar/homeservice-common_debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-      </packages>
-    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>RobotApps-HomeService-debug</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
       <baseUrl></baseUrl>
       <teamDomain></teamDomain>
