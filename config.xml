@@ -173,7 +173,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>package</firstJob>
-        <firstJobLink>job/package/</firstJobLink>
+        <firstJobLink>view/BluetoothRemote/job/package/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -377,7 +377,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-release</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
+        <firstJobLink>view/BluetoothRemote/job/Pre-NuwaCore-MiboSDK-release/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -402,7 +402,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Pre-NuwaCore-MiboSDK-debug</firstJob>
-        <firstJobLink>job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
+        <firstJobLink>view/BluetoothRemote/job/Pre-NuwaCore-MiboSDK-debug/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -672,6 +672,9 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[15]/jobNames/comparator"/>
+        <string>Pre-RobotApps-BluetoothRemote-debug</string>
+        <string>RobotApps-BluetoothRemote-debug</string>
+        <string>RobotApps-BluetoothRemote-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
