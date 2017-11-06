@@ -673,6 +673,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[15]/jobNames/comparator"/>
         <string>Pre-RobotApps-BluetoothRemote-debug</string>
+        <string>Pre-RobotApps-BluetoothRemote-release</string>
         <string>RobotApps-BluetoothRemote-debug</string>
         <string>RobotApps-BluetoothRemote-release</string>
       </jobNames>
