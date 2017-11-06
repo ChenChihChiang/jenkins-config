@@ -483,7 +483,7 @@
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>RobotApps-VideoCall</name>
+      <name>VideoCall</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
