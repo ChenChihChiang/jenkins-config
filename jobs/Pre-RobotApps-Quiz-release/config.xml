@@ -34,13 +34,19 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-cd $WORKSPACE
-./gradlew assembleRelease</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>RobotApps-Quiz-release</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
       <baseUrl></baseUrl>
       <teamDomain></teamDomain>
