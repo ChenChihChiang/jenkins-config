@@ -55,8 +55,8 @@ mv homeservice-common_* homeservice-common_debug.aar
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service</groupId>
-            <artifactId>HomeService_debug</artifactId>
+            <groupId>com.nuwarobotics.service.home</groupId>
+            <artifactId>homeservice_debug</artifactId>
             <version>$HOME_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -70,8 +70,8 @@ mv homeservice-common_* homeservice-common_debug.aar
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service</groupId>
-            <artifactId>HomeService-client_debug</artifactId>
+            <groupId>com.nuwarobotics.service.home</groupId>
+            <artifactId>homeservice-client_debug</artifactId>
             <version>$HOME_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -85,8 +85,8 @@ mv homeservice-common_* homeservice-common_debug.aar
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service</groupId>
-            <artifactId>HomeService-common_debug</artifactId>
+            <groupId>com.nuwarobotics.service.home</groupId>
+            <artifactId>homeservice-common_debug</artifactId>
             <version>$HOME_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
