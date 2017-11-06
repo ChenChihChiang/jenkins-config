@@ -37,7 +37,9 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-./gradlew assembleRelease</command>
+chmod 755 ./build.sh
+chmod 755 ./gradlew
+./build.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
