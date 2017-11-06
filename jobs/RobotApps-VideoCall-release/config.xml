@@ -50,7 +50,7 @@ mv VideoCall*release.apk VideoCall_release.apk</command>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk/VideoCall_release.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk/VideoCall_release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
