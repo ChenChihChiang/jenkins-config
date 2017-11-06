@@ -58,7 +58,7 @@ mv homeservice-common_* homeservice-common_release.aar
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service</groupId>
+            <groupId>com.nuwarobotics.service.home</groupId>
             <artifactId>homeservice_signed</artifactId>
             <version>$HOME_VERSION</version>
             <packaging>apk</packaging>
