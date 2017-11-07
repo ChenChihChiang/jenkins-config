@@ -551,6 +551,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
         <string>Pre-RobotApps-RobotTheater-debug</string>
+        <string>Pre-RobotApps-RobotTheater-release</string>
         <string>RobotApps-RobotTheater-debug</string>
         <string>RobotApps-RobotTheater-release</string>
       </jobNames>
