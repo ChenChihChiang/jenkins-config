@@ -39,7 +39,7 @@ chmod 755 ./build.sh
 chmod 755 ./gradlew
 ./build.sh
 cd /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/
-mv Algorithms*.apk Algorithms-VisualTracking-release.apk
+mv Algorithms-VisualTracking-release-release* Algorithms-VisualTracking-release.apk
 cd /var/jenkins/workspace/Algorithms-VisualTracking-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/Algorithms-VisualTracking-release.apk ../build/outputs/apk/Algorithms-VisualTracking-signed.apk
 </command>
