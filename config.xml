@@ -628,6 +628,7 @@
         <string>Algorithms-VisualTracking-debug</string>
         <string>Algorithms-VisualTracking-release</string>
         <string>Pre-Algorithms-VisualTracking-debug</string>
+        <string>Pre-Algorithms-VisualTracking-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
