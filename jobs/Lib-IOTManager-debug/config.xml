@@ -31,6 +31,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
+rm -rf /var/jenkins/workspace/Lib-IOTManager-debug/app/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew assembleDebug
 mv app/build/outputs/apk/iotmanager* app/build/outputs/apk/iotmanager_debug.apk</command>
