@@ -47,7 +47,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>nuwacamera-debug</artifactId>
+            <artifactId>nuwacamera_debug</artifactId>
             <version>$NUWACAMERA2_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
