@@ -45,7 +45,7 @@ mv kiwioobe*debug.apk kiwioobe_debug.apk
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>kiwioobe</artifactId>
+            <artifactId>kiwioobe_debug</artifactId>
             <version>$OOBE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
