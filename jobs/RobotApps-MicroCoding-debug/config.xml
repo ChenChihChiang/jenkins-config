@@ -45,7 +45,7 @@ mv MicroCoding*debug.apk MicroCoding_debug.apk
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>microcoding</artifactId>
+            <artifactId>microcoding_debug</artifactId>
             <version>$MICRO_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
