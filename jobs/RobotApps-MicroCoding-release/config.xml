@@ -46,7 +46,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Mi
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>microcoding</artifactId>
+            <artifactId>microcoding_signed</artifactId>
             <version>$MICRO_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
