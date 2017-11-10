@@ -42,7 +42,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>app-debug</artifactId>
+            <artifactId>facehome2</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
