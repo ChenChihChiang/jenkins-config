@@ -41,9 +41,9 @@ cd $WORKSPACE
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.FaceHome2</groupId>
+            <groupId>com.nuwarobotics.app.home</groupId>
             <artifactId>app-release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$FACEHOME2_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
@@ -56,9 +56,9 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.FaceHome2</groupId>
+            <groupId>com.nuwarobotics.app.home</groupId>
             <artifactId>pet-release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$FACEHOME2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
@@ -71,9 +71,9 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.FaceHome2</groupId>
+            <groupId>com.nuwarobotics.app.home</groupId>
             <artifactId>utility-release</artifactId>
-            <version>$BUILD_NUMBER</version>
+            <version>$FACEHOME2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
