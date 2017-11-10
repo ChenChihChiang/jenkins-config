@@ -45,7 +45,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>app-release</artifactId>
+            <artifactId>app_signed</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -60,7 +60,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>pet-release</artifactId>
+            <artifactId>pet</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -75,7 +75,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>utility-release</artifactId>
+            <artifactId>utility</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
