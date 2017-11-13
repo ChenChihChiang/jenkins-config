@@ -349,30 +349,6 @@
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>Sample</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[3]/jobNames/comparator"/>
-        <string>Pre-Sample-KiwiPlay-debug</string>
-        <string>Pre-Sample-KiwiPlay-release</string>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-      </columns>
-      <includeRegex>Sample.*</includeRegex>
-      <recurse>false</recurse>
-    </listView>
-    <listView>
-      <owner class="hudson" reference="../../.."/>
       <name>KiwiController</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
@@ -425,7 +401,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-VideoCall-debug</string>
         <string>Pre-RobotApps-VideoCall-release</string>
         <string>RobotApps-VideoCall-debug</string>
@@ -450,7 +426,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-BluetoothRemote-debug</string>
         <string>Pre-RobotApps-BluetoothRemote-release</string>
         <string>RobotApps-BluetoothRemote-debug</string>
@@ -475,7 +451,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-HomeService-debug</string>
         <string>Pre-RobotApps-HomeService-release</string>
         <string>RobotApps-HomeService-debug</string>
@@ -500,7 +476,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Algorithms-FaceRecognition2-debug</string>
         <string>Algorithms-FaceRecognition2-release</string>
         <string>Pre-Algorithms-FaceRecognition2-debug</string>
@@ -525,7 +501,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-KiwiOOBE-debug</string>
         <string>Pre-RobotApps-KiwiOOBE-release</string>
         <string>RobotApps-KiwiOOBE-debug</string>
@@ -550,7 +526,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-RobotTheater-debug</string>
         <string>Pre-RobotApps-RobotTheater-release</string>
         <string>RobotApps-RobotTheater-debug</string>
@@ -575,7 +551,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-MicroCoding-debug</string>
         <string>Pre-RobotApps-MicroCoding-release</string>
         <string>RobotApps-MicroCoding-debug</string>
@@ -600,7 +576,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-Quiz-debug</string>
         <string>Pre-RobotApps-Quiz-release</string>
         <string>RobotApps-Quiz-debug</string>
@@ -625,7 +601,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[11]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Algorithms-VisualTracking-debug</string>
         <string>Algorithms-VisualTracking-release</string>
         <string>Pre-Algorithms-VisualTracking-debug</string>
@@ -675,7 +651,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[21]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
         <string>Pre-Sample-KiwiPlay-debug</string>
         <string>Pre-Sample-KiwiPlay-release</string>
         <string>Sample-KiwiPlay-debug</string>
@@ -700,7 +676,7 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[21]/jobNames/comparator"/>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
         <string>Pre-Update-Service</string>
         <string>Update-Service</string>
       </jobNames>
