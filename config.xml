@@ -676,6 +676,10 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[21]/jobNames/comparator"/>
+        <string>Pre-Sample-KiwiPlay-debug</string>
+        <string>Pre-Sample-KiwiPlay-release</string>
+        <string>Sample-KiwiPlay-debug</string>
+        <string>Sample-KiwiPlay-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
