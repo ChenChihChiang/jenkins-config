@@ -701,6 +701,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[21]/jobNames/comparator"/>
+        <string>Pre-Update-Service</string>
+        <string>Update-Service</string>
       </jobNames>
       <jobFilters/>
       <columns>
