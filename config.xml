@@ -700,6 +700,22 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
+        <string>Algorithms-FaceRecognition2-release</string>
+        <string>Algorithms-VisualTracking-release</string>
+        <string>Lib-IOTManager-release</string>
+        <string>NuwaCore-KiwiService-release</string>
+        <string>RobotApps-BluetoothRemote-release</string>
+        <string>RobotApps-CameraService-release</string>
+        <string>RobotApps-FaceHome2-release</string>
+        <string>RobotApps-HomeService-release</string>
+        <string>RobotApps-KiwiOOBE-release</string>
+        <string>RobotApps-MicroCoding-release</string>
+        <string>RobotApps-NuwaCamera2-release</string>
+        <string>RobotApps-Quiz-release</string>
+        <string>RobotApps-RobotTheater-release</string>
+        <string>RobotApps-VideoCall-release</string>
+        <string>Sample-KiwiPlay-release</string>
+        <string>Update-Service</string>
       </jobNames>
       <jobFilters/>
       <columns>
