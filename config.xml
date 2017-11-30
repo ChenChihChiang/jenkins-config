@@ -737,6 +737,10 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
+        <string>Pre-SensoryService-debug</string>
+        <string>Pre-SensoryService-release</string>
+        <string>SensoryService-debug</string>
+        <string>SensoryService-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
