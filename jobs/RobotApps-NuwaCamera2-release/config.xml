@@ -33,7 +33,7 @@
 export ANDROID_HOME
 cd $WORKSPACE
 chmod +x ./gradlew
-./gradlew -x lint
+./gradlew -Xlint
 ./gradlew clean
 ./gradlew assembleRelease
 
