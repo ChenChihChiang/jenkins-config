@@ -280,7 +280,6 @@
         <string>Pre-RobotApps-NuwaCamera2-debug</string>
         <string>Pre-RobotApps-NuwaCamera2-release</string>
         <string>RobotApps-NuwaCamera2-debug</string>
-        <string>RobotApps-NuwaCamera2-debug-release</string>
         <string>RobotApps-NuwaCamera2-release</string>
       </jobNames>
       <jobFilters/>
