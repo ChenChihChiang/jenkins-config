@@ -37,7 +37,7 @@ rm -rf $WORKSPACE/homeservice-client/build/outputs/aar/
 rm -rf $WORKSPACE/homeservice-common/build/outputs/aar/
 
 cd $WORKSPACE
- ./gradlew assembleUatRelease
+ ./gradlew clean assembleUatRelease
  
 cd $WORKSPACE/homeservice/build/outputs/apk/
 mv homeservice_* homeservice_release.apk
