@@ -33,6 +33,7 @@
 export ANDROID_HOME
 cd $WORKSPACE
 chmod +x ./gradlew
+./gradlew clean
 ./gradlew assembleRelease
 
 cd /var/jenkins/workspace/RobotApps-NuwaCamera2-release/signed
