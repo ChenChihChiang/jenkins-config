@@ -20,7 +20,7 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>jenkins-3</assignedNode>
+  <assignedNode>jenkins-6</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -29,13 +29,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-cd $WORKSPACE
-./gradlew clean assembleRelease
-
-#cd /var/jenkins/workspace/Algorithms-FaceRecognition2-release/signed
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-release-unsigned.apk ../app/build/outputs/apk/app-release-signed.apk</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -62,16 +56,5 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
-      <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-Algorithms-FaceRecognition2-release/env.properties</propertiesFilePath>
-        <secureGroovyScript plugin="script-security@1.31">
-          <script></script>
-          <sandbox>false</sandbox>
-        </secureGroovyScript>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
