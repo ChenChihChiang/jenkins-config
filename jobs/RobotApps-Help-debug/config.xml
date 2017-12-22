@@ -20,7 +20,7 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>jenkins-3</assignedNode>
+  <assignedNode>jenkins-6</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -34,6 +34,27 @@ export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean assembleDebug</command>
     </hudson.tasks.Shell>
+    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
+      <nexusInstanceId>nexus</nexusInstanceId>
+      <nexusRepositoryId>snapshots</nexusRepositoryId>
+      <packages>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.app</groupId>
+            <artifactId>help</artifactId>
+            <version>$HELP_VERSION</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/RobotApps-Help-debug/app/build/outputs/apk/app-debug.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+      </packages>
+    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
@@ -62,7 +83,7 @@ cd $WORKSPACE
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-Algorithms-FaceRecognition2-debug/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-Help-debug/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
