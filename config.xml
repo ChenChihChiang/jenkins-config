@@ -782,7 +782,7 @@
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>robotanalytics</name>
+      <name>Robotanalytics</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
