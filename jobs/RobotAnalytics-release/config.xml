@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/Algorithms/VisualTracking.git</url>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/RobotAnalytics.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -31,17 +31,16 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-ANDROID_NDK_HOME=/opt/android-ndk-r15c
-export ANDROID_NDK_HOME
-rm -rf /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/*
+#ANDROID_NDK_HOME=/opt/android-ndk-r15c
+#export ANDROID_NDK_HOME
+#rm -rf /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/*
 cd $WORKSPACE
-chmod 755 ./build.sh
-chmod 755 ./gradlew
+./gradlew
 ./build.sh
-cd /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/
-mv Algorithms-VisualTracking-release-release* Algorithms-VisualTracking-release.apk
-cd /var/jenkins/workspace/Algorithms-VisualTracking-release/signed/
-java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/Algorithms-VisualTracking-release.apk ../build/outputs/apk/Algorithms-VisualTracking-signed.apk
+#cd /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/
+#mv Algorithms-VisualTracking-release-release* Algorithms-VisualTracking-release.apk
+#cd /var/jenkins/workspace/Algorithms-VisualTracking-release/signed/
+#java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/Algorithms-VisualTracking-release.apk ../build/outputs/apk/Algorithms-VisualTracking-signed.apk
 </command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
