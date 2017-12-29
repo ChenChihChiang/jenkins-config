@@ -36,7 +36,6 @@ export ANDROID_HOME
 #rm -rf /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew
-./build.sh
 #cd /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/
 #mv Algorithms-VisualTracking-release-release* Algorithms-VisualTracking-release.apk
 #cd /var/jenkins/workspace/Algorithms-VisualTracking-release/signed/
