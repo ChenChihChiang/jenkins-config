@@ -31,13 +31,10 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-#ANDROID_NDK_HOME=/opt/android-ndk-r15c
-#export ANDROID_NDK_HOME
-#rm -rf /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/*
+
 cd $WORKSPACE
-./gradlew
-#cd /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/
-#mv Algorithms-VisualTracking-release-release* Algorithms-VisualTracking-release.apk
+./gradlew assembleRelease
+
 #cd /var/jenkins/workspace/Algorithms-VisualTracking-release/signed/
 #java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/Algorithms-VisualTracking-release.apk ../build/outputs/apk/Algorithms-VisualTracking-signed.apk
 </command>
