@@ -34,17 +34,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-cd $WORKSPACE
-./gradlew assembleMockRelease
-#cd /var/jenkins/workspace/RobotApps-RobotTheater-release/signed/
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-dev-release.apk ../app/build/outputs/apk/app-dev-signed.apk
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-prod-release.apk ../app/build/outputs/apk/app-prod-signed.apk
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-staging-release.apk ../app/build/outputs/apk/app-staging-signed.apk
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-temp-release.apk ../app/build/outputs/apk/app-temp-signed.apk
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-uat-release.apk ../app/build/outputs/apk/app-uat-signed.apk
-</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -70,47 +60,6 @@ cd $WORKSPACE
       <includeCustomMessage>false</includeCustomMessage>
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
-    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>chen.john@nuwarobotics.com</recipientList>
-      <configuredTriggers>
-        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
-          <email>
-            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
-            <body>$PROJECT_DEFAULT_CONTENT</body>
-            <recipientProviders>
-              <hudson.plugins.emailext.plugins.recipients.DevelopersRecipientProvider/>
-            </recipientProviders>
-            <attachmentsPattern></attachmentsPattern>
-            <attachBuildLog>false</attachBuildLog>
-            <compressBuildLog>false</compressBuildLog>
-            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
-            <contentType>project</contentType>
-          </email>
-        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
-      </configuredTriggers>
-      <contentType>text/html</contentType>
-      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>$DEFAULT_CONTENT</defaultContent>
-      <attachmentsPattern></attachmentsPattern>
-      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
-      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>true</attachBuildLog>
-      <compressBuildLog>false</compressBuildLog>
-      <replyTo>$DEFAULT_REPLYTO</replyTo>
-      <saveOutput>false</saveOutput>
-      <disabled>false</disabled>
-    </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
-      <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-RobotTheater-release/env.properties</propertiesFilePath>
-        <secureGroovyScript plugin="script-security@1.31">
-          <script></script>
-          <sandbox>false</sandbox>
-        </secureGroovyScript>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
