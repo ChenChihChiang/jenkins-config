@@ -32,12 +32,12 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 
-rm -rf /var/jenkins/workspace/RobotApps-IotService-release/app/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/RobotApps-IotService-debug/app/build/outputs/apk/*
 
 cd $WORKSPACE
 ./gradlew assembleMockRelease
 
-cd /var/jenkins/workspace/RobotApps-IotService-release/app/build/outputs/apk
+cd /var/jenkins/workspace/RobotApps-IotService-debug/app/build/outputs/apk
 mv iotservice*.apk iotservice_debug.apk
 </command>
     </hudson.tasks.Shell>
