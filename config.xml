@@ -811,6 +811,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
+        <string>Pre-RobotApps-IotService-release</string>
+        <string>RobotApps-IotService-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
