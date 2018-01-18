@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/debug</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -39,7 +39,7 @@
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-IotService-release</childProjects>
+      <childProjects>RobotApps-IotService-debug</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
