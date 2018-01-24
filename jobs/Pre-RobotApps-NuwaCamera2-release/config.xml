@@ -27,7 +27,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>50 1 * * 5</spec>
+      <spec>50 1 * * 4</spec>
     </hudson.triggers.TimerTrigger>
     <hudson.triggers.SCMTrigger>
       <spec>H H/2 * * *</spec>
