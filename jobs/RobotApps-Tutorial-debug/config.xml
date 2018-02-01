@@ -43,7 +43,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
             <artifactId>tutorial_debug</artifactId>
-            <version>TUTORIAL_VERSION</version>
+            <version>$TUTORIAL_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
