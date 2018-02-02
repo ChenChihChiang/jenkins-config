@@ -48,7 +48,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-Tutorial-debug/app/build/outputs/apk/debug/app-debug.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-Tutorial-debug/app/build/outputs/apk/debug/app-release-unsigned.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
