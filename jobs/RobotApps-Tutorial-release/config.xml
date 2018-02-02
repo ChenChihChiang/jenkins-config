@@ -45,13 +45,13 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>tutorial_debug</artifactId>
+            <artifactId>tutorial_signed</artifactId>
             <version>$TUTORIAL_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-Tutorial-release/app/build/outputs/apk/release/app-release.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-Tutorial-release/app/build/outputs/apk/release/app-release-unsigned.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
