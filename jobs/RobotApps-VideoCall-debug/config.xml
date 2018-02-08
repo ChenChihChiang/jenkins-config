@@ -33,7 +33,7 @@
 export ANDROID_HOME
 rm -rf /var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk/*
 cd $WORKSPACE
-./gradlew assembleProdDebug
+./gradlew assembleProdAgoraDebug
 cd /var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk
 mv VideoCall*debug.apk VideoCall_debug.apk
 </command>
