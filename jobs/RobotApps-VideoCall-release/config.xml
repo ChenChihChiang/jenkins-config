@@ -33,7 +33,7 @@
 export ANDROID_HOME
 rm -rf /var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk/*
 cd $WORKSPACE
-./gradlew assembleProdMiboRelease
+./gradlew assembleUatMiboRelease
 cd /var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk
 mv VideoCall*release.apk VideoCall_release.apk
 cd /var/jenkins/workspace/RobotApps-VideoCall-release/signed
