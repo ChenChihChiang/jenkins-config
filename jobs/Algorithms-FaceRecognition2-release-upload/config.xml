@@ -31,6 +31,9 @@
     <hudson.tasks.Shell>
       <command>FACE_NAME=`cat app/build.gradle | grep versionName | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
+FACE_NAME1=`cat app/build.gradle | grep versionCode | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+
+
 TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
 
 
@@ -39,7 +42,9 @@ HEAD=${GIT_HASH:0:6}
 
 FACE_VERSION=$TIME&quot;_&quot;$FACE_NAME&quot;_&quot;$HEAD
 
-echo $FACE_VERSION</command>
+echo $FACE_VERSION
+
+echo $FACE_NAME1</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
