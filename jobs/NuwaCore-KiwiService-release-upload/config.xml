@@ -31,9 +31,9 @@
     <hudson.tasks.Shell>
       <command>FDS_VERSION=`cat AndroidManifest.xml | grep &quot;versionName&quot; | awk -F: &apos;{print $2}&apos; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
 
-FDS_CODE=`cat AndroidManifest.xml | grep &quot;versionName&quot; | awk -F: &apos;{print $2}&apos; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
+FDS_CODE=`cat AndroidManifest.xml | grep &quot;versionCode&quot; | awk -F: &apos;{print $2}&apos; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
 
-FDS_ID=`cat AndroidManifest.xml | grep &quot;versionName&quot; | awk -F: &apos;{print $2}&apos; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
+FDS_ID=`cat AndroidManifest.xml | grep &quot;package&quot; | awk -F: &apos;{print $2}&apos; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
 
 FDS_PATH=&quot;/var/jenkins/workspace/NuwaCore-KiwiService-release/build/outputs/apk/KiwiService_mibo_release_signed.apk&quot;
 TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
