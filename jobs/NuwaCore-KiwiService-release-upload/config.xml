@@ -48,7 +48,7 @@ echo $FDS_CODE
 echo $FDS_ID
 
 
-#/root/.nvm/versions/node/v8.9.4/bin/node /var/jenkins/backend-tool-ota-cli/process.js &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;versionCode&quot;:&quot;&apos;$FDS_CODE&apos;&quot;,&quot;versionName&quot;:&quot;&apos;$FDS_VERSION&apos;&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;&apos;$FDS_PATH&apos;&quot;,&quot;env&quot;:&quot;uat&quot;,&quot;isForcePublish&quot;:&quot;y&quot;}&apos;</command>
+/root/.nvm/versions/node/v8.9.4/bin/node /var/jenkins/backend-tool-ota-cli/process.js &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;versionCode&quot;:&quot;&apos;$FDS_CODE&apos;&quot;,&quot;versionName&quot;:&quot;&apos;$FDS_VERSION&apos;&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;&apos;$FDS_PATH&apos;&quot;,&quot;env&quot;:&quot;uat&quot;,&quot;isForcePublish&quot;:&quot;y&quot;}&apos;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
