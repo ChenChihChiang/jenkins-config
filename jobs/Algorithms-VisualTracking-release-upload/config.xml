@@ -36,7 +36,7 @@ FDS_VERSION=`cat AndroidManifest.xml | grep versionName | awk -F= &apos;{print $
 
 FDS_CODE=`cat AndroidManifest.xml | grep versionCode | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos; | awk &apos;{print $1}&apos;`
 
-FDS_ID=`cat AndroidManifest.xml | grep applicationId | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos; | awk &apos;{print $1}&apos;`
+FDS_ID=`cat AndroidManifest.xml | grep package | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos; | awk &apos;{print $1}&apos;`
 
 FDS_PATH=&quot;/var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/Algorithms-VisualTracking-signed.apk&quot;
 TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
