@@ -479,6 +479,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Algorithms-FaceRecognition2-debug</string>
         <string>Algorithms-FaceRecognition2-release</string>
+        <string>Algorithms-FaceRecognition2-release-upload</string>
         <string>Pre-Algorithms-FaceRecognition2-debug</string>
         <string>Pre-Algorithms-FaceRecognition2-release</string>
       </jobNames>
