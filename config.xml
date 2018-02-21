@@ -605,6 +605,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Algorithms-VisualTracking-debug</string>
         <string>Algorithms-VisualTracking-release</string>
+        <string>Algorithms-VisualTracking-release-upload</string>
         <string>Pre-Algorithms-VisualTracking-debug</string>
         <string>Pre-Algorithms-VisualTracking-release</string>
       </jobNames>
