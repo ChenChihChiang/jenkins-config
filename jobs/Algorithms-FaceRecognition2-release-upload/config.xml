@@ -29,29 +29,26 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>FACE_VERSION=`cat app/build.gradle | grep versionName | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+      <command>FDS_VERSION=`cat app/build.gradle | grep versionName | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
-FACE_CODE=`cat app/build.gradle | grep versionCode | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+FDS_CODE=`cat app/build.gradle | grep versionCode | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
-FACE_ID=`cat app/build.gradle | grep applicationId | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+FDS_ID=`cat app/build.gradle | grep applicationId | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
 TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
-
 
 GIT_HASH=`git rev-parse HEAD`
 HEAD=${GIT_HASH:0:6}
 
+echo $FDS_VERSION
 
-echo $FACE_VERSION
+echo $FDS_CODE
 
-echo $FACE_CODE
-
-echo $FACE_ID
+echo $FDS_ID
 
 
-echo &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;com.nuwarobotics.app.facerecognition2&quot;,&quot;versionCode&quot;:&quot;&apos;$FACE_CODE&apos;&quot;,&quot;versionName&quot;:&quot;&apos;$FACE_VERSION&apos;&quot;,&quot;description&quot;:&quot;com.nuwarobotics.app.facerecognition2&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-release-signed.apk&quot;,&quot;env&quot;:&quot;dev&quot;,&quot;isForcePublish&quot;:&quot;y&quot;}&apos;
-
-#node process.js &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;com.nuwarobotics.app.facerecognition2&quot;,&quot;versionCode&quot;:&quot;$FACE_CODE&quot;,&quot;versionName&quot;:&quot;$FACE_VERSION&quot;,&quot;description&quot;:&quot;com.nuwarobotics.app.facerecognition2&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-release-signed.apk&quot;,&quot;env&quot;:&quot;dev&quot;,&quot;isForcePublish&quot;:&quot;y&quot;}&apos;</command>
+node /var/jenkins/backend-tool-ota-cli/process.js &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;com.nuwarobotics.app.facerecognition2&quot;,&quot;versionCode&quot;:&quot;&apos;$FDS_CODE&apos;&quot;,&quot;versionName&quot;:&quot;&apos;$FDS_VERSION&apos;&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-release-signed.apk&quot;,&quot;env&quot;:&quot;uat&quot;,&quot;isForcePublish&quot;:&quot;y&quot;}&apos;
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
