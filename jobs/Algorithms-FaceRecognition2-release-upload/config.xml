@@ -29,7 +29,17 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;okay&quot;</command>
+      <command>FACE_NAME=`cat app/build.gradle | grep versionName | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+
+TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
+
+
+GIT_HASH=`git rev-parse HEAD`
+HEAD=${GIT_HASH:0:6}
+
+FACE_VERSION=$TIME&quot;_&quot;$FACE_NAME&quot;_&quot;$HEAD
+
+echo $FACE_VERSION</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
