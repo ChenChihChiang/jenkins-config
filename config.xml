@@ -433,6 +433,7 @@
         <string>Pre-RobotApps-BluetoothRemote-release</string>
         <string>RobotApps-BluetoothRemote-debug</string>
         <string>RobotApps-BluetoothRemote-release</string>
+        <string>RobotApps-BluetoothRemote-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
