@@ -284,6 +284,7 @@
         <string>Pre-RobotApps-NuwaCamera2-release</string>
         <string>RobotApps-NuwaCamera2-debug</string>
         <string>RobotApps-NuwaCamera2-release</string>
+        <string>RobotApps-NuwaCamera2-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
