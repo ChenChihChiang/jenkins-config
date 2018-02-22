@@ -460,6 +460,7 @@
         <string>Pre-RobotApps-HomeService-release</string>
         <string>RobotApps-HomeService-debug</string>
         <string>RobotApps-HomeService-release</string>
+        <string>RobotApps-HomeService-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
