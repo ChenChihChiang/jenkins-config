@@ -775,6 +775,7 @@
         <string>Pre-RobotApps-Help-release</string>
         <string>RobotApps-Help-debug</string>
         <string>RobotApps-Help-release</string>
+        <string>RobotApps-Help-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
