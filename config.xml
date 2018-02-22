@@ -410,6 +410,7 @@
         <string>Pre-RobotApps-VideoCall-release</string>
         <string>RobotApps-VideoCall-debug</string>
         <string>RobotApps-VideoCall-release</string>
+        <string>RobotApps-VideoCall-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
