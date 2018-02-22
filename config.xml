@@ -335,7 +335,6 @@
         <string>Pre-RobotApps-CameraService-release</string>
         <string>RobotApps-CameraService-debug</string>
         <string>RobotApps-CameraService-debug-release</string>
-        <string>RobotApps-CameraService-debug-release-upload</string>
         <string>RobotApps-CameraService-release</string>
       </jobNames>
       <jobFilters/>
