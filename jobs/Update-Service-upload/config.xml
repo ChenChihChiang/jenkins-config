@@ -33,7 +33,7 @@
 
 FDS_CODE=`cat AndroidManifest.xml | grep &quot;versionCode&quot; | awk -F: &apos;{print $2}&apos; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
 
-FDS_ID=`cat AndroidManifest.xml | grep &quot;package&quot; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos;`
+FDS_ID=`cat AndroidManifest.xml | grep &quot;package&quot; | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&gt;//g&apos; | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/ //g&apos; | grep -v package`
 
 FDS_PATH=&quot;/var/jenkins/workspace/Update-Service/build/outputs/apk/UpdateService_signed.apk&quot;
 
