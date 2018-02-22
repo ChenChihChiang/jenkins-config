@@ -31,11 +31,11 @@
     <hudson.tasks.Shell>
       <command>#/var/jenkins/workspace/RobotApps-MicroCoding-release/app/build/outputs/apk/MicroCoding_signed.apk
 
-FDS_VERSION=`cat app/build.gradle | grep versionName | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+FDS_VERSION=`cat config.gradle | grep &quot;versionName&quot; | awk &apos;{print $3}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
-FDS_CODE=`cat app/build.gradle | grep versionCode | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+FDS_CODE=`cat config.gradle | grep &quot;versionCode&quot; | awk &apos;{print $3}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
-FDS_ID=`cat app/build.gradle | grep applicationId | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
+FDS_ID=`cat config.gradle | grep &quot;versionName&quot; | awk &apos;{print $3}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
 FDS_PATH=&quot;/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-release-signed.apk&quot;
 
