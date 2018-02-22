@@ -512,6 +512,7 @@
         <string>Pre-RobotApps-KiwiOOBE-release</string>
         <string>RobotApps-KiwiOOBE-debug</string>
         <string>RobotApps-KiwiOOBE-release</string>
+        <string>RobotApps-KiwiOOBE-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
