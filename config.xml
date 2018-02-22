@@ -670,6 +670,7 @@
         <string>Pre-Sample-KiwiPlay-release</string>
         <string>Sample-KiwiPlay-debug</string>
         <string>Sample-KiwiPlay-release</string>
+        <string>Sample-KiwiPlay-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
