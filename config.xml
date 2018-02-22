@@ -539,6 +539,7 @@
         <string>Pre-RobotApps-RobotTheater-release</string>
         <string>RobotApps-RobotTheater-debug</string>
         <string>RobotApps-RobotTheater-release</string>
+        <string>RobotApps-RobotTheater-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
