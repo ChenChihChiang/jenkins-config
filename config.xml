@@ -590,6 +590,7 @@
         <string>Pre-RobotApps-Quiz-release</string>
         <string>RobotApps-Quiz-debug</string>
         <string>RobotApps-Quiz-release</string>
+        <string>RobotApps-Quiz-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
