@@ -563,6 +563,7 @@
         <string>Pre-RobotApps-MicroCoding-release</string>
         <string>RobotApps-MicroCoding-debug</string>
         <string>RobotApps-MicroCoding-release</string>
+        <string>RobotApps-MicroCoding-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
