@@ -32,6 +32,7 @@
       <command>FDS_VERSION=`cat AndroidManifest.xml | grep versionName | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos; | awk &apos;{print $1}&apos;`
 
 FDS_CODE=`cat AndroidManifest.xml | grep versionCode | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos; | awk &apos;{print $1}&apos; | tr -d [&quot;\r&quot;]`
+FDS_CODE=2
 
 FDS_ID=`cat AndroidManifest.xml | grep package | awk -F= &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos; | awk &apos;{print $1}&apos; | tr -d [&quot;\r&quot;]`
 
