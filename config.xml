@@ -694,6 +694,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
         <string>Pre-Update-Service</string>
         <string>Update-Service</string>
+        <string>Update-Service-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
