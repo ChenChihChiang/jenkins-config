@@ -834,6 +834,7 @@
         <string>Pre-RobotApps-IotService-release</string>
         <string>RobotApps-IotService-debug</string>
         <string>RobotApps-IotService-release</string>
+        <string>RobotApps-IotService-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
