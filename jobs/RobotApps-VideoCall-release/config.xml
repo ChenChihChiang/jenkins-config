@@ -35,7 +35,7 @@ rm -rf /var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk/
 cd $WORKSPACE
 ./gradlew assembleUatMiboRelease
 cd /var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk
-mv VideoCall*release.apk VideoCall_release.apk
+mv VideoCall*release_uatMibo.apk VideoCall_release.apk
 cd /var/jenkins/workspace/RobotApps-VideoCall-release/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/VideoCall_release.apk ../app/build/outputs/apk/VideoCall_signed.apk</command>
     </hudson.tasks.Shell>
