@@ -859,6 +859,7 @@
         <string>Pre-RobotApps-Tutorial-release</string>
         <string>RobotApps-Tutorial-debug</string>
         <string>RobotApps-Tutorial-release</string>
+        <string>RobotApps-Tutorial-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
