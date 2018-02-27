@@ -28,6 +28,12 @@
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
+    <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.61">
+      <triggers/>
+    </hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$yTO.06.6wH8lobW9qAIPheyrUu6KKlzgD2cSLztl3lSg2EHLBAa4O</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.20">
       <emailAddress>chung.lion@nuwarobotics.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
