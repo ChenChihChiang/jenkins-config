@@ -884,6 +884,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
         <string>Lib-VoiceLib-release</string>
+        <string>Pre-Lib-VoiceLib-debug</string>
         <string>Pre-Lib-VoiceLib-release</string>
       </jobNames>
       <jobFilters/>
