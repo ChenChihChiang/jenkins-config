@@ -29,15 +29,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-#rm -rf cd /var/jenkins/workspace/Lib-IOTManager-release/app/build/outputs/apk/*
-cd $WORKSPACE
-./gradlew assembleRelease
-#cd /var/jenkins/workspace/Lib-IOTManager-release/app/build/outputs/apk
-#mv iotmanager* iotmanager_release.apk
-#cd /var/jenkins/workspace/Lib-IOTManager-release/signed
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/iotmanager_release.apk ../app/build/outputs/apk/iotmanager_release_signed.apk</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -64,16 +56,5 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
-      <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-Lib-IOTManager-release/env.properties</propertiesFilePath>
-        <secureGroovyScript plugin="script-security@1.31">
-          <script></script>
-          <sandbox>false</sandbox>
-        </secureGroovyScript>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
