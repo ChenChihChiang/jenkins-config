@@ -57,7 +57,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.voice.app</groupId>
-            <artifactId>ifly</artifactId>
+            <artifactId>ifly_debug</artifactId>
             <version>$IFLY_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -72,7 +72,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.voice.app</groupId>
-            <artifactId>nuwa</artifactId>
+            <artifactId>nuwa_debug</artifactId>
             <version>$NUWA_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -87,7 +87,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.voice.app</groupId>
-            <artifactId>sino</artifactId>
+            <artifactId>sino_debug</artifactId>
             <version>$SINO_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -102,7 +102,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.voice.app</groupId>
-            <artifactId>mi</artifactId>
+            <artifactId>mi_debug</artifactId>
             <version>$MI_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -117,7 +117,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.voice.app</groupId>
-            <artifactId>voice</artifactId>
+            <artifactId>voice_debug</artifactId>
             <version>$VOICE_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -132,7 +132,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.voice.app</groupId>
-            <artifactId>app</artifactId>
+            <artifactId>app_debug</artifactId>
             <version>$APP_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
