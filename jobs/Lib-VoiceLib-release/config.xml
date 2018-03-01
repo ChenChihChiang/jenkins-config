@@ -29,11 +29,11 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>#ANDROID_HOME=/usr/local/Android-SDK
-#export ANDROID_HOME
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
 #rm -rf cd /var/jenkins/workspace/Lib-IOTManager-release/app/build/outputs/apk/*
-#cd $WORKSPACE
-#./gradlew assembleRelease
+cd $WORKSPACE
+./gradlew assembleRelease
 #cd /var/jenkins/workspace/Lib-IOTManager-release/app/build/outputs/apk
 #mv iotmanager* iotmanager_release.apk
 #cd /var/jenkins/workspace/Lib-IOTManager-release/signed
