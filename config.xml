@@ -736,6 +736,7 @@
         <string>RobotApps-Tutorial-release</string>
         <string>RobotApps-VideoCall-release</string>
         <string>Sample-KiwiPlay-release</string>
+        <string>SensoryService-release</string>
         <string>Update-Service</string>
       </jobNames>
       <jobFilters/>
