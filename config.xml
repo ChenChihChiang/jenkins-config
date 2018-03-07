@@ -721,6 +721,7 @@
         <string>Algorithms-VisualTracking-release</string>
         <string>Lib-IOTManager-release</string>
         <string>NuwaCore-KiwiService-release</string>
+        <string>Pre-SensoryService-release</string>
         <string>RobotApps-BluetoothRemote-release</string>
         <string>RobotApps-CameraService-release</string>
         <string>RobotApps-FaceHome2-release</string>
