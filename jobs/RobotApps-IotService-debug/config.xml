@@ -48,7 +48,7 @@ mv iotservice*.apk iotservice_debug.apk
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service</groupId>
-            <artifactId>iot</artifactId>
+            <artifactId>iotservice</artifactId>
             <version>$IOT_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
