@@ -910,6 +910,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
+        <string>Pre-RobotApps-NuwaAlarm-debug</string>
         <string>RobotApps-NuwaAlarm-debug</string>
         <string>RobotApps-NuwaAlarm-release</string>
       </jobNames>
