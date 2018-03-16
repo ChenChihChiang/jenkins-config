@@ -153,7 +153,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Lib-VoiceLib-debug/mi/build/outputs/aar/voice-interfaces-debug.aar</filePath>
+              <filePath>/var/jenkins/workspace/Lib-VoiceLib-debug/voice-interfaces/build/outputs/aar/voice-interfaces-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
