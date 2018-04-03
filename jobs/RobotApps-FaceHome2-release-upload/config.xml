@@ -43,6 +43,7 @@ HEAD=${GIT_HASH:0:6}
 
 echo $FDS_VERSION
 
+FDS_CODE = 0.9.8.3
 echo $FDS_CODE
 
 echo $FDS_ID
