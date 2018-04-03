@@ -764,6 +764,7 @@
         <string>Pre-SensoryService-release</string>
         <string>SensoryService-debug</string>
         <string>SensoryService-release</string>
+        <string>SensoryService-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
