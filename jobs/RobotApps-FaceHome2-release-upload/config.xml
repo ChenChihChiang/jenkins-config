@@ -45,7 +45,6 @@ echo $FDS_VERSION
 
 echo $FDS_CODE
 
-FDS_ID=6
 echo $FDS_ID
 
 
