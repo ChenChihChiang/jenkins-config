@@ -938,6 +938,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
+        <string>Pre-RobotApps-VoiceService-debug</string>
         <string>RobotApps-VoiceService-debug</string>
         <string>RobotApps-VoiceService-release</string>
       </jobNames>
