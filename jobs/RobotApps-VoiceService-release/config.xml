@@ -51,7 +51,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-VoiceService-release/app/build/outputs/apk/release/app-release-signed.apk </filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-VoiceService-release/app/build/outputs/apk/release/app-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
