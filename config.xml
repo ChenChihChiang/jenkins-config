@@ -942,6 +942,7 @@
         <string>Pre-RobotApps-VoiceService-release</string>
         <string>RobotApps-VoiceService-debug</string>
         <string>RobotApps-VoiceService-release</string>
+        <string>RobotApps-VoiceService-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
