@@ -34,7 +34,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean
 ./gradlew assembleRelease
-cd /var/jenkins/workspace/RobotApps-Voice-release/signed/
+cd /var/jenkins/workspace/RobotApps-VoiceService-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release.apk ../app/build/outputs/apk/release/app-release-signed.apk
 </command>
     </hudson.tasks.Shell>
