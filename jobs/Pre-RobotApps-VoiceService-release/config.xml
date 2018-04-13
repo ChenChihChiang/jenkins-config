@@ -29,11 +29,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-cd $WORKSPACE
-./gradlew clean
-./gradlew assembleRelease</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -60,16 +56,5 @@ cd $WORKSPACE
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
   </publishers>
-  <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
-      <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-FaceHome2-debug/env.properties</propertiesFilePath>
-        <secureGroovyScript plugin="script-security@1.31">
-          <script></script>
-          <sandbox>false</sandbox>
-        </secureGroovyScript>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
