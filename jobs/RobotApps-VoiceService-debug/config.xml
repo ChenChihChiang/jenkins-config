@@ -42,7 +42,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service</groupId>
-            <artifactId>voice_debug</artifactId>
+            <artifactId>voice</artifactId>
             <version>$VOICE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
