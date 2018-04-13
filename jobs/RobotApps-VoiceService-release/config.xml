@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/dev</name>
+        <name>*/release</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -33,7 +33,7 @@
 export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean
-./gradlew assembleDebug</command>
+./gradlew assembleRelease</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
