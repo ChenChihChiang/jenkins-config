@@ -42,7 +42,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.module</groupId>
-            <artifactId>face2</artifactId>
+            <artifactId>facemodule2</artifactId>
             <version>$FACEMODULE2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -57,7 +57,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.module</groupId>
-            <artifactId>object</artifactId>
+            <artifactId>objectmodule</artifactId>
             <version>$OBJECTMODULE_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -72,7 +72,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.module</groupId>
-            <artifactId>FaceModule3</artifactId>
+            <artifactId>facemodule3</artifactId>
             <version>$FACEMODULE3_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
