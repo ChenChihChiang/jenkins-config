@@ -90,7 +90,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.module</groupId>
-            <artifactId>FaceModule3</artifactId>
+            <artifactId>facemodule3</artifactId>
             <version>$FACEMODULE3_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
