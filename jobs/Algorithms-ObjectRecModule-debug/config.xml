@@ -73,7 +73,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.module</groupId>
             <artifactId>FaceModule3</artifactId>
-            <version>$FACEMODULE2_VERSION</version>
+            <version>$FACEMODULE3_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
