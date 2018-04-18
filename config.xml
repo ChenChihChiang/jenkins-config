@@ -966,6 +966,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[20]/jobNames/comparator"/>
         <string>FaceDetectLib-debug</string>
+        <string>Pre-FaceDetectLib-debug</string>
       </jobNames>
       <jobFilters/>
       <columns>
