@@ -63,7 +63,7 @@ cd $WORKSPACE
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/FaceDetectLib-debug/build/outputs/aar/facedetect.aar</filePath>
+              <filePath>/var/jenkins/workspace/FaceDetectLib-debug/facedetect/build/outputs/aar/facedetect.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
