@@ -42,7 +42,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.lib.vision</groupId>
-            <artifactId>FaceDetectLib_signed</artifactId>
+            <artifactId>FaceDetectLib_debug</artifactId>
             <version>$APP_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -58,7 +58,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib.vision</groupId>
             <artifactId>facedetect</artifactId>
-            <version>$APP_VERSION</version>
+            <version>$AAR_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
