@@ -132,21 +132,6 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
           </assets>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera.module</groupId>
-            <artifactId>openCVLibrary330</artifactId>
-            <version>$OPENCVLIB_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-release/openCVLibrary330/build/outputs/aar/openCVLibrary330-release.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
