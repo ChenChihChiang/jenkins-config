@@ -117,7 +117,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
-            <artifactId>tensorflowmodule </artifactId>
+            <artifactId>tensorflowmodule</artifactId>
             <version>$TFMODULE_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
