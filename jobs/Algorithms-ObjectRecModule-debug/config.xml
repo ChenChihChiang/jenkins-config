@@ -118,7 +118,7 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
             <artifactId>tensorflowmodule </artifactId>
-            <version>2018-04-19_1700_0.0.3.0_5df77e</version>
+            <version>$TFMODULE_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
