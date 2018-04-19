@@ -56,7 +56,7 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule-debug</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
             <artifactId>objectmodule</artifactId>
             <version>$OBJECTMODULE_VERSION</version>
             <packaging>aar</packaging>
