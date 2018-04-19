@@ -310,7 +310,6 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[3]/jobNames/comparator"/>
         <string>Algorithms-ObjectRecModule-debug</string>
-        <string>Algorithms-ObjectRecModule-debug-release</string>
         <string>Algorithms-ObjectRecModule-release</string>
         <string>Pre-Algorithms-ObjectRecModule-debug</string>
         <string>Pre-Algorithms-ObjectRecModule-release</string>
