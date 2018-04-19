@@ -44,7 +44,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_signed</groupId>
             <artifactId>facemodule2</artifactId>
             <version>$FACEMODULE2_VERSION</version>
             <packaging>aar</packaging>
@@ -59,7 +59,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_signed</groupId>
             <artifactId>objectmodule</artifactId>
             <version>$OBJECTMODULE_VERSION</version>
             <packaging>aar</packaging>
@@ -74,7 +74,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_signed</groupId>
             <artifactId>ObjectRecModule_signed</artifactId>
             <version>$APP_VERSION</version>
             <packaging>apk</packaging>
@@ -89,7 +89,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_signed</groupId>
             <artifactId>facemodule3</artifactId>
             <version>$FACEMODULE3_VERSION</version>
             <packaging>aar</packaging>
@@ -104,7 +104,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_signed</groupId>
             <artifactId>gesturemodule</artifactId>
             <version>$GESTUREMODULE_VERSION</version>
             <packaging>aar</packaging>
@@ -119,7 +119,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_signed</groupId>
             <artifactId>tensorflowmodule</artifactId>
             <version>$TFMODULE_VERSION</version>
             <packaging>aar</packaging>
