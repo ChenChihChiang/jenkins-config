@@ -75,7 +75,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.service.camera.ObjectRecModule</groupId>
-            <artifactId>ObjectRecModule_release_signed</artifactId>
+            <artifactId>ObjectRecModule_signed</artifactId>
             <version>$APP_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
