@@ -102,6 +102,21 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
           </assets>
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.service.camera.module</groupId>
+            <artifactId>gesturemodule</artifactId>
+            <version>$GESTUREMODULE_VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-release/gesturemodule/build/outputs/aar/gesturemodule-release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
       </packages>
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
