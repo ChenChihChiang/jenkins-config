@@ -41,7 +41,7 @@ cd $WORKSPACE
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule-debug</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
             <artifactId>facemodule2</artifactId>
             <version>$FACEMODULE2_VERSION</version>
             <packaging>aar</packaging>
@@ -71,7 +71,7 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule-debug</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
             <artifactId>facemodule3</artifactId>
             <version>$FACEMODULE3_VERSION</version>
             <packaging>aar</packaging>
@@ -86,8 +86,8 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule-debug</groupId>
-            <artifactId>ObjectRecModule_signed</artifactId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
+            <artifactId>app_debug</artifactId>
             <version>$APP_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -101,7 +101,7 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule-debug</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
             <artifactId>gesturemodule</artifactId>
             <version>$GESTUREMODULE_VERSION</version>
             <packaging>aar</packaging>
@@ -116,7 +116,7 @@ cd $WORKSPACE
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule-debug</groupId>
+            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
             <artifactId>tensorflowmodule</artifactId>
             <version>$TFMODULE_VERSION</version>
             <packaging>aar</packaging>
