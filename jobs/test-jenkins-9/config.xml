@@ -14,7 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/home/jk/Rk3288_userdebug/auto-clean-build.sh</command>
+      <command>cd /home/jk/Rk3288_userdebug/
+./auto-clean-build.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
