@@ -988,6 +988,10 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>auto-clean-build</string>
+        <string>auto-pack-build</string>
+        <string>debug-auto-clean-build</string>
+        <string>debug-auto-pack-build</string>
       </jobNames>
       <jobFilters/>
       <columns>
