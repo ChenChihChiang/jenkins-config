@@ -15,7 +15,12 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/Rk3288_user/
-./auto-pack-build.sh</command>
+./auto-pack-build.sh
+
+date=`date +&quot;%Y-%m-%d_%H%M&quot;`_user_auto-pack-build
+ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
+scp -r /home/jk/Rk3288_user/rockdev/Image-mibo jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
+scp /home/jk/Rk3288_user/out/target/product/mibo/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
