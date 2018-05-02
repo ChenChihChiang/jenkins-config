@@ -15,7 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/Rk3288_user/
-sudo ./ auto-pack-build.sh</command>
+sudo ./auto-pack-build.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
