@@ -29,7 +29,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>rm -rf /root/.android/build-cache/ee4c7414537c42b50b667aaddfeb7982d036819d/output/jni
+      <command>rm -rf /root/.android/build-cache/*
 rm -rf /var/jenkins/workspace/RobotApps-CameraService-debug/cameraservice-service/build/intermediates/bundles/default/jni
 
 ANDROID_HOME=/usr/local/Android-SDK
