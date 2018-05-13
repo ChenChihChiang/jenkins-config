@@ -492,6 +492,7 @@
         <string>Algorithms-FaceRecognition2-release</string>
         <string>Algorithms-FaceRecognition2-release-upload</string>
         <string>Pre-Algorithms-FaceRecognition2-debug</string>
+        <string>Pre-Algorithms-FaceRecognition2-kizpad</string>
         <string>Pre-Algorithms-FaceRecognition2-release</string>
       </jobNames>
       <jobFilters/>
