@@ -1014,6 +1014,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[33]/jobNames/comparator"/>
+        <string>Algorithms-VisualTracking2-release</string>
+        <string>Pre-Algorithms-VisualTracking2-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
