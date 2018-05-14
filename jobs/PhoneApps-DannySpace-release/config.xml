@@ -8,12 +8,12 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/RobotApps/VideoCall.git</url>
+        <url>ssh://jk@192.168.1.29:29418/AndroidApps/KiwiGarden.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/release</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -31,13 +31,13 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-rm -rf /var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew assembleUatMiboRelease
-cd /var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk
-mv VideoCall*release_uatMibo.apk VideoCall_release.apk
-cd /var/jenkins/workspace/RobotApps-VideoCall-release/signed
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/VideoCall_release.apk ../app/build/outputs/apk/VideoCall_signed.apk</command>
+cd /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk
+mv DannySpace*release_uatMibo.apk DannySpace_release.apk
+cd /var/jenkins/workspace/PhoneApps-DannySpace-release/signed
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/DannySpace_release.apk ../app/build/outputs/apk/VideoCall_signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -52,7 +52,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Vi
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-VideoCall-release/app/build/outputs/apk/VideoCall_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/DannySpace_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -118,7 +118,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Vi
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-VideoCall-release/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-PhoneApps-DannySpace-release/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
