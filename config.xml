@@ -1038,6 +1038,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[33]/jobNames/comparator"/>
+        <string>PhoneApps-DannySpace-release</string>
+        <string>Pre-PhoneApps-DannySpace-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
