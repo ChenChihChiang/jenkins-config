@@ -567,6 +567,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
+        <string>AndroidApps-MicroCoding-release</string>
         <string>Pre-RobotApps-MicroCoding-debug</string>
         <string>Pre-RobotApps-MicroCoding-release</string>
         <string>RobotApps-MicroCoding-debug</string>
