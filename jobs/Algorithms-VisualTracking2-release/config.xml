@@ -45,7 +45,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.app</groupId>
+            <groupId>com.nuwarobotics.app.visualtracking</groupId>
             <artifactId>visualtracking2_signed</artifactId>
             <version>$VISUAL_VERSION</version>
             <packaging>apk</packaging>
@@ -53,6 +53,21 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
               <filePath>/var/jenkins/workspace/Algorithms-VisualTracking2-release/app/build/outputs/apk/app-release-signed.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.app.visualtracking</groupId>
+            <artifactId>trackmodule2</artifactId>
+            <version>$VISUAL_Lib__VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/Algorithms-VisualTracking2-release/trackmodule/build/outputs/aar/trackmodule-release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
