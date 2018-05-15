@@ -29,8 +29,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>#ANDROID_HOME=/usr/local/Android-SDK
-#export ANDROID_HOME
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
 ./gradlew assembleRelease
 </command>
     </hudson.tasks.Shell>
