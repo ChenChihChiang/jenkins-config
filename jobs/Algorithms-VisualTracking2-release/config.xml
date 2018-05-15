@@ -45,7 +45,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.app.visualtracking</groupId>
+            <groupId>com.nuwarobotics.lib.trackmodule</groupId>
             <artifactId>visualtracking2_signed</artifactId>
             <version>$VISUAL_VERSION</version>
             <packaging>apk</packaging>
@@ -60,8 +60,8 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         </org.sonatype.nexus.ci.nxrm.MavenPackage>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.app.visualtracking</groupId>
-            <artifactId>trackmodule2</artifactId>
+            <groupId>com.nuwarobotics.lib.trackmodule</groupId>
+            <artifactId>trackmodule</artifactId>
             <version>$MODULE_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
