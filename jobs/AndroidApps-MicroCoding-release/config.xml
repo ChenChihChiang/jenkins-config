@@ -29,15 +29,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-#rm -rf /var/jenkins/workspace/RobotApps-MicroCoding-release/app/build/outputs/apk/*
-cd $WORKSPACE
+      <command>#ANDROID_HOME=/usr/local/Android-SDK
+#export ANDROID_HOME
 ./gradlew assembleRelease
-#cd /var/jenkins/workspace/RobotApps-MicroCoding-release/app/build/outputs/apk/
-#mv MicroCoding*release.apk MicroCoding_release.apk
-#cd /var/jenkins/workspace/RobotApps-MicroCoding-release/signed/
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/MicroCoding_release.apk ../app/build/outputs/apk/MicroCoding_signed.apk</command>
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
