@@ -48,7 +48,7 @@ mv dannyspace*release_uatMibo.apk dannyspace_release.apk
           <coordinate>
             <groupId>com.nuwarobotics.android</groupId>
             <artifactId>kiwigarden</artifactId>
-            <version>$KIWI</version>
+            <version>$KIWI_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
