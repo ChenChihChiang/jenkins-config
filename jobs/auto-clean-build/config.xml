@@ -18,11 +18,15 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/Rk3288_user/
+      <command>cd /home/jk/user_app/
+./update.sh
+
+cd /home/jk/Rk3288_user/
 ./auto-clean-build.sh
 
 date=`date +&quot;%Y-%m-%d_%H%M&quot;`_user_auto-clean-build
 ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
+scp /home/jk/user_app/appchangelist.txt jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
 scp -r /home/jk/Rk3288_user/rockdev/Image-mibo jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
 scp /home/jk/Rk3288_user/out/target/product/mibo/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
     </hudson.tasks.Shell>
