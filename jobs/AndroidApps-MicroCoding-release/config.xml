@@ -35,7 +35,7 @@ rm -rf /var/jenkins/workspace/AndroidApps-MicroCoding-release/app/build/outputs/
 cd $WORKSPACE
 ./gradlew assembleUatRelease
 cd /var/jenkins/workspace/AndroidApps-MicroCoding-release/app/build/outputs/apk/
-mv microcoding*release.apk microcoding_release.apk
+mv microcoding*release_uat.apk microcoding_release.apk
 #cd /var/jenkins/workspace/RobotApps-MicroCoding-release/signed/
 #java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/MicroCoding_release.apk ../app/build/outputs/apk/MicroCoding_signed.apk</command>
     </hudson.tasks.Shell>
