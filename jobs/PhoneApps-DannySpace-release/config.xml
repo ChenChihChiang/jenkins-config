@@ -34,8 +34,8 @@ export ANDROID_HOME
 rm -rf /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew assembleUatMiboRelease
-cd /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk
-mv DannySpace*release_uatMibo.apk DannySpace_release.apk
+#cd /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk
+#mv DannySpace*release_uatMibo.apk DannySpace_release.apk
 
 #cd /var/jenkins/workspace/PhoneApps-DannySpace-release/signed
 #java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/DannySpace_release.apk ../app/build/outputs/apk/VideoCall_signed.apk</command>
