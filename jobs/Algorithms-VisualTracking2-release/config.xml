@@ -62,7 +62,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
           <coordinate>
             <groupId>com.nuwarobotics.app.visualtracking</groupId>
             <artifactId>trackmodule2</artifactId>
-            <version>$VISUAL_Lib_VERSION</version>
+            <version>$MODULE_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
