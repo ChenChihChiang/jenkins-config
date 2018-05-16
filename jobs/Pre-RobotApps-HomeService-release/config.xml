@@ -30,7 +30,7 @@
       <spec>50 0 * * 4</spec>
     </hudson.triggers.TimerTrigger>
     <hudson.triggers.SCMTrigger>
-      <spec>H H/2 * * *</spec>
+      <spec>H H/1 * * *</spec>
       <ignorePostCommitHooks>false</ignorePostCommitHooks>
     </hudson.triggers.SCMTrigger>
   </triggers>
