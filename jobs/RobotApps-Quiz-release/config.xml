@@ -34,7 +34,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean assembleRelease
 cd /var/jenkins/workspace/RobotApps-Quiz-release/signed/
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release-unsigned.apk ../app/build/outputs/apk/release/app-signed.apk</command>
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release.apk ../app/build/outputs/apk/release/app-signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -49,7 +49,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-Quiz-release/app/build/outputs/apk/release/app-release.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-Quiz-release/app/build/outputs/apk/release/app-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
