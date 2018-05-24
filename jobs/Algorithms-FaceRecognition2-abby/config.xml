@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/kizpad</name>
+        <name>*/abby</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -42,8 +42,8 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_kizpad</artifactId>
-            <version>$FACE_VERSION</version>
+            <artifactId>FaceRecognition2_abby</artifactId>
+            <version>$ABBY_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
