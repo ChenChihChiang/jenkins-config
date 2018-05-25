@@ -47,13 +47,13 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ro
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>robottheater-uat_signed</artifactId>
+            <artifactId>robotTheater_signed</artifactId>
             <version>$THEATER_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-RobotTheater-release/app/build/outputs/apk/app-uat-signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-RobotTheater-release/app/build/outputs/apk/robotTheater_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
