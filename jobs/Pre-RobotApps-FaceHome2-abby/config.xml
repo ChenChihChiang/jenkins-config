@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/abby</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -42,7 +42,7 @@
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-FaceHome2-release</childProjects>
+      <childProjects>RobotApps-FaceHome2-abby</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
