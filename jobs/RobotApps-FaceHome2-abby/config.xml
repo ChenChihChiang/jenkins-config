@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/abby</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -34,7 +34,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean
 ./gradlew assembleRelease
-cd /var/jenkins/workspace/RobotApps-FaceHome2-release/signed/
+cd /var/jenkins/workspace/RobotApps-FaceHome2-abby/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release.apk ../app/build/outputs/apk/release/app-release-signed.apk
 </command>
     </hudson.tasks.Shell>
@@ -147,7 +147,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-FaceHome2-release/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-FaceHome2-abby/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
