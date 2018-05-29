@@ -648,6 +648,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Pre-RobotApps-FaceHome2-abby</string>
         <string>Pre-RobotApps-FaceHome2-debug</string>
         <string>Pre-RobotApps-FaceHome2-release</string>
         <string>RobotApps-FaceHome2-debug</string>
