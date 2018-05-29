@@ -45,7 +45,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>facehome2_signed</artifactId>
+            <artifactId>facehome2-abby_signed</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -60,7 +60,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>pet</artifactId>
+            <artifactId>pet-abby</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
@@ -75,7 +75,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.home</groupId>
-            <artifactId>utility</artifactId>
+            <artifactId>utility-abby</artifactId>
             <version>$FACEHOME2_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
