@@ -32,7 +32,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cd $WORKSPACE
-./build.sh
+./build_abby.sh
 cd $WORKSPACE/build/outputs/apk
 mv KiwiService_mibo_debug* KiwiService_mibo_debug.apk
 mv KiwiService_mibo_release* KiwiService_mibo_release.apk
