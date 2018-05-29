@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/abby</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -37,7 +37,7 @@ cd $WORKSPACE/build/outputs/apk
 mv KiwiService_mibo_debug* KiwiService_mibo_debug.apk
 mv KiwiService_mibo_release* KiwiService_mibo_release.apk
 
-cd /var/jenkins/workspace/NuwaCore-KiwiService-release/signed
+cd /var/jenkins/workspace/NuwaCore-KiwiService-abby/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/KiwiService_mibo_release.apk ../build/outputs/apk/KiwiService_mibo_release_signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
@@ -47,7 +47,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/KiwiSe
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.KiwiService</groupId>
-            <artifactId>KiwiService_signed</artifactId>
+            <artifactId>KiwiService-abby_signed</artifactId>
             <version>$KIWISERVICE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -119,7 +119,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/KiwiSe
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-NuwaCore-KiwiService/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-NuwaCore-KiwiService-abby/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
