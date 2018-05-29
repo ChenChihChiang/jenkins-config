@@ -263,6 +263,7 @@
         <string>NuwaCore-KiwiService-release</string>
         <string>NuwaCore-KiwiService-release-upload</string>
         <string>Pre-NuwaCore-KiwiService</string>
+        <string>Pre-NuwaCore-KiwiService-abby</string>
       </jobNames>
       <jobFilters/>
       <columns>
