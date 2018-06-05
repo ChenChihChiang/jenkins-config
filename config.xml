@@ -1046,7 +1046,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[33]/jobNames/comparator"/>
         <string>PhoneApps-DannySpace-release</string>
-        <string>PhoneApps-DannySpace-release-product</string>
+        <string>PhoneApps-DannySpace-release-prod</string>
         <string>Pre-PhoneApps-DannySpace-release</string>
       </jobNames>
       <jobFilters/>
