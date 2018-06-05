@@ -47,7 +47,7 @@ mv dannyspace*release_prodMibo.apk dannyspace_release_prod.apk
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.android</groupId>
-            <artifactId>kiwigarden</artifactId>
+            <artifactId>kiwigarden_prod</artifactId>
             <version>$KIWI_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
