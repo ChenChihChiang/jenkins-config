@@ -571,6 +571,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>AndroidApps-MicroCoding-release</string>
+        <string>AndroidApps-MicroCoding-release-prod</string>
         <string>Pre-AndroidApps-MicroCoding-release</string>
         <string>Pre-AndroidApps-MicroCoding-release-prod</string>
         <string>Pre-RobotApps-MicroCoding-debug</string>
