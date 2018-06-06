@@ -38,7 +38,10 @@
       <emailAddress>wang.daniel@nuwarobotics.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
     <jenkins.security.LastGrantedAuthoritiesProperty>
-      <timestamp>0</timestamp>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1528279632183</timestamp>
     </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
