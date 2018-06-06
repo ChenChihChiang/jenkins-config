@@ -42,7 +42,7 @@
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>PhoneApps-DannySpace-release</childProjects>
+      <childProjects>PhoneApps-DannySpace-release-prod</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
@@ -76,7 +76,7 @@
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-PhoneApps-DannySpace-release/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-PhoneApps-DannySpace-release-prod/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
