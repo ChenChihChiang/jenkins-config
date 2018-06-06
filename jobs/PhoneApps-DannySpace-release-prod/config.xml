@@ -119,7 +119,7 @@ mv dannyspace*release_prodMibo.apk dannyspace_release_prod.apk
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-PhoneApps-DannySpace-release-prod/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-PhoneApps-DannySpace-release/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
