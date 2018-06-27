@@ -33,6 +33,7 @@
 export ANDROID_HOME
 cd $WORKSPACE
 rm -rf /var/jenkins/workspace/RobotApps-RobotTheater-release/app/build/outputs/apk/*
+./gradlew clean
 ./gradlew assembleUatRelease
 cd /var/jenkins/workspace/RobotApps-RobotTheater-release/app/build/outputs/apk/
 mv robotTheater*release.apk robotTheater_release.apk
