@@ -999,10 +999,10 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>debug-auto-clean-build</string>
         <string>debug-auto-pack-build</string>
         <string>nw_kw1_user_clean_build</string>
         <string>nw_kw1_user_pack_build</string>
+        <string>nw_kw1_userdebug_clean_build</string>
       </jobNames>
       <jobFilters/>
       <columns>
