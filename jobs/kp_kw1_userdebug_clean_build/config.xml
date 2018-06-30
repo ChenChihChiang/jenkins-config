@@ -23,8 +23,8 @@ cd /home/jk/workspace/kp_kw1_userdebug/
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`_kp_kw1_userdebug_clean_build
 ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
 scp /home/jk/userdebug_app/appchangelist.txt jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp -r /home/jk/workspace/kp_kw1_userdebug/rockdev/Image-mibo jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp /home/jk/workspace/kp_kw1_userdebug/out/target/product/mibo/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
+scp -r /home/jk/workspace/kp_kw1_userdebug/rockdev/Image-abby jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
+scp /home/jk/workspace/kp_kw1_userdebug/out/target/product/abby/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
