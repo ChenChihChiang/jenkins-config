@@ -34,7 +34,7 @@ export ANDROID_HOME
 #rm -rf /var/jenkins/workspace/RobotApps-KiwiOOBE-release/app/build/outputs/apk/*
 cd $WORKSPACE
 chmod 755 ./gradlew
-./gradlew assembleUatRelease
+./gradlew assembleRelease
 #cd /var/jenkins/workspace/RobotApps-KiwiOOBE-release/app/build/outputs/apk/
 #mv kiwioobe*release.apk kiwioobe_release.apk
 #cd /var/jenkins/workspace/RobotApps-KiwiOOBE-release/signed/
