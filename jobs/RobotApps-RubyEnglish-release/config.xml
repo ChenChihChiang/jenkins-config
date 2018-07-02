@@ -38,7 +38,7 @@ chmod 755 ./gradlew
 cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/
 mv RubyEnglish*release.apk RubyEnglish_release.apk
 cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/signed/
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kiwioobe_release.apk ../app/build/outputs/apk/kiwioobe_signed.apk</command>
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_release.apk ../app/build/outputs/apk/RubyEnglish_signed.apk</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
