@@ -31,14 +31,14 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-#rm -rf /var/jenkins/workspace/RobotApps-KiwiOOBE-release/app/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/*
 cd $WORKSPACE
 chmod 755 ./gradlew
 ./gradlew assembleRelease
-#cd /var/jenkins/workspace/RobotApps-KiwiOOBE-release/app/build/outputs/apk/
-#mv kiwioobe*release.apk kiwioobe_release.apk
-#cd /var/jenkins/workspace/RobotApps-KiwiOOBE-release/signed/
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kiwioobe_release.apk ../app/build/outputs/apk/kiwioobe_signed.apk</command>
+cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/
+mv RubyEnglish*release.apk RubyEnglish_release.apk
+cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/signed/
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kiwioobe_release.apk ../app/build/outputs/apk/kiwioobe_signed.apk</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -95,5 +95,16 @@ chmod 755 ./gradlew
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <EnvInjectBuildWrapper plugin="envinject@2.1.3">
+      <info>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-RubyEnglish-release/env.properties</propertiesFilePath>
+        <secureGroovyScript plugin="script-security@1.31">
+          <script></script>
+          <sandbox>false</sandbox>
+        </secureGroovyScript>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
 </project>
