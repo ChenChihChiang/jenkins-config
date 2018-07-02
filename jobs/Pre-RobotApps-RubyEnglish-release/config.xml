@@ -29,16 +29,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ANDROID_HOME=/usr/local/Android-SDK
-export ANDROID_HOME
-#rm -rf /var/jenkins/workspace/RobotApps-KiwiOOBE-release/app/build/outputs/apk/*
-cd $WORKSPACE
-chmod 755 ./gradlew
-./gradlew assembleRelease
-#cd /var/jenkins/workspace/RobotApps-KiwiOOBE-release/app/build/outputs/apk/
-#mv kiwioobe*release.apk kiwioobe_release.apk
-#cd /var/jenkins/workspace/RobotApps-KiwiOOBE-release/signed/
-#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kiwioobe_release.apk ../app/build/outputs/apk/kiwioobe_signed.apk</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
