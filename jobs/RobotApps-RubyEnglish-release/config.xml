@@ -47,7 +47,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Ru
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.demo</groupId>
-            <artifactId>rubyenglish</artifactId>
+            <artifactId>rubyenglish-signed</artifactId>
             <version>$RUBY_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
