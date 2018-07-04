@@ -15,7 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/nw_kw1_userdebug_production/
-./auto-pack-build.sh
+source auto-pack-build.sh
 
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`nw_kw1_userdebug_pack_build_production
 ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
