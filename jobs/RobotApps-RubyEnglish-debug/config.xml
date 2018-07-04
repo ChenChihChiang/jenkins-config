@@ -44,7 +44,7 @@ mv RubyEnglish*debug.apk RubyEnglish_debug.apk</command>
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.demo</groupId>
+            <groupId>com.nuwarobotics.app</groupId>
             <artifactId>rubyenglish</artifactId>
             <version>$RUBY_VERSION</version>
             <packaging>apk</packaging>
