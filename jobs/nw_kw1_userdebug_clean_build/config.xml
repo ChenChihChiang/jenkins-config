@@ -18,7 +18,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>./home/jk/workspace/nw_kw1_userdebug/jenkins.sh</command>
+      <command>cd /home/jk/workspace/nw_kw1_userdebug_uat
+./jenkins.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
