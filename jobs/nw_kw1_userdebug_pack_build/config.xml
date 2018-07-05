@@ -14,13 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/nw_kw1_userdebug/
-./auto-pack-build.sh
-
-date=`date +&quot;%Y_%m_%d_%H%M&quot;`nw_kw1_userdebug_pack_build
-ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
-scp -r /home/jk/workspace/nw_kw1_userdebug/rockdev/Image-mibo jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp /home/jk/workspace/nw_kw1_userdebug/out/target/product/mibo/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
+      <command>cd /home/jk/workspace/nw_kw1_userdebug_uat/jenkins/
+./pack.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
