@@ -1002,6 +1002,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>kp_kw1_userdebug_clean_build</string>
+        <string>nw_kw1_firmware_mainboard_maincode</string>
         <string>nw_kw1_user_clean_build</string>
         <string>nw_kw1_user_clean_build_production</string>
         <string>nw_kw1_user_pack_build</string>
