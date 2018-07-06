@@ -21,7 +21,7 @@ PATH=&quot;/home/ron/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH&quot;
 
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`
 ssh jk@192.168.1.29 &quot;mkdir -p /share/KW1/Firmware/Motorboard_Microcode/$date/&quot;
-scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/balancesystem/GNUGCC/STM32F051K8_* jk@192.168.1.29:/share/KW1/Firmware/Motorboard_Microcode/$date</command>
+scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUGCC/STM32F051K8_* jk@192.168.1.29:/share/KW1/Firmware/Motorboard_Microcode/$date</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
