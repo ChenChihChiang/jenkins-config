@@ -14,14 +14,14 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/nw_kw1_firmware/Mainboard_Maincode
+      <command>cd /home/jk/workspace/KW1/Firmware/Mainboard_Maincode
 PATH=&quot;/home/ron/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH&quot;
 
 ./auto-clean-build.sh
 
-date=`date +&quot;%Y_%m_%d_%H%M&quot;`_nw_kw1_user_clean_build
+date=`date +&quot;%Y_%m_%d_%H%M&quot;`
 ssh jk@192.168.1.29 &quot;mkdir -p /share/KW1/Firmware/Mainboard_Maincode/$date/&quot;
-scp /home/jk/workspace/nw_kw1_firmware/Mainboard_Maincode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/share/KW1/Firmware/Mainboard_Maincode/$date</command>
+scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/share/KW1/Firmware/Mainboard_Maincode/$date</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
