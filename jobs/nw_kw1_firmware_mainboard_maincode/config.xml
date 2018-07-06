@@ -10,25 +10,13 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers>
-    <hudson.triggers.TimerTrigger>
-      <spec>0 2 * * *</spec>
-    </hudson.triggers.TimerTrigger>
-  </triggers>
+  <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/user_app/
-./update.sh
-
-cd /home/jk/workspace/nw_kw1_user/
+      <command>cd /home/jk/workspace/nw_kw1_firmware/Mainboard_Maincode
 ./auto-clean-build.sh
-
-date=`date +&quot;%Y_%m_%d_%H%M&quot;`_nw_kw1_user_clean_build
-ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
-scp /home/jk/user_app/appchangelist.txt jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp -r /home/jk/workspace/nw_kw1_user/rockdev/Image-mibo jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp /home/jk/workspace/nw_kw1_user/out/target/product/mibo/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
