@@ -14,8 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/nw_kw1_userdebug_uat/jenkins/
-./pack.sh</command>
+      <command>cd /home/jk/workspace/bsp/nw_kw1_userdebug_uat/jenkins/
+./build.sh pack</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
