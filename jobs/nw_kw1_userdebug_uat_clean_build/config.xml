@@ -12,14 +12,14 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>0 2 * * *</spec>
+      <spec>0 5 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/nw_kw1_userdebug_uat/jenkins/
-./clean.sh</command>
+      <command>cd /home/jk/workspace/bsp/nw_kw1_userdebug_uat/jenkins/
+./clean.sh clean</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
