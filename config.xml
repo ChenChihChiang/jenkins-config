@@ -1010,8 +1010,8 @@
         <string>nw_kw1_user_prod_pack_build</string>
         <string>nw_kw1_user_uat_clean_build</string>
         <string>nw_kw1_user_uat_pack_build</string>
-        <string>nw_kw1_userdebug_clean_build_production</string>
         <string>nw_kw1_userdebug_pack_build_production</string>
+        <string>nw_kw1_userdebug_prod_clean_build</string>
         <string>nw_kw1_userdebug_uat_clean_build</string>
         <string>nw_kw1_userdebug_uat_pack_build</string>
       </jobNames>
