@@ -19,7 +19,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/nw_kw1_userdebug_uat/jenkins/
-./clean.sh clean</command>
+./build.sh clean</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
