@@ -10,21 +10,16 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>0 12 * * 7</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/userdebug_app/
-./update.sh
-
-cd /home/jk/workspace/kp_kw1_userdebug/
-./auto-clean-build.sh
-
-date=`date +&quot;%Y_%m_%d_%H%M&quot;`_kp_kw1_userdebug_clean_build
-ssh jk@192.168.1.29 &quot;sudo mkdir -p /share/Rockchip_SW_Release/Dailybuild/$date/&quot;
-scp /home/jk/userdebug_app/appchangelist.txt jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp -r /home/jk/workspace/kp_kw1_userdebug/rockdev/Image-abby jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/
-scp /home/jk/workspace/kp_kw1_userdebug/out/target/product/abby/data/NUWA/NuwaData jk@192.168.1.29:/share/Rockchip_SW_Release/Dailybuild/$date/</command>
+      <command>cd /home/jk/workspace/bsp/kp_kw1_userdebug_uat/jenkins/
+./build.sh clean</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
