@@ -45,13 +45,11 @@
       <includeCustomMessage>false</includeCustomMessage>
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
-    <org.jenkinsci.plugins.emailext__template.ExtendedEmailTemplatePublisher plugin="emailext-template@1.0">
-      <templateIds>
-        <org.jenkinsci.plugins.emailext__template.TemplateId>
-          <templateId></templateId>
-        </org.jenkinsci.plugins.emailext__template.TemplateId>
-      </templateIds>
-    </org.jenkinsci.plugins.emailext__template.ExtendedEmailTemplatePublisher>
+    <hudson.tasks.Mailer plugin="mailer@1.20">
+      <recipients>wang.daniel@nuwarobotics.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
   </publishers>
   <buildWrappers/>
 </project>
