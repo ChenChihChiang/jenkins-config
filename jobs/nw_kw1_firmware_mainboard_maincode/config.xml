@@ -49,7 +49,7 @@ scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/gitl
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com,liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.gordon@nuwarobotics.com</recipientList>
+      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.gordon@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -69,7 +69,8 @@ scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/gitl
       </configuredTriggers>
       <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <defaultContent>&lt;BR&gt;
+Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Maincode/&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Maincode/&lt;/a&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
