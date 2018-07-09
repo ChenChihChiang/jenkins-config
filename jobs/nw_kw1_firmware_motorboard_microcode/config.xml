@@ -20,8 +20,9 @@ PATH=&quot;/home/ron/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH&quot;
 ./auto-clean-build.sh
 
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`
-ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/Motorboard_Microcode/$date/&quot;
-scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUGCC/STM32F051K8_* jk@192.168.1.29:/build/daily_build/fw/Motorboard_Microcode/$date</command>
+ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/KW1/Motorboard_Microcode/$date/&quot;
+scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUGCC/STM32F051K8_* jk@192.168.1.29:/build/daily_build/fw/KW1/Motorboard_Microcode/$date
+scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/KW1/Motorboard_Microcode/$date</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -50,12 +51,13 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUG
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
       <recipientList>wang.charles@nuwarobotics.com,liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.gordon@nuwarobotics.com</recipientList>
       <configuredTriggers>
-        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
             <subject>$PROJECT_DEFAULT_SUBJECT</subject>
             <body>$PROJECT_DEFAULT_CONTENT</body>
             <recipientProviders>
               <hudson.plugins.emailext.plugins.recipients.DevelopersRecipientProvider/>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
             </recipientProviders>
             <attachmentsPattern></attachmentsPattern>
             <attachBuildLog>false</attachBuildLog>
@@ -63,7 +65,7 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUG
             <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
             <contentType>project</contentType>
           </email>
-        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
       <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
