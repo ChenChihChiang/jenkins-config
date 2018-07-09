@@ -20,8 +20,9 @@ PATH=&quot;/home/ron/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH&quot;
 ./auto-clean-build.sh
 
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`
-ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/Mainboard_Maincode/$date/&quot;
-scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/Mainboard_Maincode/$date</command>
+ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/KW1/Mainboard_Maincode/$date/&quot;
+scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Maincode/$date
+scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Maincode/$date</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
