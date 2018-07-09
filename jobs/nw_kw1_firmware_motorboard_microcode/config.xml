@@ -70,7 +70,7 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUG
       <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
       <defaultContent>&lt;BR&gt;
-Release image is located at &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Motorboard_Microcode/&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Motorboard_Microcode/&lt;/a&gt;</defaultContent>
+Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Motorboard_Microcode/&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Motorboard_Microcode/&lt;/a&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
