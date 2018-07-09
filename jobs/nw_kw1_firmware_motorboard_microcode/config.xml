@@ -49,7 +49,7 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUG
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>liao.ron@nuwarobotics.com</recipientList>
+      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.gordon@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
