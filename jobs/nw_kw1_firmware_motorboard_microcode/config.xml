@@ -69,7 +69,9 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUG
       </configuredTriggers>
       <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <defaultContent>$DEFAULT_CONTENT
+
+Release image is located at \\192.168.1.29\build\daily_build\fw\KW1\</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
