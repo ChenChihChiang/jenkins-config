@@ -69,11 +69,12 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Maincode/balancesystem/GNUGCC/git
       </configuredTriggers>
       <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <defaultContent>&lt;BR&gt;
+Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Motorboard_Maincode/&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Motorboard_Maincode/&lt;/a&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>false</attachBuildLog>
+      <attachBuildLog>true</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
       <replyTo>liao.ron@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
