@@ -73,7 +73,7 @@ scp /home/jk/workspace/KW1/Firmware/Motorboard_Microcode/AI_Motor_MicroCode/GNUG
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>false</attachBuildLog>
+      <attachBuildLog>true</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
       <replyTo>liao.ron@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
