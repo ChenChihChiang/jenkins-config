@@ -63,20 +63,13 @@
           </email>
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
-      <contentType>text/plain</contentType>
+      <contentType>text/html</contentType>
       <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
-      <defaultContent>Hi all,
-
-$PROJECT_NAME - $BUILD_STATUS
-Check details at $BUILD_URL
-
-If you have any further problem, please do not hesitate to contact me.
----
-Daniel Wang / 王怡程
-香港商女媧創造(股)公司台灣分公司
-10487 台北市中山區南京東路三段101號9樓
-9F., No.101, Sec. 3, Nanjing E. Rd.,
-Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.) </defaultContent>
+      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;　&lt;/p&gt;
+&lt;p&gt;$PROJECT_NAME - $BUILD_STATUS&lt;br /&gt;Check details at $BUILD_URL&lt;/p&gt;
+&lt;p&gt;　&lt;/p&gt;
+&lt;p&gt;If you have any further problem, please do not hesitate to contact me.&lt;br /&gt;---&lt;br /&gt;Daniel Wang / 王怡程&lt;br /&gt;香港商女媧創造(股)公司台灣分公司&lt;br /&gt;10487 台北市中山區南京東路三段101號9樓&lt;br /&gt;9F., No.101, Sec. 3, Nanjing E. Rd.,&lt;br /&gt;Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/p&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
