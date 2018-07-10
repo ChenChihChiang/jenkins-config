@@ -70,7 +70,7 @@
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;log: $BUILD_URL&lt;br /&gt;
-output: \\192.168.1.29\build\daily_build\sw\nw\kw1\user\prod\&lt;/p&gt;
+output: &lt;a href=&quot;http://\\192.168.1.29\build\daily_build\sw\nw\kw1\user\prod\&quot;&gt;\\192.168.1.29\build\daily_build\sw\nw\kw1\user\prod\&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you have any further problem, please do not hesitate to contact me.&lt;br /&gt;
 &lt;span style=&quot;color:#3498db&quot;&gt;---&lt;br /&gt;
