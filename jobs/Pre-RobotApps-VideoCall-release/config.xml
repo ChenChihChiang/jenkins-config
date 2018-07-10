@@ -18,7 +18,9 @@
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <submoduleCfg class="list"/>
-    <extensions/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.PruneStaleBranch/>
+    </extensions>
   </scm>
   <assignedNode>jenkins-6</assignedNode>
   <canRoam>false</canRoam>
@@ -37,8 +39,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>git remote prune origin
-./env.sh</command>
+      <command>./env.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
