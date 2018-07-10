@@ -19,7 +19,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/nw_kw1_user_prod/jenkins/
-./build.sh clean</command>
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -46,7 +46,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com,liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com</recipientList>
+      <recipientList>wang.daniel@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -66,7 +66,7 @@
       <contentType>both</contentType>
       <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
       <defaultContent>Hi all,
-　
+\n
 $PROJECT_NAME - $BUILD_STATUS
 Check details at $BUILD_URL
 　
