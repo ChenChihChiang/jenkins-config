@@ -65,34 +65,19 @@
       </configuredTriggers>
       <contentType>text/html</contentType>
       <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
-      <defaultContent>&lt;div&gt;
-	Hi all,&lt;/div&gt;
-&lt;div&gt;
-	&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-	&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000;&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-	&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-	log: $BUILD_URL&lt;/div&gt;
-&lt;div&gt;
-	output: &lt;a href=&quot;file:///c:/windows/&quot;&gt;\\192.168.1.29\build\daily_build\sw\nw\kw1\user\prod\&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;
-	&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-	If you have any further problem, please do not hesitate to contact me.&lt;/div&gt;
-&lt;div&gt;
-	&lt;span style=&quot;color:#40e0d0;&quot;&gt;---&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-	&lt;span style=&quot;color:#40e0d0;&quot;&gt;Daniel Wang / 王怡程&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-	&lt;span style=&quot;color:#40e0d0;&quot;&gt;香港商女媧創造(股)公司台灣分公司&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-	&lt;span style=&quot;color:#40e0d0;&quot;&gt;10487 台北市中山區南京東路三段101號9樓&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-	&lt;span style=&quot;color:#40e0d0;&quot;&gt;9F., No.101, Sec. 3, Nanjing E. Rd.,&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-	&lt;span style=&quot;color:#40e0d0;&quot;&gt;Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/div&gt;
+      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;log: $BUILD_URL&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#95a5a6&quot;&gt;&lt;em&gt;If you have any further problem, please do not hesitate to contact me.&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#3498db&quot;&gt;---&lt;br /&gt;
+Daniel Wang / 王怡程&lt;br /&gt;
+香港商女媧創造(股)公司台灣分公司&lt;br /&gt;
+10487 台北市中山區南京東路三段101號9樓&lt;br /&gt;
+9F., No.101, Sec. 3, Nanjing E. Rd.,&lt;br /&gt;
+Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/p&gt;
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
