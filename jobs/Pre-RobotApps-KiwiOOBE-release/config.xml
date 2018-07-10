@@ -37,7 +37,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>./env.sh</command>
+      <command>./env.sh
+git gc --prune=now</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
