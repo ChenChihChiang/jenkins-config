@@ -63,7 +63,7 @@
           </email>
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
-      <contentType>text/html</contentType>
+      <contentType>text/plain</contentType>
       <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
       <defaultContent>Hi all,
 
