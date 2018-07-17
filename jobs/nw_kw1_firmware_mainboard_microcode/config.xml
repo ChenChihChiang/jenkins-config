@@ -20,9 +20,9 @@ PATH=&quot;/home/ron/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH&quot;
 ./auto-clean-build.sh
 
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`
-ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/KW1/Mainboard_Microcode/$date/&quot;
-scp /home/jk/workspace/KW1/Firmware/Mainboard_Microcode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Microcode/$date
-scp /home/jk/workspace/KW1/Firmware/Mainboard_Microcode/balancesystem/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Microcode/$date</command>
+ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/KW1/Mainboard_Microcode/${BUILD_VERSION}/&quot;
+scp /home/jk/workspace/KW1/Firmware/Mainboard_Microcode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Microcode/${BUILD_VERSION}
+scp /home/jk/workspace/KW1/Firmware/Mainboard_Microcode/balancesystem/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Microcode/${BUILD_VERSION}</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -49,7 +49,7 @@ scp /home/jk/workspace/KW1/Firmware/Mainboard_Microcode/balancesystem/GNUGCC/git
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.gordon@nuwarobotics.com</recipientList>
+      <recipientList>liao.ron@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -68,9 +68,12 @@ scp /home/jk/workspace/KW1/Firmware/Mainboard_Microcode/balancesystem/GNUGCC/git
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
       <contentType>default</contentType>
-      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>&lt;BR&gt;
-Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Microcode/&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Microcode/&lt;/a&gt;</defaultContent>
+      <defaultSubject>$PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
+      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;${BUILD_VERSION}&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Microcode/${BUILD_VERSION}&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Microcode/${BUILD_VERSION}&lt;/a&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
@@ -81,5 +84,20 @@ Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_M
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jvnet.hudson.tools.versionnumber.VersionNumberBuilder plugin="versionnumber@1.9">
+      <versionNumberString>${BUILD_DATE_FORMATTED, &quot;yyyy_MM_dd&quot;}_${BUILDS_TODAY}</versionNumberString>
+      <projectStartDate>1970-01-01 00:00:00.0 UTC</projectStartDate>
+      <environmentVariableName>BUILD_VERSION</environmentVariableName>
+      <environmentPrefixVariable></environmentPrefixVariable>
+      <oBuildsToday></oBuildsToday>
+      <oBuildsThisWeek></oBuildsThisWeek>
+      <oBuildsThisMonth></oBuildsThisMonth>
+      <oBuildsThisYear></oBuildsThisYear>
+      <oBuildsAllTime></oBuildsAllTime>
+      <worstResultForIncrement>SUCCESS</worstResultForIncrement>
+      <skipFailedBuilds>false</skipFailedBuilds>
+      <useAsBuildDisplayName>true</useAsBuildDisplayName>
+    </org.jvnet.hudson.tools.versionnumber.VersionNumberBuilder>
+  </buildWrappers>
 </project>
