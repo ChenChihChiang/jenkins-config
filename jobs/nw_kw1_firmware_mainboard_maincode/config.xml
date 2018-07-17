@@ -68,8 +68,12 @@ scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/gitl
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
       <contentType>default</contentType>
-      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>&lt;BR&gt;
+      <defaultSubject>$PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
+      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;BR&gt;
 Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Maincode/${BUILD_VERSION}&quot;&gt;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_Maincode/${BUILD_VERSION}&lt;/a&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
