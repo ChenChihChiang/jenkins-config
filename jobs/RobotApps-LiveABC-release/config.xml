@@ -47,7 +47,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Li
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>liveabc</artifactId>
+            <artifactId>liveabc-signed</artifactId>
             <version>$ABC_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
