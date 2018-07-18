@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/dev</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -34,7 +34,7 @@ export ANDROID_HOME
 #rm -rf /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/*
 cd $WORKSPACE
 chmod 755 ./gradlew
-./gradlew assembleRelease
+./gradlew assembleDebug
 #cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/
 #mv RubyEnglish*release.apk RubyEnglish_release.apk
 #cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/signed/
