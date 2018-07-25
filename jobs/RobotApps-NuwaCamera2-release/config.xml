@@ -62,6 +62,15 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>RobotApps-MicroCoding-release-upload</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
       <baseUrl></baseUrl>
       <teamDomain></teamDomain>
