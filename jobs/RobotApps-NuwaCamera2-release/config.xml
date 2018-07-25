@@ -63,7 +63,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-MicroCoding-release-upload</childProjects>
+      <childProjects>RobotApps-NuwaCamera2-release-upload</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
