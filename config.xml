@@ -1087,6 +1087,7 @@
         <string>Pre-RobotApps-RubyEnglish-release</string>
         <string>RobotApps-RubyEnglish-debug</string>
         <string>RobotApps-RubyEnglish-release</string>
+        <string>RobotApps-RubyEnglish-release-upload</string>
       </jobNames>
       <jobFilters/>
       <columns>
