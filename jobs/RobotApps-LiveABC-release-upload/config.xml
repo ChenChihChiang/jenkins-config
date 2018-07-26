@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/RobotApps/RubyEnglish.git</url>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/LiveABC.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -35,7 +35,7 @@ FDS_CODE=`cat build.gradle | grep versionCode | awk &apos;{print $3}&apos; | sed
 
 FDS_ID=`cat app/build.gradle | grep applicationId | awk &apos;{print $2}&apos; | sed -e &apos;s/&quot;//g&apos;`
 
-FDS_PATH=&quot;/var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/RubyEnglish_signed.apk&quot;
+FDS_PATH=&quot;/var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/LiveABC_signed.apk&quot;
 #../app/build/outputs/apk/RubyEnglish_signed.apk
 TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
 
@@ -51,7 +51,7 @@ echo $FDS_ID
 echo $BUILD_NUMBER
 
 
-/root/.nvm/versions/node/v8.9.4/bin/node /var/jenkins/backend-tool-ota-cli/process.js &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;versionCode&quot;:&quot;&apos;$BUILD_NUMBER&apos;&quot;,&quot;versionName&quot;:&quot;&apos;$FDS_VERSION&apos;&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;&apos;$FDS_PATH&apos;&quot;,&quot;env&quot;:&quot;uat&quot;,&quot;isForcePublish&quot;:&quot;y&quot;, &quot;i18n&quot;:[{&quot;langCode&quot;:&quot;zh-CN&quot;,&quot;name&quot;:&quot;test&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;}],&quot;productSupport&quot;:[&quot;C12P15600&quot;]}&apos;</command>
+#/root/.nvm/versions/node/v8.9.4/bin/node /var/jenkins/backend-tool-ota-cli/process.js &apos;{&quot;type&quot;:&quot;apk&quot;,&quot;packageName&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;versionCode&quot;:&quot;&apos;$BUILD_NUMBER&apos;&quot;,&quot;versionName&quot;:&quot;&apos;$FDS_VERSION&apos;&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;,&quot;packageType&quot;:&quot;full&quot;,&quot;sku&quot;:&quot;generic_cn&quot;,&quot;file&quot;:&quot;&apos;$FDS_PATH&apos;&quot;,&quot;env&quot;:&quot;uat&quot;,&quot;isForcePublish&quot;:&quot;y&quot;, &quot;i18n&quot;:[{&quot;langCode&quot;:&quot;zh-CN&quot;,&quot;name&quot;:&quot;test&quot;,&quot;description&quot;:&quot;&apos;$FDS_ID&apos;&quot;}],&quot;productSupport&quot;:[&quot;C12P15600&quot;]}&apos;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -111,7 +111,7 @@ echo $BUILD_NUMBER
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-RubyEnglish-release/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-LiveABC-release/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
