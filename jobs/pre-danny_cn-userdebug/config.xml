@@ -13,7 +13,7 @@
   <triggers>
     <jenkins.triggers.ReverseBuildTrigger>
       <spec></spec>
-      <upstreamProjects>Pre-RobotApps-FaceHome2-release</upstreamProjects>
+      <upstreamProjects>Pre-RobotApps-FaceHome2-release,</upstreamProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
@@ -22,14 +22,13 @@
       </threshold>
     </jenkins.triggers.ReverseBuildTrigger>
     <hudson.triggers.TimerTrigger>
-      <spec>0 3 * * *</spec>
+      <spec>0 0 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/nw_kw1_user_prod/jenkins/
-./build.sh clean</command>
+      <command></command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -56,7 +55,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com,liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wu.charlie@nuwarobotics.com</recipientList>
+      <recipientList>wang.daniel@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
