@@ -29,7 +29,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/nw_kw1_user_prod/jenkins/
-</command>
+./build.sh clean</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -56,7 +56,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com,liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wu.charlie@nuwarobotics</recipientList>
+      <recipientList>wang.charles@nuwarobotics.com,liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wu.charlie@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
