@@ -1015,6 +1015,7 @@
         <string>nw_kw1_userdebug_prod_pack_build</string>
         <string>nw_kw1_userdebug_uat_clean_build</string>
         <string>nw_kw1_userdebug_uat_pack_build</string>
+        <string>pre-danny_cn-userdebug</string>
       </jobNames>
       <jobFilters/>
       <columns>
