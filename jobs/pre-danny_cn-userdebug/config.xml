@@ -13,7 +13,7 @@
   <triggers>
     <jenkins.triggers.ReverseBuildTrigger>
       <spec></spec>
-      <upstreamProjects>Pre-RobotApps-FaceHome2-release,</upstreamProjects>
+      <upstreamProjects>Pre-RobotApps-BluetoothRemote-release,Pre-RobotApps-CameraService-release,Pre-RobotApps-FaceHome2-release,Pre-Algorithms-FaceRecognition2-release,Pre-RobotApps-Help-release,Pre-RobotApps-HomeService-release,Pre-RobotApps-IotService-release,Pre-RobotApps-KiwiOOBE-release,Pre-Sample-KiwiPlay-release,Pre-NuwaCore-KiwiService,Pre-RobotApps-MicroCoding-release,Pre-RobotApps-NuwaCamera2-release,Pre-RobotApps-Quiz-release,Pre-RobotAnalytics-release,Pre-RobotApps-RobotTheater-release,Pre-RobotApps-RubyEnglish-release,Pre-RobotApps-Tutorial-release,Pre-Update-Service,Pre-RobotApps-VideoCall-release,Pre-Algorithms-VisualTracking-release</upstreamProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
