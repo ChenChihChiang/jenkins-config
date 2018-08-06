@@ -12,14 +12,14 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>0 3 * * *</spec>
+      <spec>H 1 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/nw_kw1_user_prod/jenkins/
-./build.sh clean</command>
+      <command>cd /home/jk/workspace/bsp/rk3288_userdebug/jenkins/
+./build.sh -c -o -p4 -s4</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -53,7 +53,7 @@
             <subject>$PROJECT_DEFAULT_SUBJECT</subject>
             <body>$PROJECT_DEFAULT_CONTENT</body>
             <recipientProviders>
-              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+              <hudson.plugins.emailext.plugins.recipients.DevelopersRecipientProvider/>
             </recipientProviders>
             <attachmentsPattern></attachmentsPattern>
             <attachBuildLog>false</attachBuildLog>
@@ -62,6 +62,20 @@
             <contentType>project</contentType>
           </email>
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
       </configuredTriggers>
       <contentType>text/html</contentType>
       <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
