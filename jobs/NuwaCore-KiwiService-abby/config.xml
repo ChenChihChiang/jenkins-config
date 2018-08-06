@@ -86,7 +86,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../build/outputs/apk/KiwiSe
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>chen.john@nuwarobotics.com,wang.daniel@nuwarobotics.com,tsai.ares@nuwarobotics.com</recipientList>
+      <recipientList>chen.john@nuwarobotics.com,wang.daniel@nuwarobotics.com,tsai.ares@nuwarobotics.com,tsai.leo@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
