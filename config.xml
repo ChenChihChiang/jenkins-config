@@ -1003,7 +1003,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>apps_build</string>
-        <string>danny_cn_clean_build</string>
+        <string>danny_cn_userdebug_clean_build</string>
         <string>kp_kw1_userdebug_uat_clean_build</string>
         <string>nw_kw1_firmware_mainboard_maincode</string>
         <string>nw_kw1_firmware_mainboard_microcode</string>
