@@ -1154,6 +1154,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>danny_cn_user_clean_build</string>
         <string>danny_cn_user_pack_build</string>
+        <string>danny_cn_userdebug_clean_build</string>
       </jobNames>
       <jobFilters/>
       <columns>
