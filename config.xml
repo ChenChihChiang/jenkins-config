@@ -1002,7 +1002,6 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>apps_build_temp</string>
         <string>kp_kw1_userdebug_uat_clean_build</string>
         <string>nw_kw1_firmware_mainboard_maincode</string>
         <string>nw_kw1_firmware_mainboard_microcode</string>
