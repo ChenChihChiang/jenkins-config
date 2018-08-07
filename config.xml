@@ -1153,6 +1153,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>danny_cn_userdebug_clean_build</string>
       </jobNames>
       <jobFilters/>
       <columns>
