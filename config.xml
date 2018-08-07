@@ -1152,6 +1152,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>apps_build</string>
         <string>danny_cn_user_clean_build</string>
         <string>danny_cn_user_pack_build</string>
         <string>danny_cn_userdebug_clean_build</string>
