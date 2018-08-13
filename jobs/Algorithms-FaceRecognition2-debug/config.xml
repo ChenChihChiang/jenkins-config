@@ -42,13 +42,13 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_debug</artifactId>
+            <artifactId>FaceRecognition2_danny_cn_debug</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-debug/app/build/outputs/apk/app-debug.apk</filePath>
+              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-debug/app/build/outputs/apk/app-danny_cn-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
