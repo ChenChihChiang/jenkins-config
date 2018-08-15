@@ -1156,7 +1156,6 @@
         <string>danny_cn_user_pack_build</string>
         <string>danny_cn_userdebug_clean_build</string>
         <string>danny_cn_userdebug_pack_build</string>
-        <string>nw_dn_cn_user_clean</string>
       </jobNames>
       <jobFilters/>
       <columns>
