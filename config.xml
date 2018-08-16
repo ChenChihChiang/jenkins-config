@@ -1153,6 +1153,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>apps_build</string>
         <string>nw_kw1_dn_cn_user_clean</string>
+        <string>nw_kw1_dn_cn_user_pack</string>
         <string>nw_kw1_dn_cn_userdebug_clean</string>
         <string>nw_kw1_dn_cn_userdebug_pack</string>
       </jobNames>
