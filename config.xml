@@ -1159,6 +1159,7 @@
         <string>nw_kw1_kb_cn_user_clean</string>
         <string>nw_kw1_kb_cn_user_pack</string>
         <string>nw_kw1_kb_cn_userdebug_clean</string>
+        <string>nw_kw1_kb_cn_userdebug_pack</string>
         <string>nw_kw1_kb_tw_user_clean</string>
         <string>nw_kw1_kb_tw_userdebug_clean</string>
       </jobNames>
