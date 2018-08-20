@@ -59,12 +59,12 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.lib</groupId>
             <artifactId>KiwiSDK_kebbi_tw</artifactId>
-            <version>KIWISDK_VERSION</version>
+            <version>$KIWISDK_VERSION</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>build/outputs/aar/1.0.0.34_Mibo_SDK_release_auth.aar</filePath>
+              <filePath>build/outputs/aar/Mibo_SDK_release_kebbitw.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
