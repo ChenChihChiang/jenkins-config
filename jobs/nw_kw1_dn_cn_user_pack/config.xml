@@ -15,7 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/nw_kw1_dn_cn_user/jenkins/
-./build.sh -p1 -v3 -s2 -l1 -e4 -o -n</command>
+./build.sh -p1 -v3 -s2 -l1 -e4 -o -u</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
