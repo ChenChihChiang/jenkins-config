@@ -85,12 +85,33 @@ cd $WORKSPACE
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
             <artifactId>FaceRecognition2_kebbi_tw_debug</artifactId>
-            <version></version>
+            <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
               <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-debug/app/build/outputs/apk/app-kebbi_tw-debug.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+      </packages>
+    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
+    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
+      <nexusInstanceId>nexus</nexusInstanceId>
+      <nexusRepositoryId>kebbi-en</nexusRepositoryId>
+      <packages>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.app</groupId>
+            <artifactId>FaceRecognition2_kebbi_en_debug</artifactId>
+            <version>$FACE_VERSION</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-debug/app/build/outputs/apk/app-kebbi_en-debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
