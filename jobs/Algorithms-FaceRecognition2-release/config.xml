@@ -35,7 +35,7 @@ cd $WORKSPACE
 ./gradlew clean assembleRelease
 
 cd /var/jenkins/workspace/Algorithms-FaceRecognition2-release/signed
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_cn_release.apk ../app/build/outputs/apk/app-kebbi_cn_release-signed.apk</command>
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_cn-release.apk	 ../app/build/outputs/apk/app-kebbi_cn-release-signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -50,7 +50,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-kebbi_cn_release.apk</filePath>
+              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-kebbi_cn-release.apk	</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
