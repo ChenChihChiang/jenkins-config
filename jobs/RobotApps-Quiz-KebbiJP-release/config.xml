@@ -50,7 +50,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ke
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-Quiz-kebbiJP-release/app/build/outputs/apk/kebbi_jp/release/app-kebbi_jp-release-signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-Quiz-KebbiJP-release/app/build/outputs/apk/kebbi_jp/release/app-kebbi_jp-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
