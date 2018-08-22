@@ -604,6 +604,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[10]/jobNames/comparator"/>
         <string>Pre-RobotApps-Quiz-debug</string>
+        <string>Pre-RobotApps-Quiz-KebbiJP-release</string>
         <string>Pre-RobotApps-Quiz-release</string>
         <string>RobotApps-Quiz-debug</string>
         <string>RobotApps-Quiz-KebbiJP-release</string>
