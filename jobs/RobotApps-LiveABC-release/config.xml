@@ -57,7 +57,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Li
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>./app/build/outputs/apk/LiveABC_danny_cn_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/LiveABC_danny_cn_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -78,7 +78,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Li
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>./app/build/outputs/apk/LiveABC_kebbi_tw_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/LiveABC_kebbi_tw_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -99,7 +99,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Li
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>./app/build/outputs/apk/LiveABC_kebbi_cn_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/LiveABC_kebbi_cn_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
