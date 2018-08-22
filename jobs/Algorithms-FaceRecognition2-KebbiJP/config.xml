@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/abby</name>
+        <name>*/feature/multiJP</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -42,7 +42,7 @@ cd $WORKSPACE
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_abby</artifactId>
+            <artifactId>FaceRecognition2_kebbi_jp_signed</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
