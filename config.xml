@@ -606,6 +606,7 @@
         <string>Pre-RobotApps-Quiz-debug</string>
         <string>Pre-RobotApps-Quiz-release</string>
         <string>RobotApps-Quiz-debug</string>
+        <string>RobotApps-Quiz-KebbiJP-release</string>
         <string>RobotApps-Quiz-release</string>
         <string>RobotApps-Quiz-release-upload</string>
       </jobNames>
