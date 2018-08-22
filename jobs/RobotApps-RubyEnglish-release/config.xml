@@ -39,7 +39,7 @@ cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/
 mv RubyEnglish*CN*release.apk RubyEnglish_CN_release.apk
 mv RubyEnglish*JP*release.apk RubyEnglish_JP_release.apk
 mv RubyEnglish*TW*release.apk RubyEnglish_TW_release.apk
-mv RubyEnglish*release.apk RubyEnglish_release.apk
+mv RubyEnglish*danny*release.apk RubyEnglish_release.apk
 cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_release.apk ../app/build/outputs/apk/RubyEnglish_signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_CN_release.apk ../app/build/outputs/apk/RubyEnglish_CN_signed.apk
