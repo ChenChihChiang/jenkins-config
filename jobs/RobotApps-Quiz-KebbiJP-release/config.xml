@@ -33,7 +33,8 @@
 export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean assembleRelease
-cd /var/jenkins/workspace/RobotApps-Quiz-release/signed/
+cd /var/jenkins/workspace/RobotApps-Quiz-KebbiJP-release/signed/
+
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kebbi_jp/release/app-kebbi_jp-release.apk ../app/build/outputs/apk/kebbi_jp/release/app-kebbi_jp-release-signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
