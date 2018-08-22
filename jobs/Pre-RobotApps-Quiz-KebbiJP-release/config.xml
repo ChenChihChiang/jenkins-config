@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/feature/multiJP</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -39,7 +39,7 @@
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-Quiz-release</childProjects>
+      <childProjects>RobotApps-Quiz-KebbiJP-release</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
