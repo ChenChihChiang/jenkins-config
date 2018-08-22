@@ -36,7 +36,6 @@ cd $WORKSPACE
 
 cd /var/jenkins/workspace/Algorithms-FaceRecognition2-release/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-danny_cn-release.apk	 ../app/build/outputs/apk/app-danny_cn-release-signed.apk
-
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_cn-release.apk	 ../app/build/outputs/apk/app-kebbi_cn-release-signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_tw-release.apk	 ../app/build/outputs/apk/app-kebbi_tw-release-signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_en-release.apk	 ../app/build/outputs/apk/app-kebbi_en-release-signed.apk
@@ -99,7 +98,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-denny_cn-release-signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/Algorithms-FaceRecognition2-release/app/build/outputs/apk/app-danny_cn-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
