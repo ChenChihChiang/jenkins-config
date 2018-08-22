@@ -188,7 +188,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-Quiz-KebbiJPrelease/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-Quiz-KebbiJP-release/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
