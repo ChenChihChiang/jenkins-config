@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release</name>
+        <name>*/feature/multiJP</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -40,7 +40,7 @@ cat env.properties</command>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>Algorithms-FaceRecognition2-release</childProjects>
+      <childProjects>Algorithms-FaceRecognition2-KebbiJP</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
