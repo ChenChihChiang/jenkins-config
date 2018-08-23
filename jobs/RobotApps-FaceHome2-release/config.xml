@@ -67,7 +67,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ke
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/pet/build/outputs/aar/pet-release.aar</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/pet/build/outputs/aar/pet-danny_cn-release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -104,6 +104,36 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ke
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
               <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/app/build/outputs/apk/kebbi_en/release/app-kebbi_en-release-signed.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.app.home</groupId>
+            <artifactId>pet</artifactId>
+            <version>$FACEHOME2_VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/pet/build/outputs/aar/pet-kebbi_en-release.aar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.app.home</groupId>
+            <artifactId>utility</artifactId>
+            <version>$FACEHOME2_VERSION</version>
+            <packaging>aar</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/utility/build/outputs/aar/utility-release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
