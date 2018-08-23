@@ -34,7 +34,12 @@ export ANDROID_HOME
 cd $WORKSPACE
 rm -rf /var/jenkins/workspace/RobotApps-RobotTheater-release/app/build/outputs/apk/*
 #./gradlew clean
-./gradlew assembleUatRelease
+#./gradlew assembleUatRelease
+./gradlew assembledanny_cnRelease
+./gradlew assemblekebbi_cnRelease
+./gradlew assemblekebbi_twRelease
+./gradlew assemblekebbi_jpRelease
+./gradlew assemblekebbi_enRelease
 cd /var/jenkins/workspace/RobotApps-RobotTheater-release/app/build/outputs/apk/
 mv robotTheater*kebbi_cn*release.apk robotTheater_kebbi_cn_release.apk
 mv robotTheater*kebbi_tw*release.apk robotTheater_kebbi_tw_release.apk
