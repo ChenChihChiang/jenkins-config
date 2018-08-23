@@ -50,7 +50,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_kebbi_cn_signed</artifactId>
+            <artifactId>FaceRecognition2_signed</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -71,7 +71,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_kebbi_tw_signed</artifactId>
+            <artifactId>FaceRecognition2_signed</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -92,7 +92,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_danny_cn_signed</artifactId>
+            <artifactId>FaceRecognition2_signed</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -113,7 +113,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ap
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>FaceRecognition2_kebbi_en_signed</artifactId>
+            <artifactId>FaceRecognition2_signed</artifactId>
             <version>$FACE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
