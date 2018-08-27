@@ -40,8 +40,8 @@ cd $WORKSPACE
  ./gradlew clean assembleUat
  
 cd $WORKSPACE/homeservice/build/outputs/apk/
-mv homeservice_*_release_danny_cnUat homeservice_release.apk
-mv homeservice_*_release_kebbi_enUat homeservice_kebbi_en_release.apk
+mv homeservice_release_danny_cnUat_* homeservice_release.apk
+mv homeservice_release_kebbi_enUat_* homeservice_kebbi_en_release.apk
 
 cd $WORKSPACE/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../homeservice/build/outputs/apk/homeservice_release.apk ../homeservice/build/outputs/apk/homeservice_signed.apk 
