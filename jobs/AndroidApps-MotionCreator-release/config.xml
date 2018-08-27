@@ -33,9 +33,9 @@
 export ANDROID_HOME
 rm -rf /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/*
 cd $WORKSPACE
-./gradlew assembleRelease
+./gradlew assembleKebbiRelease
 cd /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk
-mv app-debug.apk MotionCreator_release.apk
+mv MotionCreator*release_kebbi.apk MotionCreator_release.apk
 cd /var/jenkins/workspace/AndroidApps-MotionCreator-release/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/MotionCreator_release.apk ../app/build/outputs/apk/MotionCreator_release_signed.apk</command>
     </hudson.tasks.Shell>
