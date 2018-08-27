@@ -1194,6 +1194,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[38]/jobNames/comparator"/>
+        <string>AndroidApps-MotionCreator-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
