@@ -14,8 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/nw_kw1_user/jenkins/
-./build.sh -p1 -v3 -s2 -l1 -e4 -o -n</command>
+      <command>cd /home/jk/workspace/bsp/nw_kw4_user/jenkins/
+./build.sh -p1 -v3 -s2 -l3 -e4 -o -n</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
