@@ -35,7 +35,7 @@ export ANDROID_HOME
 cd $WORKSPACE
 ./gradlew clean assembleRelease
 
-cd /var/jenkins/workspace/Algorithms-FaceRecognition2-release/signed
+cd /var/jenkins/workspace/Algorithms-FaceRecognition2-KebbiJP/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-release.apk	 ../app/build/outputs/apk/app-release-signed.apk
 
 
