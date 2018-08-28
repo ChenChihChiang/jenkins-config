@@ -8,12 +8,12 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/Algorithms/FaceRecognition2.git</url>
+        <url>ssh://jk@192.168.1.29:29418/Algorithms/NuwaBrain.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/dev</name>
+        <name>*/master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -40,7 +40,7 @@ cat env.properties</command>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>Algorithms-FaceRecognition2-debug</childProjects>
+      <childProjects>Algorithms-NuwaBrain-debug</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
