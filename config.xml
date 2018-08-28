@@ -1230,6 +1230,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[38]/jobNames/comparator"/>
         <string>Algorithms-NuwaBrain-debug</string>
+        <string>Pre-Algorithms-NuwaBrain-debug</string>
       </jobNames>
       <jobFilters/>
       <columns>
