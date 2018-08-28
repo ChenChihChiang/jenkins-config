@@ -37,7 +37,9 @@ rm -rf /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/ap
 cd $WORKSPACE
 chmod 755 ./build.sh
 chmod 755 ./gradlew
-./build.sh
+./gradlew clean
+./gradlew assembleRelease
+#./build.sh
 cd /var/jenkins/workspace/Algorithms-VisualTracking-release/build/outputs/apk/
 #mv Algorithms-VisualTracking-release-release* Algorithms-VisualTracking-release.apk
 mv VisualTracking*kebbi_cn*release.apk Algorithms-VisualTracking-kebbi_cn-release.apk
