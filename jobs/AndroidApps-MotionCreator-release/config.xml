@@ -31,7 +31,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-rm -rf /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/kebbi/release/*
 cd $WORKSPACE
 ./gradlew assembleKebbiRelease
 cd /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/kebbi/release/
