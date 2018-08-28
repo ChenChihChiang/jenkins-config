@@ -8,12 +8,12 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/Algorithms/ObjectRecModule.git</url>
+        <url>ssh://jk@192.168.1.29:29418/Algorithms/NuwaBrain.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/dev</name>
+        <name>*/master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -31,7 +31,7 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cat /var/jenkins/workspace/Pre-Algorithms-ObjectRecModule-debug/env.properties
+cat /var/jenkins/workspace/Pre-Algorithms-NuwaBrain-debug/env.properties
 cd $WORKSPACE
 ./gradlew  clean assembleDebug</command>
     </hudson.tasks.Shell>
@@ -41,89 +41,14 @@ cd $WORKSPACE
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
-            <artifactId>facemodule2</artifactId>
-            <version>$FACEMODULE2_VERSION</version>
+            <groupId>com.nuwarobotics.lib.AI</groupId>
+            <artifactId>NuwaBrainLibrary</artifactId>
+            <version>$NuwaBrainVersion</version>
             <packaging>aar</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/facemodule2/build/outputs/aar/facemodule2-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
-            <artifactId>objectmodule</artifactId>
-            <version>$OBJECTMODULE_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/objectmodule/build/outputs/aar/objectmodule-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
-            <artifactId>facemodule3</artifactId>
-            <version>$FACEMODULE3_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/facemodule3/build/outputs/aar/facemodule3-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
-            <artifactId>app_debug</artifactId>
-            <version>$APP_VERSION</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/app/build/outputs/apk/app-debug.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
-            <artifactId>gesturemodule</artifactId>
-            <version>$GESTUREMODULE_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/gesturemodule/build/outputs/aar/gesturemodule-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera.ObjectRecModule_debug</groupId>
-            <artifactId>tensorflowmodule</artifactId>
-            <version>$TFMODULE_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/Algorithms-ObjectRecModule-debug/tfmodule/build/outputs/aar/tfmodule-debug.aar</filePath>
+              <filePath>/var/jenkins/workspace/Algorithms-NuwaBrain-debug/nuwabrainlibrary/build/outputs/aar/nuwabrainlibrary-debug.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -159,7 +84,7 @@ cd $WORKSPACE
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-Algorithms-ObjectRecModule-debug/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-Algorithms-NuwaBrain-debug/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
