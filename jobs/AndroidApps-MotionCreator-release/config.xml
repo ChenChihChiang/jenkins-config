@@ -34,7 +34,7 @@ export ANDROID_HOME
 rm -rf /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/kebbi/release/*
 cd $WORKSPACE
 chmod 755 ./gradlew
-./gradlew assembleKebbiRelease
+./gradlew assembleRelease
 cd /var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/kebbi/release/
 mv MotionCreator*release_kebbi.apk MotionCreator_release.apk
 cd /var/jenkins/workspace/AndroidApps-MotionCreator-release/signed
