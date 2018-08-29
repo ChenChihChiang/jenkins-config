@@ -53,7 +53,7 @@ mv MotionCreator*release_kebbi.apk MotionCreator_release.apk
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/VideoCall_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/AndroidApps-MotionCreator-release/app/build/outputs/apk/kebbi/release/MotionCreator_release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
