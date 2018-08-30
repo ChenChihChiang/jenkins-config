@@ -53,7 +53,7 @@ mv dannyspace*release_prodMibo.apk dannyspace_release_prod.apk
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/PhoneApps-DannySpace-release-prod/app/build/outputs/apk/dannyspace_release_prod.apk</filePath>
+              <filePath>/var/jenkins/workspace/PhoneApps-DannySpace-release-prod/app/build/outputs/apk/prodMibo/release/dannyspace_release_prod.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
