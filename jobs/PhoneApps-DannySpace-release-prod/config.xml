@@ -33,7 +33,7 @@
 export ANDROID_HOME
 rm -rf /var/jenkins/workspace/PhoneApps-DannySpace-release-prod/app/build/outputs/apk/*
 cd $WORKSPACE
-./gradlew assembleProdMiboRelease
+./gradlew clean assembleProdMiboRelease
 cd /var/jenkins/workspace/PhoneApps-DannySpace-release-prod/app/build/outputs/apk/prodMibo/release/
 mv dannyspace*release_prodMibo.apk dannyspace_release_prod.apk
 
