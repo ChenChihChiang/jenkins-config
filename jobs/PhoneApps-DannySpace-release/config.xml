@@ -34,7 +34,7 @@ export ANDROID_HOME
 rm -rf /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew assembleUatMiboRelease
-cd /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk
+cd /var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/uatMibo/release/
 mv dannyspace*release_uatMibo.apk dannyspace_release.apk
 
 #cd /var/jenkins/workspace/PhoneApps-DannySpace-release/signed
@@ -53,7 +53,7 @@ mv dannyspace*release_uatMibo.apk dannyspace_release.apk
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/dannyspace_release.apk</filePath>
+              <filePath>/var/jenkins/workspace/PhoneApps-DannySpace-release/app/build/outputs/apk/uatMibo/release/dannyspace_release.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
