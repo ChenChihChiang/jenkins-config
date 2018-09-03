@@ -267,6 +267,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[3]/jobNames/comparator"/>
         <string>NuwaCore-KiwiService-abby</string>
         <string>NuwaCore-KiwiService-debug</string>
+        <string>NuwaCore-KiwiService-kebbi_tw</string>
         <string>NuwaCore-KiwiService-release</string>
         <string>NuwaCore-KiwiService-release-upload</string>
         <string>Pre-NuwaCore-KiwiService</string>
