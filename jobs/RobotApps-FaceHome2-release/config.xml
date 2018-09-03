@@ -207,7 +207,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ke
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/app/build/outputs/apk/kebbi_jp/release/app-kebbi_tw-release-signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/app/build/outputs/apk/kebbi_tw/release/app-kebbi_tw-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
