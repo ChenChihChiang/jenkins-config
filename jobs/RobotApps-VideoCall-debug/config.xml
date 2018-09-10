@@ -34,7 +34,7 @@ export ANDROID_HOME
 rm -rf /var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk/*
 cd $WORKSPACE
 ./gradlew assembleUatMiboDebug
-cd /var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk
+cd /var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk/uatMibo/debug/
 mv VideoCall*debug.apk VideoCall_debug.apk
 </command>
     </hudson.tasks.Shell>
@@ -51,7 +51,7 @@ mv VideoCall*debug.apk VideoCall_debug.apk
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk/VideoCall_debug.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-VideoCall-debug/app/build/outputs/apk/uatMibo/debug/VideoCall_debug.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
