@@ -51,7 +51,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/app/build/outputs/apk/release/app-release-signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-abby/app/build/outputs/apk/release/app-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -66,7 +66,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/pet/build/outputs/aar/pet-release.aar</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-abby/pet/build/outputs/aar/pet-release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -81,7 +81,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-release/utility/build/outputs/aar/utility-release.aar</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-FaceHome2-abby/utility/build/outputs/aar/utility-release.aar</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
