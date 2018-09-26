@@ -10,7 +10,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <authToken>curl http://benson.lin:1ca83094b9974021aa5d6b30257e0f7f@server_host:port/job/apps_build/build?token=1ca83094b9974021aa5d6b30257e0f7f</authToken>
+  <authToken>curl http://benson.lin:1ca83094b9974021aa5d6b30257e0f7f@http://192.168.1.230:8080/job/apps_build/build?token=1ca83094b9974021aa5d6b30257e0f7f</authToken>
   <triggers>
     <hudson.triggers.TimerTrigger>
       <spec>0 0 * * *</spec>
