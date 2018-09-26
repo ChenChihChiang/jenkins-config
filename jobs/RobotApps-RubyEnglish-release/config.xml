@@ -35,7 +35,7 @@ rm -rf /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/ap
 rm -rf /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/*
 cd $WORKSPACE
 chmod 755 ./gradlew
-./gradlew assembleRelease
+./gradlew clean assembleRelease
 cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/
 mv RubyEnglish*CN*release.apk RubyEnglish_CN_release.apk
 mv RubyEnglish*JP*release.apk RubyEnglish_JP_release.apk
