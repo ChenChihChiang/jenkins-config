@@ -36,7 +36,7 @@ cd $WORKSPACE
 chmod 755 ./gradlew
 ./gradlew assembleRelease
 cd /var/jenkins/workspace/RobotApps-NuwaPlayer-release/app/build/outputs/apk/
-mv app*release.apk NuwaPlayer_danny_cn_release.apk
+mv app-release-signed.apk NuwaPlayer_danny_cn_release.apk
 cd /var/jenkins/workspace/RobotApps-NuwaPlayer-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/NuwaPlayer_danny_cn_release.apk ../app/build/outputs/apk/NuwaPlayer_danny_cn_release_signed.apk
 </command>
