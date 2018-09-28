@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/RobotApps/LiveABC.git</url>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/NuwaPlayer.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -31,18 +31,15 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-rm -rf /var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/RobotApps-NuwaPlayer-release/app/build/outputs/apk/*
 cd $WORKSPACE
 chmod 755 ./gradlew
 ./gradlew assembleRelease
-cd /var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/
-mv LiveABC*danny_cn*release.apk LiveABC_danny_cn_release.apk
-mv LiveABC*kebbi_tw*release.apk LiveABC_kebbi_tw_release.apk
-mv LiveABC*kebbi_cn*release.apk LiveABC_kebbi_cn_release.apk
-cd /var/jenkins/workspace/RobotApps-LiveABC-release/signed/
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/LiveABC_danny_cn_release.apk ../app/build/outputs/apk/LiveABC_danny_cn_signed.apk
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/LiveABC_kebbi_tw_release.apk ../app/build/outputs/apk/LiveABC_kebbi_tw_signed.apk
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/LiveABC_kebbi_cn_release.apk ../app/build/outputs/apk/LiveABC_kebbi_cn_signed.apk</command>
+cd /var/jenkins/workspace/RobotApps-NuwaPlayer-release/app/build/outputs/apk/
+mv app*release.apk NuwaPlayer_danny_cn_release.apk
+cd /var/jenkins/workspace/RobotApps-NuwaPlayer-release/signed/
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/NuwaPlayer_danny_cn_release.apk ../app/build/outputs/apk/NuwaPlayer_danny_cn_release_signed.apk
+</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -51,55 +48,13 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Li
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>liveabc-signed</artifactId>
+            <artifactId>NuwaPlayer-signed</artifactId>
             <version>$ABC_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/LiveABC_danny_cn_signed.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-      </packages>
-    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
-    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
-      <nexusInstanceId>nexus</nexusInstanceId>
-      <nexusRepositoryId>kebbi-tw</nexusRepositoryId>
-      <packages>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>liveabc-signed</artifactId>
-            <version>$ABC_VERSION</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/LiveABC_kebbi_tw_signed.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-      </packages>
-    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
-    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
-      <nexusInstanceId>nexus</nexusInstanceId>
-      <nexusRepositoryId>kebbi-cn</nexusRepositoryId>
-      <packages>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.app</groupId>
-            <artifactId>liveabc-signed</artifactId>
-            <version>$ABC_VERSION</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/LiveABC_kebbi_cn_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-NuwaPlayer-release/app/build/outputs/apk/NuwaPlayer_danny_cn_release_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
@@ -109,37 +64,6 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Li
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
-    <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-LiveABC-release-upload</childProjects>
-      <threshold>
-        <name>SUCCESS</name>
-        <ordinal>0</ordinal>
-        <color>BLUE</color>
-        <completeBuild>true</completeBuild>
-      </threshold>
-    </hudson.tasks.BuildTrigger>
-    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
-      <baseUrl></baseUrl>
-      <teamDomain></teamDomain>
-      <authToken></authToken>
-      <authTokenCredentialId></authTokenCredentialId>
-      <botUser>false</botUser>
-      <room></room>
-      <startNotification>true</startNotification>
-      <notifySuccess>true</notifySuccess>
-      <notifyAborted>true</notifyAborted>
-      <notifyNotBuilt>true</notifyNotBuilt>
-      <notifyUnstable>true</notifyUnstable>
-      <notifyRegression>true</notifyRegression>
-      <notifyFailure>true</notifyFailure>
-      <notifyBackToNormal>true</notifyBackToNormal>
-      <notifyRepeatedFailure>false</notifyRepeatedFailure>
-      <includeTestSummary>false</includeTestSummary>
-      <includeFailedTests>false</includeFailedTests>
-      <commitInfoChoice>NONE</commitInfoChoice>
-      <includeCustomMessage>false</includeCustomMessage>
-      <customMessage></customMessage>
-    </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
       <recipientList>chen.john@nuwarobotics.com,wang.daniel@nuwarobotics.com,tsai.ares@nuwarobotics.com</recipientList>
       <configuredTriggers>
