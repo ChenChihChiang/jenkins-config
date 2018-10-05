@@ -13,7 +13,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/dev</name>
+        <name>*/develop</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -29,96 +29,13 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>#rm -rf /root/.android/build-cache
-#rm -rf /var/jenkins/workspace/RobotApps-CameraService-debug/cameraservice-service/build/intermediates/bundles
-
+      <command>
 ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-cat /var/jenkins/workspace/Pre-RobotApps-CameraService-debug/env.properties
+cat /var/jenkins/workspace/Pre-RobotApps-NuwaStore-debug/env.properties
 cd $WORKSPACE
 ./gradlew clean assembleDebug</command>
     </hudson.tasks.Shell>
-    <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
-      <nexusInstanceId>nexus</nexusInstanceId>
-      <nexusRepositoryId>snapshots</nexusRepositoryId>
-      <packages>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera</groupId>
-            <artifactId>common-debug</artifactId>
-            <version>$CAMERASERVICE_COMMON_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-CameraService-debug/cameraservice-common/build/outputs/aar/cameraservice-common-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera</groupId>
-            <artifactId>module-debug</artifactId>
-            <version>$CAMERASERVICE_MODULE_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-CameraService-debug/cameraservice-module/build/outputs/aar/cameraservice-module-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera</groupId>
-            <artifactId>sdk-debug</artifactId>
-            <version>$CAMERASERVICE_SDK_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-CameraService-debug/cameraservice-sdk/build/outputs/aar/cameraservice-sdk-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera</groupId>
-            <artifactId>service-debug</artifactId>
-            <version>$CAMERASERVICE_SERVICE_VERSION</version>
-            <packaging>aar</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-CameraService-debug/cameraservice-service/build/outputs/aar/cameraservice-service-debug.aar</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-        <org.sonatype.nexus.ci.nxrm.MavenPackage>
-          <coordinate>
-            <groupId>com.nuwarobotics.service.camera</groupId>
-            <artifactId>app-debug</artifactId>
-            <version>$APP_VERSION</version>
-            <packaging>apk</packaging>
-          </coordinate>
-          <assets>
-            <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-CameraService-debug/app/build/outputs/apk/app-debug.apk</filePath>
-              <classifier></classifier>
-              <extension></extension>
-            </org.sonatype.nexus.ci.nxrm.MavenAsset>
-          </assets>
-        </org.sonatype.nexus.ci.nxrm.MavenPackage>
-      </packages>
-    </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
@@ -147,7 +64,7 @@ cd $WORKSPACE
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-CameraService-debug/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-NuwaStore-debug/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
