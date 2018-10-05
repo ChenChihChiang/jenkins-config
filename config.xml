@@ -1281,6 +1281,7 @@
         <string>Pre-RobotApps-NuwaStore-debug</string>
         <string>Pre-RobotApps-NuwaStore-release</string>
         <string>RobotApps-NuwaStore-debug</string>
+        <string>RobotApps-NuwaStore-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
