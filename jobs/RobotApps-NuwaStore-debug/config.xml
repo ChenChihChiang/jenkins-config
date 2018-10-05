@@ -42,8 +42,8 @@ cd $WORKSPACE
       <packages>
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>com.nuwarobotics.app.nuwastore.home</groupId>
-            <artifactId>nuwastore</artifactId>
+            <groupId>com.nuwarobotics.app.nuwastore</groupId>
+            <artifactId>nuwastore_debug</artifactId>
             <version>NUWASTORE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
