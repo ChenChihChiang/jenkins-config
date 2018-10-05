@@ -1279,6 +1279,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>Pre-RobotApps-NuwaStore-debug</string>
+        <string>Pre-RobotApps-NuwaStore-release</string>
         <string>RobotApps-NuwaStore-debug</string>
       </jobNames>
       <jobFilters/>
