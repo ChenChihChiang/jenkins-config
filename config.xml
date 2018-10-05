@@ -1278,6 +1278,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Pre-RobotApps-NuwaStore-debug</string>
         <string>RobotApps-NuwaStore-debug</string>
       </jobNames>
       <jobFilters/>
