@@ -1278,7 +1278,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
         <firstJob>Algorithms-FaceRecognition2-abby</firstJob>
-        <firstJobLink>job/Algorithms-FaceRecognition2-abby/</firstJobLink>
+        <firstJobLink>view/test/job/Algorithms-FaceRecognition2-abby/</firstJobLink>
       </gridBuilder>
       <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
       <buildViewTitle></buildViewTitle>
@@ -1295,19 +1295,6 @@
       <refreshFrequency>3</refreshFrequency>
       <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
     </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-    <se.diabol.jenkins.workflow.WorkflowPipelineView plugin="delivery-pipeline-plugin@1.0.3">
-      <owner class="hudson" reference="../../.."/>
-      <name>test</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <updateInterval>2</updateInterval>
-      <noOfPipelines>3</noOfPipelines>
-      <noOfColumns>1</noOfColumns>
-      <allowPipelineStart>false</allowPipelineStart>
-      <showChanges>false</showChanges>
-      <theme>default</theme>
-    </se.diabol.jenkins.workflow.WorkflowPipelineView>
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
