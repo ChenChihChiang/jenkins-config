@@ -1303,6 +1303,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[41]/jobNames/comparator"/>
+        <string>Pre-RobotApps-NuwaPlayer-release</string>
         <string>RobotApps-NuwaPlayer-release</string>
       </jobNames>
       <jobFilters/>
