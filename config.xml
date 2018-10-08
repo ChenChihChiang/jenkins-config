@@ -1192,6 +1192,7 @@
         <string>nw_kw5_userdebug_clean</string>
         <string>nw_kw5_userdebug_pack</string>
         <string>rb_kw5_user_clean</string>
+        <string>rb_kw5_user_pack</string>
       </jobNames>
       <jobFilters/>
       <columns>
