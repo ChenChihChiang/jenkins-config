@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>ssh://jk@192.168.1.29:29418/RobotApps/RubyEnglish.git</url>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/NuwaPlayer.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -39,7 +39,7 @@
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>RobotApps-RubyEnglish-release</childProjects>
+      <childProjects>RobotApps-NuwaPlayer-release</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
@@ -70,7 +70,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>chen.john@nuwarobotics.com</recipientList>
+      <recipientList>hsu.robert@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
