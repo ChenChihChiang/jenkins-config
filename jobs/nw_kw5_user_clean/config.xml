@@ -46,7 +46,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com</recipientList>
+      <recipientList>wang.daniel@nuwarobotics.com, wu.charlie@nuwarobotics.com, lin.benson@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -84,7 +84,7 @@ Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/p&gt;
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
       <attachBuildLog>false</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
-      <replyTo>wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com</replyTo>
+      <replyTo>wang.daniel@nuwarobotics.com, wu.charlie@nuwarobotics.com, lin.benson@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
