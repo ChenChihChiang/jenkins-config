@@ -1168,6 +1168,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>apps_build</string>
         <string>kc_kw5_user_clean</string>
+        <string>kc_kw5_user_pack</string>
         <string>kp_kw0_user_clean</string>
         <string>kp_kw0_user_pack</string>
         <string>nw_kw1_user_clean</string>
