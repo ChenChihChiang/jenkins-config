@@ -1336,6 +1336,7 @@
         <string>nw_kw1_firmware_motorboard_maincode</string>
         <string>nw_kw1_firmware_motorboard_microcode</string>
         <string>nw_nb1_firmware_mainboard_maincode</string>
+        <string>nw_nb1_firmware_mainboard_microcode</string>
         <string>nw_nb1_firmware_motorboard_microcode</string>
       </jobNames>
       <jobFilters/>
