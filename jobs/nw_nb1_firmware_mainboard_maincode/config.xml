@@ -14,15 +14,14 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/KW1/Firmware/Mainboard_Maincode
-PATH=&quot;/home/ron/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH&quot;
+      <command>cd /home/jk/workspace/NB1/Firmware/Mainboard_Maincode
 
 ./auto-clean-build.sh
 
 date=`date +&quot;%Y_%m_%d_%H%M&quot;`
-ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/KW1/Mainboard_Maincode/${BUILD_VERSION}/&quot;
-scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Maincode/${BUILD_VERSION}
-scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/KW1/Mainboard_Maincode/${BUILD_VERSION}</command>
+ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/NB1/Mainboard_Maincode/${BUILD_VERSION}/&quot;
+scp /home/jk/workspace/NB1/Firmware/Mainboard_Maincode/Mainboard_Maincode/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/NB1/Mainboard_Maincode/${BUILD_VERSION}
+scp /home/jk/workspace/NB1/Firmware/Mainboard_Maincode/Mainboard_Maincode/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/NB1/Mainboard_Maincode/${BUILD_VERSION}</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -49,7 +48,7 @@ scp /home/jk/workspace/KW1/Firmware/Mainboard_Maincode/balancesystem/GNUGCC/gitl
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.gordon@nuwarobotics.com</recipientList>
+      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
