@@ -84,7 +84,7 @@ Image: &lt;a href=&quot;file://192.168.1.29/build/daily_build/fw/KW1/Mainboard_M
   </publishers>
   <buildWrappers>
     <org.jvnet.hudson.tools.versionnumber.VersionNumberBuilder plugin="versionnumber@1.9">
-      <versionNumberString>${BUILD_DATE_FORMATTED, &quot;yyyyMMdd&quot;}_${BUILDS_TODAY}</versionNumberString>
+      <versionNumberString>${BUILD_DATE_FORMATTED, &quot;yyyy_MM_dd&quot;}_${BUILDS_TODAY}</versionNumberString>
       <projectStartDate>1969-12-31 16:00:00.0 UTC</projectStartDate>
       <environmentVariableName>BUILD_VERSION</environmentVariableName>
       <environmentPrefixVariable></environmentPrefixVariable>
