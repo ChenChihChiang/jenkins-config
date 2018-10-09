@@ -1329,11 +1329,16 @@
     <listView>
       <owner class="hudson" reference="../../.."/>
       <name>Firmware</name>
+      <description>Firmware build project</description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[41]/jobNames/comparator"/>
+        <string>nw_kw1_firmware_mainboard_maincode</string>
+        <string>nw_kw1_firmware_mainboard_microcode</string>
+        <string>nw_kw1_firmware_motorboard_maincode</string>
+        <string>nw_kw1_firmware_motorboard_microcode</string>
       </jobNames>
       <jobFilters/>
       <columns>
