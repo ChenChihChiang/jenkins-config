@@ -1325,7 +1325,7 @@
     <listView>
       <owner class="hudson" reference="../../.."/>
       <name>Firmware</name>
-      <description>Firmware build project</description>
+      <description>Firmware team project</description>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
