@@ -47,7 +47,7 @@ scp /home/jk/workspace/NB1/Firmware/Mainboard_Maincode/Mainboard_Maincode/GNUGCC
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com</recipientList>
+      <recipientList>liao.ron@nuwarobotics.com,wang.daniel@nuwarobotics.com,wang.charles@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
