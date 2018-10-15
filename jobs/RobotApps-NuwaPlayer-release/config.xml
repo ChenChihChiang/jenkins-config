@@ -49,7 +49,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Nu
           <coordinate>
             <groupId>com.nuwarobotics.app</groupId>
             <artifactId>NuwaPlayer-signed</artifactId>
-            <version>$ABC_VERSION</version>
+            <version>$PLAYER_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
           <assets>
