@@ -39,7 +39,7 @@ cd /var/jenkins/workspace/RobotApps-NuwaPlayer-release/app/build/outputs/apk/
 mv app-release-unsigned.apk NuwaPlayer_danny_cn_release.apk
 cd /var/jenkins/workspace/RobotApps-NuwaPlayer-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/NuwaPlayer_danny_cn_release.apk ../app/build/outputs/apk/NuwaPlayer_danny_cn_release_signed.apk
-echo $PLAYER_VERSION</command>
+</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -99,7 +99,7 @@ echo $PLAYER_VERSION</command>
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@2.1.3">
       <info>
-        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-LiveABC-release/env.properties</propertiesFilePath>
+        <propertiesFilePath>/var/jenkins/workspace/Pre-RobotApps-NuwaPlayer-release/env.properties</propertiesFilePath>
         <secureGroovyScript plugin="script-security@1.31">
           <script></script>
           <sandbox>false</sandbox>
