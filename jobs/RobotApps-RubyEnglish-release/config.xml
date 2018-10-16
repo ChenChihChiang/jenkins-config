@@ -41,11 +41,13 @@ mv RubyEnglish*CN*release.apk RubyEnglish_CN_release.apk
 mv RubyEnglish*JP*release.apk RubyEnglish_JP_release.apk
 mv RubyEnglish*TW*release.apk RubyEnglish_TW_release.apk
 mv RubyEnglish*danny*release.apk RubyEnglish_release.apk
+mv RubyEnglish*kebbi*ruby.apk RubyEnglish_Ruby_release.apk
 cd /var/jenkins/workspace/RobotApps-RubyEnglish-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_release.apk ../app/build/outputs/apk/RubyEnglish_signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_CN_release.apk ../app/build/outputs/apk/RubyEnglish_CN_signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_JP_release.apk ../app/build/outputs/apk/RubyEnglish_JP_signed.apk
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_TW_release.apk ../app/build/outputs/apk/RubyEnglish_TW_signed.apk</command>
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_TW_release.apk ../app/build/outputs/apk/RubyEnglish_TW_signed.apk
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/RubyEnglish_Ruby_release.apk ../app/build/outputs/apk/RubyEnglish_Ruby_signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
@@ -103,6 +105,21 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/Ru
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
               <filePath>/var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/RubyEnglish_TW_signed.apk</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </org.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </org.sonatype.nexus.ci.nxrm.MavenPackage>
+        <org.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.nuwarobotics.app</groupId>
+            <artifactId>rubyenglish-forRuby-signed</artifactId>
+            <version>$RUBY_VERSION</version>
+            <packaging>apk</packaging>
+          </coordinate>
+          <assets>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/RobotApps-RubyEnglish-release/app/build/outputs/apk/RubyEnglish_Ruby_signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
