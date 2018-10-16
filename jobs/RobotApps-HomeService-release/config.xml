@@ -40,10 +40,10 @@ cd $WORKSPACE
  ./gradlew clean assembleRelease
  
 cd $WORKSPACE/homeservice/build/outputs/apk/
-mv homeservice_release_danny_cnUat_* homeservice_release.apk
-mv homeservice_release_kebbi_enUat_* homeservice_kebbi_en_release.apk
-mv homeservice_release_kebbi_jpUat_* homeservice_kebbi_jp_release.apk
-mv homeservice_release_kebbi_twUat_* homeservice_kebbi_tw_release.apk
+mv danny_cn/release/homeservice_release_danny_cn* homeservice_release.apk
+mv kebbi_en/release/homeservice_release_kebbi_en* homeservice_kebbi_en_release.apk
+mv kebbi_jp/release/homeservice_release_kebbi_jp* homeservice_kebbi_jp_release.apk
+mv kebbi_tw/release/homeservice_release_kebbi_tw* homeservice_kebbi_tw_release.apk
 
 cd $WORKSPACE/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../homeservice/build/outputs/apk/homeservice_release.apk ../homeservice/build/outputs/apk/homeservice_signed.apk 
