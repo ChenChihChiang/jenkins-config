@@ -15,7 +15,6 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/nw_kw4_user/jenkins/
-git checkout kw4_jp
 ./build.sh -p1 -v3 -s3 -l3 -e4 -c -o</command>
     </hudson.tasks.Shell>
   </builders>
