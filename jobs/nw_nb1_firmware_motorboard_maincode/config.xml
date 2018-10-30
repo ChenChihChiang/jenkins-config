@@ -14,13 +14,13 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/NB1/Firmware/Mainboard_Maincode
+      <command>cd /home/jk/workspace/NB1/Firmware/Motorboard_Maincode
 
 ./auto-clean-build.sh
 
-ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/NB1/Mainboard_Maincode/${BUILD_VERSION}/&quot;
-scp /home/jk/workspace/NB1/Firmware/Mainboard_Maincode/Mainboard_Maincode/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/NB1/Mainboard_Maincode/${BUILD_VERSION}
-scp /home/jk/workspace/NB1/Firmware/Mainboard_Maincode/Mainboard_Maincode/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/NB1/Mainboard_Maincode/${BUILD_VERSION}</command>
+ssh jk@192.168.1.29 &quot;mkdir -p /build/daily_build/fw/NB1/Motorboard_Maincode/${BUILD_VERSION}/&quot;
+scp /home/jk/workspace/NB1/Firmware/Motorboard_Maincode/Motorboard_Maincode/GNUGCC/STM32F302C8Tx_* jk@192.168.1.29:/build/daily_build/fw/NB1/Motorboard_Maincode/${BUILD_VERSION}
+scp /home/jk/workspace/NB1/Firmware/Motorboard_Maincode/Motorboard_Maincode/GNUGCC/gitlog.txt jk@192.168.1.29:/build/daily_build/fw/NB1/Motorboard_Maincode/${BUILD_VERSION}</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
