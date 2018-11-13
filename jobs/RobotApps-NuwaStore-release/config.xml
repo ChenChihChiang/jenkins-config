@@ -51,7 +51,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/da
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-NuwaStore-release/app/build/outputs/apk/app-release-signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-NuwaStore-release/app/build/outputs/apk/app-danny_cn-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
