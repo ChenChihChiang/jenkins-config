@@ -19,7 +19,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/nw_kw5_userdebug/jenkins/
-./build.sh -p2 -v3 -s3 -l4 -e4 -c -o</command>
+git checkout mr3_data_build
+./build.sh -p2 -v3 -s3 -l4 -e3 -c -o -d</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
