@@ -45,7 +45,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/da
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.nuwastore</groupId>
-            <artifactId>nuwastore_signed</artifactId>
+            <artifactId>nuwastore_danny_cn_signed</artifactId>
             <version>$NUWASTORE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
@@ -66,7 +66,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/da
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.nuwastore</groupId>
-            <artifactId>nuwastore_signed</artifactId>
+            <artifactId>nuwastore_kebbi_tw_signed</artifactId>
             <version>$NUWASTORE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
