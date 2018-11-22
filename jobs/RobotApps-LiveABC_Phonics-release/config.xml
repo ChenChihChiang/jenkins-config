@@ -31,15 +31,15 @@
     <hudson.tasks.Shell>
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
-rm -rf /var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/*
+rm -rf /var/jenkins/workspace/RobotApps-LiveABCPhonics-release/app/build/outputs/apk/*
 cd $WORKSPACE
 chmod 755 ./gradlew
 ./gradlew assembleRelease
-cd /var/jenkins/workspace/RobotApps-LiveABC-release/app/build/outputs/apk/
+cd /var/jenkins/workspace/RobotApps-LiveABCPhonics-release/app/build/outputs/apk/
 mv LiveABC*danny_cn*release.apk LiveABC_danny_cn_release.apk
 mv LiveABC*kebbi_tw*release.apk LiveABC_kebbi_tw_release.apk
 mv LiveABC*kebbi_cn*release.apk LiveABC_kebbi_cn_release.apk
-cd /var/jenkins/workspace/RobotApps-LiveABC-release/signed/
+cd /var/jenkins/workspace/RobotApps-LiveABCPhonics-release/signed/
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/LiveABC_danny_cn_release.apk ../app/build/outputs/apk/LiveABCPhonics_danny_cn_signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/LiveABC_kebbi_tw_release.apk ../app/build/outputs/apk/LiveABCPhonics_kebbi_tw_signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/LiveABC_kebbi_cn_release.apk ../app/build/outputs/apk/LiveABCPhonics_kebbi_cn_signed.apk</command>
