@@ -1119,6 +1119,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>Pre-RobotApps-LiveABC-debug</string>
         <string>Pre-RobotApps-LiveABC-release</string>
+        <string>Pre-RobotApps-LiveABC_Phonics-release</string>
         <string>RobotApps-LiveABC-debug</string>
         <string>RobotApps-LiveABC-release</string>
         <string>RobotApps-LiveABC-release-upload</string>
