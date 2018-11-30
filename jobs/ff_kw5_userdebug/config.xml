@@ -14,8 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/ff_kw5_user/jenkins/
-./build.sh -p1 -v5 -s3 -l4 -e3 -c -o
+      <command>cd /home/jk/workspace/bsp/ff_kw5_userdebug/jenkins/
+./build.sh -p2 -v5 -s3 -l4 -e3 -c 
 </command>
     </hudson.tasks.Shell>
   </builders>
