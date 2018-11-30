@@ -10,17 +10,13 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers>
-    <hudson.triggers.TimerTrigger>
-      <spec>0 1 * * *</spec>
-    </hudson.triggers.TimerTrigger>
-  </triggers>
+  <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/nw_kw5_user/jenkins/
-./build.sh -p1 -v3 -s3 -l4 -e3 -c
-./build.sh -p1 -v3 -s3 -l4 -e4 -o -n -d</command>
+      <command>cd /home/jk/workspace/bsp/ff_kw5_user/jenkins/
+./build.sh -p1 -v5 -s3 -l4 -e3 -c -o
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
