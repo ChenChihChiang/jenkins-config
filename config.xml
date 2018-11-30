@@ -1167,6 +1167,7 @@
         <string>apps_build</string>
         <string>ff_kw1_user_clean</string>
         <string>ff_kw1_user_pack</string>
+        <string>ff_kw1_userdebug_clean</string>
         <string>ff_kw5_user_clean</string>
         <string>ff_kw5_user_pack</string>
         <string>ff_kw5_userdebug_clean</string>
