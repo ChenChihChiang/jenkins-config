@@ -1209,7 +1209,6 @@
         <string>rb_kw5_user_pack</string>
         <string>rb_kw5_userdebug_clean</string>
         <string>rb_kw5_userdebug_pack</string>
-        <string>roy_userdebug_pack</string>
       </jobNames>
       <jobFilters/>
       <columns>
