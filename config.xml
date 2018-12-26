@@ -1391,6 +1391,19 @@
       </columns>
       <recurse>false</recurse>
     </listView>
+    <se.diabol.jenkins.workflow.WorkflowPipelineView plugin="delivery-pipeline-plugin@1.0.3">
+      <owner class="hudson" reference="../../.."/>
+      <name>NotificationService</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <updateInterval>2</updateInterval>
+      <noOfPipelines>3</noOfPipelines>
+      <noOfColumns>1</noOfColumns>
+      <allowPipelineStart>false</allowPipelineStart>
+      <showChanges>false</showChanges>
+      <theme>default</theme>
+    </se.diabol.jenkins.workflow.WorkflowPipelineView>
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
