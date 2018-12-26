@@ -1399,6 +1399,10 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[41]/jobNames/comparator"/>
+        <string>Pre-RobotApps-NotificationService-debug</string>
+        <string>Pre-RobotApps-NotificationService-release</string>
+        <string>RobotApps-NotificationService-debug</string>
+        <string>RobotApps-NotificationService-release</string>
       </jobNames>
       <jobFilters/>
       <columns>
