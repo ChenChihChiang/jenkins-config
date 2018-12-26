@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -49,7 +50,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/ke
           </coordinate>
           <assets>
             <org.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>/var/jenkins/workspace/RobotApps-NotificationService-release/app/build/outputs/apk/NotificationService_release_signed.apk</filePath>
+              <filePath>/var/jenkins/workspace/RobotApps-NotificationService-release/app/build/outputs/apk/app-release-signed.apk</filePath>
               <classifier></classifier>
               <extension></extension>
             </org.sonatype.nexus.ci.nxrm.MavenAsset>
