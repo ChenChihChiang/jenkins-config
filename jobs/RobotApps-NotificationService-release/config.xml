@@ -44,7 +44,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
         <org.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
             <groupId>com.nuwarobotics.app.notificationservice</groupId>
-            <artifactId>notificationservice_release_signed</artifactId>
+            <artifactId>notificationservice-release-signed</artifactId>
             <version>$NOTIFICATIONSERVICE_VERSION</version>
             <packaging>apk</packaging>
           </coordinate>
