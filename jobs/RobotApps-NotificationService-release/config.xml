@@ -35,7 +35,8 @@ cat /var/jenkins/workspace/Pre-RobotApps-NotificationService-release/env.propert
 cd $WORKSPACE
 ./gradlew clean assembleRelease
 cd /var/jenkins/workspace/RobotApps-NotificationService-release/signed
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release.apk ../app/build/outputs/apk/release/apk-release-signed.apk</command>
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kebbi_tw/release/app-kebbi_tw-release.apk ../app/build/outputs/apk/app-kebbi_tw-signed.apk
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/kebbi_tw/release/app-kebbi_tw-release.apk ../app/build/outputs/apk/app-kebbi_tw-signed.apk</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
