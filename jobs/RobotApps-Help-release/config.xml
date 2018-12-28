@@ -36,7 +36,7 @@ cd $WORKSPACE
 
 cd /var/jenkins/workspace/RobotApps-Help-release/signed
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-danny_cn-release.apk ../app/build/outputs/apk/app-danny_cn-release-signed.apk
-java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_cn-release.apk ../app/build/outputs/apk/app-kebbi_cn-release-signed.apk
+# java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_cn-release.apk ../app/build/outputs/apk/app-kebbi_cn-release-signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_jp-release.apk ../app/build/outputs/apk/app-kebbi_jp-release-signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_tw-release.apk ../app/build/outputs/apk/app-kebbi_tw-release-signed.apk
 java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-kebbi_tw_kc-release.apk ../app/build/outputs/apk/app-kebbi_tw_kc-release-signed.apk
