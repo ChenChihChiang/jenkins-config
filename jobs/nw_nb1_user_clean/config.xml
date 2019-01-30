@@ -5,22 +5,21 @@
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
-  <assignedNode>jenkins-9</assignedNode>
+  <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>00 4 * * *</spec>
+      <spec>00 0 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/nw_kw5_user/jenkins/
-./build.sh -p1 -v3 -s3 -l4 -e3 -c
-./build.sh -p1 -v3 -s3 -l4 -e3 -o -n -d</command>
+      <command>cd /home/jk/workspace/bsp/msm8937_android_09_00_00
+./build.sh msm8937_64</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
