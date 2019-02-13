@@ -14,8 +14,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/msm8937_android_09_00_00
-./build.sh msm8937_64</command>
+      <command>cd /home/jk/workspace/bsp/nw_nb1
+
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
