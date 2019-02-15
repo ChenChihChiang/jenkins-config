@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
-  <assignedNode>jenkins-9</assignedNode>
+  <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -14,8 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/Rk3288_userdebug/
-./auto-clean-build.sh</command>
+      <command>cd /nuwa_disk2/benson/tmp
+echo &quot;done&quot; &gt; alan.txt</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -23,7 +23,7 @@
       <recipientList>chang.alan@nuwarobotics.com</recipientList>
       <contentType>text/html</contentType>
       <defaultSubject>[DailyBuild] $DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>${JELLY_SCRIPT,template=&quot;build_log.jelly&quot;}</defaultContent>
+      <defaultContent>${FILE,path=&quot;/nuwa_disk2/benson/tmp/build_log.html&quot;}</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
