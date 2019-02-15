@@ -68,11 +68,13 @@
       </configuredTriggers>
       <contentType>text/html</contentType>
       <defaultSubject>[Daily_Build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
-      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+      <defaultContent>&lt;p&gt;Dear all,&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;log: $BUILD_URL&lt;/p&gt;
+&lt;p&gt;The details as follow:&lt;/p&gt;
+&lt;p&gt;$BUILD_URL&lt;/p&gt;
+
 ${FILE,path=&quot;/nuwa_disk2/benson/tmp/build_log.html&quot;}
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
