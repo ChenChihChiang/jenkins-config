@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
-  <assignedNode>jenkins-239</assignedNode>
+  <assignedNode>jenkins-9</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -14,8 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /nuwa_disk2/benson/tmp
-echo &quot;done&quot; &gt; alan.txt</command>
+      <command>cd /home/jk/Rk3288_userdebug/
+./auto-clean-build.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -26,25 +26,21 @@ echo &quot;done&quot; &gt; alan.txt</command>
     </hudson.tasks.Mailer>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
       <recipientList>chang.alan@nuwarobotics.com</recipientList>
-      <configuredTriggers>
-        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
-          <email>
-            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
-            <body>$PROJECT_DEFAULT_CONTENT</body>
-            <recipientProviders>
-              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
-            </recipientProviders>
-            <attachmentsPattern></attachmentsPattern>
-            <attachBuildLog>false</attachBuildLog>
-            <compressBuildLog>false</compressBuildLog>
-            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
-            <contentType>project</contentType>
-          </email>
-        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
-      </configuredTriggers>
       <contentType>text/html</contentType>
       <defaultSubject>[DailyBuild] $DEFAULT_SUBJECT</defaultSubject>
-      <defaultContent>${FILE,path=&quot;/nuwa_disk2/benson/tmp/build_log.html&quot;}</defaultContent>
+      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;log: $BUILD_URL&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#95a5a6&quot;&gt;&lt;em&gt;If you have any further problem, please do not hesitate to contact me.&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#3498db&quot;&gt;---&lt;br /&gt;
+Daniel Wang / 王怡程&lt;br /&gt;
+香港商女媧創造(股)公司台灣分公司&lt;br /&gt;
+10487 台北市中山區南京東路三段101號9樓&lt;br /&gt;
+9F., No.101, Sec. 3, Nanjing E. Rd.,&lt;br /&gt;
+Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/p&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
