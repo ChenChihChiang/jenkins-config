@@ -1427,6 +1427,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[41]/jobNames/comparator"/>
+        <string>nw_nb1_All_userdebug_clean</string>
         <string>nw_nb1_user_clean</string>
         <string>nw_nb1_userdebug_clean</string>
       </jobNames>
