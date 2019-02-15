@@ -67,7 +67,7 @@
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
       <contentType>text/html</contentType>
-      <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
+      <defaultSubject>[Daily_Build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
       <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
