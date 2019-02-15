@@ -18,8 +18,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/nw_nb1
+      <command>cd /home/jk/workspace/bsp/script
 ./get_repo.sh
+NB1.sh
 
 
 </command>
@@ -75,7 +76,7 @@
 &lt;p&gt;The details as follow:&lt;/p&gt;
 &lt;p&gt;$BUILD_URL&lt;/p&gt;
 
-${FILE,path=&quot;/nuwa_disk2/benson/tmp/build_log.html&quot;}
+${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
