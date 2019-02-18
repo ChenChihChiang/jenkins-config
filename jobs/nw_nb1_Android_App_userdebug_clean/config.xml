@@ -15,7 +15,6 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-source ./setenv.sh
 ./get_repo.sh
 NB1.sh
 
