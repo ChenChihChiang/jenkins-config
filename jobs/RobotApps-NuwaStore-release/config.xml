@@ -32,6 +32,7 @@
       <command>ANDROID_HOME=/usr/local/Android-SDK
 export ANDROID_HOME
 cat /var/jenkins/workspace/Pre-RobotApps-NuwaStore-release/env.properties
+rm -rf /var/jenkins/workspace/RobotApps-NuwaStore-release/app/build/*
 cd $WORKSPACE
 ./gradlew clean assembleRelease
 cd /var/jenkins/workspace/RobotApps-NuwaStore-release/signed
