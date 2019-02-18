@@ -15,6 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
+./get_repo.sh -x 31200006_BSP
 ./NB1.sh</command>
     </hudson.tasks.Shell>
   </builders>
