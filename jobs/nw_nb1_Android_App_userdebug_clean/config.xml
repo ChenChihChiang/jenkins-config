@@ -15,10 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-NB1.sh
-
-
-</command>
+./NB1.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
