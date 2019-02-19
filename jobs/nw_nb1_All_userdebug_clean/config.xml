@@ -20,7 +20,7 @@
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
 ./get_repo.sh
-NB1.sh
+./NB1.sh
 
 
 </command>
