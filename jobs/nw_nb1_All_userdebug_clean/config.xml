@@ -19,7 +19,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./get_repo.sh -c
+./get_repo.sh -c noremove
 ./NB1.sh
 
 
