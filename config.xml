@@ -1428,6 +1428,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView[41]/jobNames/comparator"/>
         <string>nw_nb1_All_userdebug_clean</string>
+        <string>nw_nb1_All_userdebug_pack</string>
         <string>nw_nb1_Android_App_userdebug_clean</string>
         <string>nw_nb1_Subsystem_clean</string>
         <string>nw_nb1_user_clean</string>
