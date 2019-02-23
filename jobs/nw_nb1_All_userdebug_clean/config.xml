@@ -19,8 +19,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./get_repo.sh -c noremove
-./NB1.sh
+./NB1.sh -c noremove
+
 
 
 </command>
