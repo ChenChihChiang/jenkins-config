@@ -21,8 +21,6 @@
       <command>cd /home/jk/workspace/bsp/script
 ./NB1.sh -c noremove
 
-
-
 </command>
     </hudson.tasks.Shell>
   </builders>
