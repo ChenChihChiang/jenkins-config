@@ -45,7 +45,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com</recipientList>
+      <recipientList></recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -78,7 +78,7 @@ ${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
       <attachBuildLog>false</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
-      <replyTo>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com</replyTo>
+      <replyTo></replyTo>
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
