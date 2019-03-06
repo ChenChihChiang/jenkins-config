@@ -19,7 +19,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh -c noremove -o -p1 
+./NB1.sh -c noremove -o
 
 </command>
     </hudson.tasks.Shell>
