@@ -6,11 +6,16 @@
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <hudson.model.StringParameterDefinition>
-          <name>MASTER_VERSION</name>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
           <description></description>
-          <defaultValue>1</defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>user</string>
+              <string>userdebug</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
