@@ -40,7 +40,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh -n -p1
+./NB1.sh -p1
 
 
 </command>
