@@ -44,7 +44,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh -c noremove -o -p $BUILD_TYPE -v $BUILD_VENDOR
+./NB1.sh -c noremove -o -p user -v nb1_10000
 
 </command>
     </hudson.tasks.Shell>
