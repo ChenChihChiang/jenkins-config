@@ -50,7 +50,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh -n -p$BUILD_TYPE -v$BUILD_VENDOR
+./NB1.sh -n -p $BUILD_TYPE -v $BUILD_VENDOR
 
 
 </command>
