@@ -37,14 +37,14 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>13 10 * * *</spec>
+      <spec>00 0 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh -p $BUILD_TYPE -v $BUILD_VENDOR
+./NB1.sh -c noremove -o -p $BUILD_TYPE -v $BUILD_VENDOR
 
 </command>
     </hudson.tasks.Shell>
