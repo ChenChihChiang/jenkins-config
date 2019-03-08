@@ -36,11 +36,11 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>-n</name>
+        <hudson.model.BooleanParameterDefinition>
+          <name>n</name>
           <description></description>
-          <defaultValue></defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
