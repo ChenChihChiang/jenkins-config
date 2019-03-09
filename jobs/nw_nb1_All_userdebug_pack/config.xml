@@ -46,6 +46,7 @@
           <value>-n, -o</value>
           <defaultValue>-n</defaultValue>
           <multiSelectDelimiter> </multiSelectDelimiter>
+          <descriptionPropertyValue></descriptionPropertyValue>
           <projectName>nw_nb1_All_userdebug_pack</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
