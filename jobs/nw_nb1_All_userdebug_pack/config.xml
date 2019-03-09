@@ -41,9 +41,9 @@
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>2</visibleItemCount>
+          <visibleItemCount>3</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>ssn aao</value>
+          <value>ssn aao 22</value>
           <defaultValue>-n</defaultValue>
           <multiSelectDelimiter> </multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_pack</projectName>
