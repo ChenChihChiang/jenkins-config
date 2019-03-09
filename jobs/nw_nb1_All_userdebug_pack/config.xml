@@ -36,6 +36,18 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>$BASE_COMMAND</name>
+          <description>default command</description>
+          <quoteValue>true</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>2</visibleItemCount>
+          <type>PT_CHECKBOX</type>
+          <value>-n -o</value>
+          <defaultValue></defaultValue>
+          <multiSelectDelimiter> </multiSelectDelimiter>
+          <projectName>nw_nb1_All_userdebug_pack</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -50,7 +62,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh -n -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
+./NB1.sh $BASE_COMMAND -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
 
 
 </command>
