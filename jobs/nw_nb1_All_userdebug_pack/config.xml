@@ -43,9 +43,9 @@
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
           <visibleItemCount>2</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>-n,-o</value>
+          <value>-n, -o</value>
           <defaultValue>-n</defaultValue>
-          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <multiSelectDelimiter> </multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_pack</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
