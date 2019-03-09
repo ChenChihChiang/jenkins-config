@@ -45,7 +45,7 @@
           <type>PT_CHECKBOX</type>
           <value>ssn aao 22</value>
           <defaultValue>-n</defaultValue>
-          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <multiSelectDelimiter>&apos;</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_pack</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
