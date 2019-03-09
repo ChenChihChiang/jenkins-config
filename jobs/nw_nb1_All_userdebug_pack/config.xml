@@ -37,7 +37,7 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
-          <name>$BASE_COMMAND</name>
+          <name>BASE_COMMAND</name>
           <description>default command</description>
           <quoteValue>true</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
