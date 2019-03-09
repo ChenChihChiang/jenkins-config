@@ -37,13 +37,13 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
-          <name>BASE_COMMAND</name>
+          <name>NO_DOWNLOAD</name>
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
           <visibleItemCount>1</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>ssn aao 22</value>
+          <value>-n</value>
           <defaultValue>-n</defaultValue>
           <multiSelectDelimiter> </multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_pack</projectName>
@@ -62,7 +62,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh $BASE_COMMAND -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
+./NB1.sh $NO_DOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
 
 
 </command>
