@@ -42,7 +42,7 @@
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
           <visibleItemCount>2</visibleItemCount>
-          <type>PT_MULTI_SELECT</type>
+          <type>PT_CHECKBOX</type>
           <value>-n -o</value>
           <defaultValue></defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
