@@ -48,6 +48,16 @@
           <multiSelectDelimiter> </multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_pack</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>OTA</name>
+          <description></description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>1</visibleItemCount>
+          <type>PT_CHECKBOX</type>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>nw_nb1_All_userdebug_pack</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
