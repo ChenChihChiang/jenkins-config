@@ -41,8 +41,8 @@
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>3</visibleItemCount>
-          <type>PT_MULTI_SELECT</type>
+          <visibleItemCount>1</visibleItemCount>
+          <type>PT_CHECKBOX</type>
           <value>ssn aao 22</value>
           <defaultValue>-n</defaultValue>
           <multiSelectDelimiter> </multiSelectDelimiter>
