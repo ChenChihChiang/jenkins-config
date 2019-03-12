@@ -13,6 +13,7 @@
             <a class="string-array">
               <string>userdebug</string>
               <string>user</string>
+              <string>eng</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
