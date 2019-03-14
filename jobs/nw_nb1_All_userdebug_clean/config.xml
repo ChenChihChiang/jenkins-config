@@ -34,7 +34,7 @@
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
           <visibleItemCount>4</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>-c, -c noremove, -n, -o,</value>
+          <value>-c , -c noremove , -n , -o</value>
           <defaultValue>-c noremove -o</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_clean</projectName>
