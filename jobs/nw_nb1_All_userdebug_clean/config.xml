@@ -63,7 +63,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh $BASE_COMMAND -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR $test
+./NB1.sh $BASE_COMMAND -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
 
 </command>
     </hudson.tasks.Shell>
