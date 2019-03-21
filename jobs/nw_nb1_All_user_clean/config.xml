@@ -11,8 +11,8 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>userdebug</string>
               <string>user</string>
+              <string>userdebug</string>
               <string>eng</string>
             </a>
           </choices>
@@ -37,7 +37,7 @@
           <value>-c clean, -c noremove</value>
           <defaultValue>-c noremove</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_nb1_All_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_OTA</name>
@@ -49,7 +49,7 @@
           <value>-o</value>
           <defaultValue>-o</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_nb1_All_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_NODOWNLOAD</name>
@@ -60,7 +60,7 @@
           <type>PT_CHECKBOX</type>
           <value>-n</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_nb1_All_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -73,15 +73,15 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>20 0 * * *</spec>
+      <spec>14 18 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/script
-./NB1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
-
+      <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
+pwd
+echo 123
 </command>
     </hudson.tasks.Shell>
   </builders>
