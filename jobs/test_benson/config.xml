@@ -3,52 +3,13 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>BUILD_TYPE</name>
-          <description></description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>userdebug</string>
-              <string>user</string>
-              <string>eng</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>BUILD_VENDOR</name>
-          <description></description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>nb1_10000</string>
-              <string>nb1_10F00</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
-          <name>BASE_COMMAND</name>
-          <description></description>
-          <quoteValue>false</quoteValue>
-          <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>4</visibleItemCount>
-          <type>PT_CHECKBOX</type>
-          <value>-c clean, -c noremove, -o, -n</value>
-          <defaultValue>-c noremove -o</defaultValue>
-          <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>test_benson</projectName>
-        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-  </properties>
+  <properties/>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <authToken>1ca83094b9974021aa5d6b30257e0f7f</authToken>
   <triggers>
     <hudson.triggers.TimerTrigger>
       <spec>30 0 * * *</spec>
@@ -58,7 +19,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh $BASE_COMMAND -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
+
 
 </command>
     </hudson.tasks.Shell>
