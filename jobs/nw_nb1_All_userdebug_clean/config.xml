@@ -28,7 +28,7 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
-          <name>BASE_COMMAND</name>
+          <name>BUILD_CLEAN</name>
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
@@ -80,7 +80,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./NB1.sh $BASE_COMMAND $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
+./NB1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
 
 </command>
     </hudson.tasks.Shell>
