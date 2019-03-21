@@ -134,16 +134,13 @@ mv out out_userdebug
 
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;The details as follow:&lt;/p&gt;
-&lt;p&gt;$BUILD_URL&lt;/p&gt;
-
-${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
+&lt;p&gt;Will build nw_nb1_All_userdebug_clean_master&lt;/p&gt;
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>true</attachBuildLog>
-      <compressBuildLog>true</compressBuildLog>
+      <attachBuildLog>false</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
       <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
