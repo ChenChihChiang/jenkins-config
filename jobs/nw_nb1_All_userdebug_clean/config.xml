@@ -32,10 +32,10 @@
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>4</visibleItemCount>
+          <visibleItemCount>2</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>-c clean, -c noremove, -o, -n</value>
-          <defaultValue>-c noremove -o</defaultValue>
+          <value>-c clean, -c noremove</value>
+          <defaultValue>-c noremove</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
