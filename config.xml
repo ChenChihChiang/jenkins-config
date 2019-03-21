@@ -1434,7 +1434,6 @@
         <string>nw_nb1_Subsystem_clean</string>
         <string>nw_nb1_user_clean</string>
         <string>nw_nb1_userdebug_clean</string>
-        <string>test_benson</string>
       </jobNames>
       <jobFilters/>
       <columns>
