@@ -3,7 +3,21 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>user</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
@@ -81,14 +95,7 @@
       <configs>
         <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
           <configs>
-            <hudson.plugins.parameterizedtrigger.BooleanParameters>
-              <configs>
-                <hudson.plugins.parameterizedtrigger.BooleanParameterConfig>
-                  <name>test</name>
-                  <value>true</value>
-                </hudson.plugins.parameterizedtrigger.BooleanParameterConfig>
-              </configs>
-            </hudson.plugins.parameterizedtrigger.BooleanParameters>
+            <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
           </configs>
           <projects>nw_nb1_All_userdebug_clean</projects>
           <condition>SUCCESS</condition>
