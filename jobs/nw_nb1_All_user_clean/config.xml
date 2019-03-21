@@ -139,7 +139,7 @@ mv out out_userdebug
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>false</attachBuildLog>
+      <attachBuildLog>true</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
       <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
