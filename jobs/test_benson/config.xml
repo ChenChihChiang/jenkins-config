@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>userdebug</string>
+              <string>user</string>
+              <string>eng</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_VENDOR</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>nb1_10000</string>
+              <string>nb1_10F00</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>BASE_COMMAND</name>
+          <description></description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>4</visibleItemCount>
+          <type>PT_CHECKBOX</type>
+          <value>-c clean, -c noremove, -o, -n</value>
+          <defaultValue>-c noremove -o</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>nw_nb1_All_userdebug_clean</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>jenkins-239</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <authToken>1ca83094b9974021aa5d6b30257e0f7f</authToken>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>30 0 * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /home/jk/workspace/bsp/script
+./NB1.sh $BASE_COMMAND -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
+
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
+      <baseUrl></baseUrl>
+      <teamDomain></teamDomain>
+      <authToken></authToken>
+      <authTokenCredentialId></authTokenCredentialId>
+      <botUser>false</botUser>
+      <room></room>
+      <startNotification>true</startNotification>
+      <notifySuccess>true</notifySuccess>
+      <notifyAborted>true</notifyAborted>
+      <notifyNotBuilt>true</notifyNotBuilt>
+      <notifyUnstable>true</notifyUnstable>
+      <notifyRegression>true</notifyRegression>
+      <notifyFailure>true</notifyFailure>
+      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyRepeatedFailure>false</notifyRepeatedFailure>
+      <includeTestSummary>false</includeTestSummary>
+      <includeFailedTests>false</includeFailedTests>
+      <commitInfoChoice>NONE</commitInfoChoice>
+      <includeCustomMessage>false</includeCustomMessage>
+      <customMessage></customMessage>
+    </jenkins.plugins.slack.SlackNotifier>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
+      <recipientList>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com, liu.wenyang@nuwarobotics.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>text/html</contentType>
+      <defaultSubject>[Daily_Build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
+      <defaultContent>&lt;p&gt;Dear all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The details as follow:&lt;/p&gt;
+&lt;p&gt;$BUILD_URL&lt;/p&gt;
+
+${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
+</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>true</attachBuildLog>
+      <compressBuildLog>true</compressBuildLog>
+      <replyTo>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com, liu.wenyang@nuwarobotics.com</replyTo>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
