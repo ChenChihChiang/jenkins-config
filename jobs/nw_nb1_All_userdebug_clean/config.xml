@@ -39,6 +39,11 @@
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>test</name>
+          <description></description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
