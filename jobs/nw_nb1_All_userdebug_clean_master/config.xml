@@ -132,7 +132,9 @@
 
 &lt;p&gt;Project &lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; is build &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;BUILD_TYPE is $BUILD_TYPE&lt;/p&gt;
+&lt;p&gt;BUILD_TYPE : $BUILD_TYPE&lt;/p&gt;
+
+&lt;p&gt;BUILD_VENDOR : $BUILD_VENDOR&lt;/p&gt;
 
 &lt;p&gt;The details as follow:&lt;/p&gt;
 &lt;p&gt;$BUILD_URL&lt;/p&gt;
