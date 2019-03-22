@@ -35,7 +35,7 @@
           <visibleItemCount>2</visibleItemCount>
           <type>PT_CHECKBOX</type>
           <value>-c clean, -c noremove</value>
-          <defaultValue>-c noremove</defaultValue>
+          <defaultValue></defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
