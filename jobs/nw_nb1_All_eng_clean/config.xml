@@ -147,7 +147,8 @@ mv vendor/nuwa ../</command>
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
-              <properties>BUILD_CLEAN=</properties>
+              <properties>BUILD_CLEAN=
+BUILD_OTA=</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
           <projects>nw_nb1_All_userdebug_clean_master</projects>
