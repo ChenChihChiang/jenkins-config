@@ -5,84 +5,10 @@
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
-    <roleMap type="projectRoles"/>
-    <roleMap type="globalRoles">
-      <role name="admin" pattern=".*">
-        <permissions>
-          <permission>hudson.model.View.Delete</permission>
-          <permission>hudson.model.Computer.Connect</permission>
-          <permission>hudson.model.Run.Delete</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains</permission>
-          <permission>hudson.model.Computer.Create</permission>
-          <permission>hudson.model.View.Configure</permission>
-          <permission>org.jfrog.hudson.ArtifactoryPlugin.PushToBintray</permission>
-          <permission>hudson.model.Computer.Build</permission>
-          <permission>hudson.model.Item.Configure</permission>
-          <permission>hudson.model.Hudson.Administer</permission>
-          <permission>hudson.model.Item.Cancel</permission>
-          <permission>hudson.model.Item.Read</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
-          <permission>hudson.model.Computer.Delete</permission>
-          <permission>hudson.model.Item.Build</permission>
-          <permission>hudson.scm.SCM.Tag</permission>
-          <permission>hudson.model.Item.Move</permission>
-          <permission>hudson.model.Item.Discover</permission>
-          <permission>hudson.model.Hudson.Read</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update</permission>
-          <permission>hudson.model.Item.Create</permission>
-          <permission>org.jfrog.hudson.ArtifactoryPlugin.Release</permission>
-          <permission>hudson.model.Item.Workspace</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete</permission>
-          <permission>hudson.model.Computer.Provision</permission>
-          <permission>hudson.model.Run.Replay</permission>
-          <permission>hudson.model.View.Read</permission>
-          <permission>hudson.model.View.Create</permission>
-          <permission>hudson.model.Item.Delete</permission>
-          <permission>org.jfrog.hudson.ArtifactoryPlugin.Promote</permission>
-          <permission>hudson.model.Computer.Configure</permission>
-          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create</permission>
-          <permission>hudson.model.Computer.Disconnect</permission>
-          <permission>hudson.model.Run.Update</permission>
-        </permissions>
-        <assignedSIDs>
-          <sid>daniel.chang</sid>
-          <sid>georgia.wang</sid>
-          <sid>leo.tsai</sid>
-          <sid>charleswang</sid>
-          <sid>roy.wang</sid>
-          <sid>Hc.Lai</sid>
-          <sid>admin</sid>
-          <sid>chung.lion</sid>
-          <sid>daniel.huang</sid>
-          <sid>wj.lee</sid>
-          <sid>ares.tsai</sid>
-          <sid>benson.lin</sid>
-          <sid>keith.wang</sid>
-          <sid>tommy.yu</sid>
-          <sid>founder.chang</sid>
-          <sid>joshua.sun</sid>
-          <sid>Alan.Chang</sid>
-          <sid>leon.liu</sid>
-          <sid>ron.liao</sid>
-          <sid>calvin.su</sid>
-          <sid>mao.uno</sid>
-          <sid>kevin.tsao</sid>
-          <sid>wilson.ho</sid>
-          <sid>tim.weng</sid>
-          <sid>antony.yeh</sid>
-          <sid>robert.hsu</sid>
-          <sid>Will.Wu</sid>
-          <sid>james.chen</sid>
-          <sid>pao.chueh</sid>
-          <sid>bella.wu</sid>
-          <sid>chiang.mickey</sid>
-          <sid>john.chen</sid>
-          <sid>daniel.wang</sid>
-        </assignedSIDs>
-      </role>
-    </roleMap>
-    <roleMap type="slaveRoles"/>
+  <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.View.Read:anonymous</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
