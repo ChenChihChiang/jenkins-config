@@ -24,6 +24,7 @@
             <a class="string-array">
               <string>nb1_10000</string>
               <string>nb1_10F00</string>
+              <string>nb1_1WLCN</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
