@@ -79,8 +79,10 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-mv out out_user
-mv vendor/nuwa/Nuwa* ../</command>
+echo &quot;mv out out_user&quot;
+echo &quot;mv vendor/nuwa/Nuwa* ../&quot;
+mv out out_eng
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
