@@ -72,15 +72,15 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>20 0 * * *</spec>
+      <spec>57 15 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-echo &quot;mv out out_user&quot;
-echo &quot;mv vendor/nuwa/Nuwa* ../&quot;
+echo &quot;#mv out out_user&quot;
+echo &quot;#mv vendor/nuwa/Nuwa* ../&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
