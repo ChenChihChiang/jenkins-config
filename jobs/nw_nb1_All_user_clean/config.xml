@@ -79,7 +79,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-mv out out_userdebug
+echo &quot;#mv out out_userdebug&quot;
+mv out out_eng
 </command>
     </hudson.tasks.Shell>
   </builders>
