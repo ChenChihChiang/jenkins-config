@@ -80,6 +80,7 @@
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
 echo &quot;#mv out out_userdebug&quot;
+git checkout vendor/nuwa/NuwaData/
 mv out out_eng
 ~/bin/repo sync -j16
 </command>
