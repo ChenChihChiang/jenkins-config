@@ -76,7 +76,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-</command>
+mv out/target/product/nb1/product.img out/target/product/nb1/product_10000.img</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
