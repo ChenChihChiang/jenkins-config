@@ -81,7 +81,7 @@
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
 echo &quot;#mv out out_userdebug&quot;
 mv out out_eng
-~/bin/repo sync -j16
+echo &quot;#~/bin/repo sync -j16&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
