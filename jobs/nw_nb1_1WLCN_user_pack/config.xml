@@ -80,7 +80,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-mv out/target/product/nb1/product.img out/target/product/nb1/product_10000.img</command>
+mv out out_user_10000</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
