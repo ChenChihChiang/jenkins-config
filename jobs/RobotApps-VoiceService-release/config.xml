@@ -61,6 +61,12 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
+      <regexp></regexp>
+      <regexpForFailed></regexpForFailed>
+      <description>&lt;a href=&quot;http://192.168.1.239/nuwa/NB1/${BUILD_NUMBER}/build_log.html​&quot;&gt;Report&lt;/a&gt;</description>
+      <setForMatrix>false</setForMatrix>
+    </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
       <baseUrl></baseUrl>
       <teamDomain></teamDomain>
