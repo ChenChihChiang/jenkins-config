@@ -86,7 +86,7 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
       <regexp></regexp>
       <regexpForFailed></regexpForFailed>
-      <description>http://192.168.1.239/nuwa/NB1/${BUILD_NUMBER}/build_log.html​</description>
+      <description>&quot;http://192.168.1.239/nuwa/NB1/${BUILD_NUMBER}/build_log.html​&quot;</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
   </publishers>
