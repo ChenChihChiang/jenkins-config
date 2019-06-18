@@ -78,8 +78,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-#./NB1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
-./NB1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j 99999 -p $BUILD_TYPE -v $BUILD_VENDOR
+./NB1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR
 
 </command>
     </hudson.tasks.Shell>
