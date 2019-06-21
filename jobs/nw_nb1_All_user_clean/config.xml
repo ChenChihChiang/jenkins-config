@@ -72,16 +72,15 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>00 3 * * *</spec>
+      <spec>00 9 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-echo &quot;#mv out out_userdebug&quot;
-mv out out_eng
-echo &quot;#~/bin/repo sync -j16&quot;
+#mv out out_eng
+mv out out_user_1WLCN
 </command>
     </hudson.tasks.Shell>
   </builders>
