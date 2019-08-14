@@ -27,6 +27,7 @@
               <string>nb1_1WLCN</string>
               <string>nb1_100CN</string>
               <string>nb1_100JP</string>
+              <string>nb1_100WW</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
