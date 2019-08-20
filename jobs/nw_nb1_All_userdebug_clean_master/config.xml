@@ -71,9 +71,9 @@
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>1</visibleItemCount>
+          <visibleItemCount>3</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>-m</value>
+          <value>-m 31200006_10000_MP.xml, -m 31200006_10000_MR1.xml, -m 31200006_10000_MR2.xml, </value>
           <defaultValue></defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_clean_master</projectName>
