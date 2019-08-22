@@ -146,7 +146,7 @@
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
-              <properties>BUILD_CLEAN=
+              <properties>BUILD_CLEAN=-c noremove
 BUILD_MP=-m 31200006_10000_MP</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
