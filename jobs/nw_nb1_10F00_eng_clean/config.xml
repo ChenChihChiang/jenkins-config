@@ -72,14 +72,15 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>15 0 * * *</spec>
+      <spec>00 15 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-</command>
+mv out out_user_100WW_
+#rm -rf vendor/nuwa/NuwaData</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -146,7 +147,7 @@
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
-              <properties>BUILD_CLEAN=-c noremove
+              <properties>BUILD_CLEAN=
 BUILD_OTA=</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
