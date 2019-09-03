@@ -159,6 +159,7 @@
 
 ##${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
 
+benson test
 #@
 ${FILE,path=&quot;/home/jk/workspace/bsp/Daily/nuwa_report_log/NB1/${BUILD_NUMBER}/build_log.html&quot;}
 </defaultContent>
