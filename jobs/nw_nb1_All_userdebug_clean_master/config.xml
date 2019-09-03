@@ -157,7 +157,8 @@
 &lt;p&gt;The details as follow:&lt;/p&gt;
 &lt;p&gt;$BUILD_URL&lt;/p&gt;
 
-${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
+##${FILE,path=&quot;/home/jk/workspace/bsp/Daily/NB1/build_log.html&quot;}
+${FILE,path=&quot;/home/jk/workspace/bsp/Daily/nuwa_report_log/NB1/${BUILD_NUMBER}/build_log.htm&quot;}
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
