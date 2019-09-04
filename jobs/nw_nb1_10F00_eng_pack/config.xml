@@ -79,8 +79,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-mv out out_user_100WW_
-#rm -rf vendor/nuwa/NuwaData</command>
+mv out out_user_100CN
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
