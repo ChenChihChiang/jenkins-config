@@ -82,7 +82,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-mv out out_user_100CN</command>
+mv out out_user_1KPTW</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
