@@ -1367,6 +1367,7 @@
         <string>nw_nb1_1WDTW_user_pack</string>
         <string>nw_nb1_1WLCN_user_pack</string>
         <string>nw_nb1_All_userdebug_clean_master</string>
+        <string>nw_nb1_generate_diff_ota</string>
       </jobNames>
       <jobFilters/>
       <columns>
