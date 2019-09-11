@@ -41,7 +41,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command></command>
+      <command>cd /home/jk/workspace/bsp/script
+./generate_diff_ota.sh $OLD_OTA $NEW_OTA</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
