@@ -8,12 +8,12 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>OLD_OTA</name>
+          <name>SOURCE_OTA_VERSION</name>
           <description>source ota version</description>
           <defaultValue>1395</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>NEW_OTA</name>
+          <name>TARGET_OTA_VERSION</name>
           <description>target ota version</description>
           <defaultValue>1424</defaultValue>
         </hudson.model.StringParameterDefinition>
@@ -31,7 +31,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./generate_diff_ota.sh $OLD_OTA $NEW_OTA</command>
+./generate_diff_ota.sh $SOURCE_OTA_VERSION $TARGET_OTA_VERSION</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
