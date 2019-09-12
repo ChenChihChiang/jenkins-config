@@ -57,7 +57,7 @@ please input full or diff</description>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./generate_diff_ota.sh -a $OTA_AFTER_VERSION -b $OTA_BEFORE_VERSION -l $OTA_LANG -m $OTA_MESSAGE -s $OTA_SKU -t $OTA_TYPE -u $OTA_UI_TITLE
+./generate_diff_ota.sh -a &quot;$OTA_AFTER_VERSION&quot; -b &quot;$OTA_BEFORE_VERSION&quot; -l &quot;$OTA_LANG&quot; -m &quot;$OTA_MESSAGE&quot; -s &quot;$OTA_SKU&quot; -t &quot;$OTA_TYPE&quot; -u &quot;$OTA_UI_TITLE&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
