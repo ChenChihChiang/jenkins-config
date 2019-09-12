@@ -25,7 +25,7 @@
         <hudson.model.StringParameterDefinition>
           <name>OTA_MESSAGE</name>
           <description>description</description>
-          <defaultValue>1.1429.10000.3 update to 1.1442.10000.3</defaultValue>
+          <defaultValue>The purpose is from 1.1429.10000.3 update to 1.1442.10000.3</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_SKU</name>
@@ -41,7 +41,7 @@ please input full or diff</description>
         <hudson.model.StringParameterDefinition>
           <name>OTA_UI_TITLE</name>
           <description>title message</description>
-          <defaultValue>software update</defaultValue>
+          <defaultValue>Software update for</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
