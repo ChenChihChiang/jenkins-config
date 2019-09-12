@@ -8,12 +8,12 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>SOURCE_OTA_VERSION</name>
+          <name>OTA_BEFORE_VERSION</name>
           <description>source ota version</description>
           <defaultValue>1395</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>TARGET_OTA_VERSION</name>
+          <name>OTA_AFTER_VERSION</name>
           <description>target ota version</description>
           <defaultValue>1424</defaultValue>
         </hudson.model.StringParameterDefinition>
