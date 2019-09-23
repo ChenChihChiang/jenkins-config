@@ -33,7 +33,7 @@
 export ANDROID_HOME
 cat /var/jenkins/workspace/Pre-NuwaCore-KiwiSDK-debug/env.properties
 cd $WORKSPACE
-./gradlew clean assembleDebug</command>
+./gradlew clean assemblenuwaDebug</command>
     </hudson.tasks.Shell>
     <org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.3.20170728-122322.902d97e">
       <nexusInstanceId>nexus</nexusInstanceId>
