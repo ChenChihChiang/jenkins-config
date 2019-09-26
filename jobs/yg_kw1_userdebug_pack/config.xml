@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>jenkins-9</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /home/jk/workspace/bsp/nw_kw1_userdebug/jenkins/
+./build.sh -p2 -v3 -s2 -l1 -e3 -d -o -n</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
+      <baseUrl></baseUrl>
+      <teamDomain></teamDomain>
+      <authToken></authToken>
+      <authTokenCredentialId></authTokenCredentialId>
+      <botUser>false</botUser>
+      <room></room>
+      <startNotification>true</startNotification>
+      <notifySuccess>true</notifySuccess>
+      <notifyAborted>true</notifyAborted>
+      <notifyNotBuilt>true</notifyNotBuilt>
+      <notifyUnstable>true</notifyUnstable>
+      <notifyRegression>true</notifyRegression>
+      <notifyFailure>true</notifyFailure>
+      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyRepeatedFailure>false</notifyRepeatedFailure>
+      <includeTestSummary>false</includeTestSummary>
+      <includeFailedTests>false</includeFailedTests>
+      <commitInfoChoice>NONE</commitInfoChoice>
+      <includeCustomMessage>false</includeCustomMessage>
+      <customMessage></customMessage>
+    </jenkins.plugins.slack.SlackNotifier>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
+      <recipientList>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>text/html</contentType>
+      <defaultSubject>[daily_build] $PROJECT_NAME - $BUILD_STATUS!</defaultSubject>
+      <defaultContent>&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; - &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;log: $BUILD_URL&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#95a5a6&quot;&gt;&lt;em&gt;If you have any further problem, please do not hesitate to contact me.&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#3498db&quot;&gt;---&lt;br /&gt;
+Daniel Wang / 王怡程&lt;br /&gt;
+香港商女媧創造(股)公司台灣分公司&lt;br /&gt;
+10487 台北市中山區南京東路三段101號9樓&lt;br /&gt;
+9F., No.101, Sec. 3, Nanjing E. Rd.,&lt;br /&gt;
+Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/p&gt;
+</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>false</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com</replyTo>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

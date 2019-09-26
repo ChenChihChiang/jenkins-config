@@ -1139,6 +1139,7 @@
         <string>yg_kw1_user_clean</string>
         <string>yg_kw1_user_pack</string>
         <string>yg_kw1_userdebug_clean</string>
+        <string>yg_kw1_userdebug_pack</string>
       </jobNames>
       <jobFilters/>
       <columns>
