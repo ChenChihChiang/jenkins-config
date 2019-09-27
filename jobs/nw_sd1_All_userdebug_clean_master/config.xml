@@ -22,16 +22,7 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>nb1_10000</string>
-              <string>nb1_10F00</string>
-              <string>nb1_1WLCN</string>
-              <string>nb1_100CN</string>
-              <string>nb1_100JP</string>
-              <string>nb1_100WW</string>
-              <string>nb1_1WDTW</string>
-              <string>nb1_1FDTW</string>
-              <string>nb1_1KPTW</string>
-              <string>nb1_1KPCN</string>
+              <string>sd1_10F00</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -45,7 +36,7 @@
           <value>-c clean, -c noremove</value>
           <defaultValue>-c noremove</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_sd1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_OTA</name>
@@ -57,7 +48,7 @@
           <value>-o</value>
           <defaultValue>-o</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_sd1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_NODOWNLOAD</name>
@@ -68,7 +59,7 @@
           <type>PT_CHECKBOX</type>
           <value>-n</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_sd1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_MP</name>
@@ -79,7 +70,7 @@
           <type>PT_CHECKBOX</type>
           <value>-m 31200006_10000_MP, -m 31200006_10000_MR1, -m 31200006_10000_MR2, -m 31200006_1KPTW_MP, -m 31200006_1KPTW_MR1, -m 31200006_1KPTW_MR2, -m 31200006_1WDTW_MP, -m 31200006_1WDTW_MR1, -m 31200006_1WDTW_MR2</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_All_userdebug_clean_master</projectName>
+          <projectName>nw_sd1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -94,8 +85,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/script
-./NB1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR $BUILD_MP
+      <command>cd /nuwa_disk4/workspace/bsp/script
+./SD1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR $BUILD_MP
 </command>
     </hudson.tasks.Shell>
   </builders>
@@ -103,7 +94,7 @@
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
       <regexp></regexp>
       <regexpForFailed></regexpForFailed>
-      <description>${BUILD_VENDOR} ${BUILD_TYPE} &lt;a target=&quot;_blank&quot; href=&quot;http://192.168.1.239/nuwa/NB1/${BUILD_NUMBER}/build_log.html&quot; &gt;${BUILD_NUMBER} Report&lt;/a&gt;</description>
+      <description>${BUILD_VENDOR} ${BUILD_TYPE} &lt;a target=&quot;_blank&quot; href=&quot;http://192.168.1.239/nuwa/SD1/${BUILD_NUMBER}/build_log.html&quot; &gt;${BUILD_NUMBER} Report&lt;/a&gt;</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
@@ -147,7 +138,7 @@
         </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
       </configuredTriggers>
       <contentType>text/html</contentType>
-      <defaultSubject>[Daily_Build] NB1 $BUILD_TYPE - $BUILD_STATUS!</defaultSubject>
+      <defaultSubject>[Daily_Build] SD1 $BUILD_TYPE - $BUILD_STATUS!</defaultSubject>
       <defaultContent>&lt;p&gt;Dear all,&lt;/p&gt;
 
 &lt;p&gt;Project &lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; is build &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
@@ -159,7 +150,7 @@
 &lt;p&gt;The details as follow:&lt;/p&gt;
 &lt;p&gt;$BUILD_URL&lt;/p&gt;
 
-${FILE,path=&quot;/home/jk/workspace/bsp/Daily/nuwa_report_log/NB1/${BUILD_NUMBER}/build_log.html&quot;}
+${FILE,path=&quot;/home/jk/workspace/bsp/Daily/nuwa_report_log/SD1/${BUILD_NUMBER}/build_log.html&quot;}
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
