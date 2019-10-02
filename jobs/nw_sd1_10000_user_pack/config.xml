@@ -147,8 +147,7 @@
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
-              <properties>BUILD_CLEAN=
-BUILD_OTA=</properties>
+              <properties>BUILD_CLEAN=</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
           <projects>nw_sd1_All_userdebug_clean_master</projects>
