@@ -78,9 +78,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
-
-</command>
+      <command>cd /nuwa_disk4/workspace/bsp/Daily/SD1/LA.UM.7.6/LINUX/android
+mv out out_eng_10F00</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
