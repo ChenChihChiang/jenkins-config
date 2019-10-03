@@ -22,7 +22,7 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>sd1_10000</string>
+              <string>sd1_200JP</string>
               <string>sd1_10F00</string>
             </a>
           </choices>
@@ -79,7 +79,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /nuwa_disk4/workspace/bsp/Daily/SD1/LA.UM.7.6/LINUX/android
-mv out out_eng_10F00</command>
+mv out out_eng_20F00</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
