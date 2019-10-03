@@ -22,9 +22,8 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>sd1_10F00</string>
-              <string>sd1_10000</string>
-              <string>sd1_100JP</string>
+              <string>sd1_20F00</string>
+              <string>sd1_200JP</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
