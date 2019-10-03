@@ -22,7 +22,7 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>sd1_10F00</string>
+              <string>sd1_20F00</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
