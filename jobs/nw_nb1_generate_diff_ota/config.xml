@@ -43,6 +43,11 @@ please input full or diff</description>
           <description>title message</description>
           <defaultValue>Software update for</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_PROJECT</name>
+          <description>NB1 or SD1</description>
+          <defaultValue>NB1</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -57,7 +62,7 @@ please input full or diff</description>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./generate_diff_ota.sh -a &quot;$OTA_AFTER_VERSION&quot; -b &quot;$OTA_BEFORE_VERSION&quot; -l &quot;$OTA_LANG&quot; -m &quot;$OTA_MESSAGE&quot; -s &quot;$OTA_SKU&quot; -t &quot;$OTA_TYPE&quot; -u &quot;$OTA_UI_TITLE&quot;
+./generate_diff_ota.sh -a &quot;$OTA_AFTER_VERSION&quot; -b &quot;$OTA_BEFORE_VERSION&quot; -l &quot;$OTA_LANG&quot; -m &quot;$OTA_MESSAGE&quot; -p &quot;$OTA_PROJECT&quot; -s &quot;$OTA_SKU&quot; -t &quot;$OTA_TYPE&quot; -u &quot;$OTA_UI_TITLE&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
