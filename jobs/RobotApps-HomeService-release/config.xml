@@ -33,10 +33,12 @@
 export ANDROID_HOME
 
 rm -rf $WORKSPACE/homeservice/build/outputs/apk/
+rm -rf $WORKSPACE/homeservice/build/
 rm -rf $WORKSPACE/homeservice-client/build/outputs/aar/
 rm -rf $WORKSPACE/homeservice-common/build/outputs/aar/
 
 cd $WORKSPACE
+ ./gradlew clean
  ./gradlew clean assembleRelease
  
 cd $WORKSPACE/homeservice/build/outputs/apk/
