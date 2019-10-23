@@ -2,9 +2,9 @@
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.20">
   <defaultSuffix>@nuwarobotics.com</defaultSuffix>
   <hudsonUrl>http://192.168.1.230:8080/</hudsonUrl>
-  <smtpAuthUsername>jk@nuwarobotics.com</smtpAuthUsername>
-  <smtpAuthPassword>{AQAAABAAAAAQsFrPSS9udNfctToe/UOIyioPHp9XUwJVLUyIms+us4k=}</smtpAuthPassword>
-  <replyToAddress>jk@nuwarobotics.com</replyToAddress>
+  <smtpAuthUsername>no-reply@nuwarobotics.com</smtpAuthUsername>
+  <smtpAuthPassword>{AQAAABAAAAAQXZwbnt/IWzzeCXpBHxmNwP+KiUq8TWBrErgOddNLiN4=}</smtpAuthPassword>
+  <replyToAddress>no-reply@nuwarobotics.com</replyToAddress>
   <smtpHost>smtp.mxhichina.com</smtpHost>
   <useSsl>true</useSsl>
   <smtpPort>465</smtpPort>
