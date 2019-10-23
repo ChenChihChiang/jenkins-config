@@ -3,7 +3,7 @@
   <defaultSuffix>@nuwarobotics.com</defaultSuffix>
   <hudsonUrl>http://192.168.1.230:8080/</hudsonUrl>
   <smtpAuthUsername>no-reply@nuwarobotics.com</smtpAuthUsername>
-  <smtpAuthPassword>{AQAAABAAAAAQXZwbnt/IWzzeCXpBHxmNwP+KiUq8TWBrErgOddNLiN4=}</smtpAuthPassword>
+  <smtpAuthPassword>{AQAAABAAAAAQqXRkiaWvnsYUThPz7pbTeaPTBGVqrdT93P5xCgvX2yA=}</smtpAuthPassword>
   <replyToAddress>no-reply@nuwarobotics.com</replyToAddress>
   <smtpHost>smtp.mxhichina.com</smtpHost>
   <useSsl>true</useSsl>
