@@ -86,7 +86,7 @@ mv dannyspace*release_prodMibo.apk dannyspace_release_prod.apk
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>chen.john@nuwarobotics.com,chung.lion@nuwarobotics.com</recipientList>
+      <recipientList></recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
