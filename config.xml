@@ -1389,7 +1389,7 @@
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>bsp_sda450</name>
+      <name>bsp_sda450_sd1</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
