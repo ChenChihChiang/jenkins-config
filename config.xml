@@ -1352,7 +1352,7 @@
     </listView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>bsp_msm8937</name>
+      <name>bsp_msm8937_nb1</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
