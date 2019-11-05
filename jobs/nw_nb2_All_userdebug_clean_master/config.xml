@@ -22,6 +22,7 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
+              <string>nb2_10000</string>
               <string>nb2_10F00</string>
             </a>
           </choices>
