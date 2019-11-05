@@ -130,7 +130,7 @@ mv out out_eng_20F00
 
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; trigger &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Will build nw_nb1_All_userdebug_clean_master&lt;/p&gt;
+&lt;p&gt;Will build nw_nb2_All_userdebug_clean_master&lt;/p&gt;
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
@@ -150,7 +150,7 @@ mv out out_eng_20F00
               <properties>BUILD_CLEAN=</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
-          <projects>nw_nb1_All_userdebug_clean_master</projects>
+          <projects>nw_nb2_All_userdebug_clean_master, </projects>
           <condition>FAILED_OR_BETTER</condition>
           <triggerWithNoParameters>false</triggerWithNoParameters>
           <triggerFromChildProjects>false</triggerFromChildProjects>
