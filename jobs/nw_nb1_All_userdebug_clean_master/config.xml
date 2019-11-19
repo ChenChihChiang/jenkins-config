@@ -88,6 +88,7 @@
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
           <visibleItemCount>2</visibleItemCount>
           <type>PT_CHECKBOX</type>
+          <value>-x 31200006_1FDTW, -x 31200006_10000</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
