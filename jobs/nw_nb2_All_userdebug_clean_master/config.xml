@@ -95,7 +95,7 @@
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
       <regexp></regexp>
       <regexpForFailed></regexpForFailed>
-      <description>${BUILD_VENDOR} ${BUILD_TYPE} &lt;a target=&quot;_blank&quot; href=&quot;http://192.168.1.239/nuwa/NB2/${BUILD_NUMBER}/build_log.html&quot; &gt;${BUILD_NUMBER} Report&lt;/a&gt;</description>
+      <description>${BUILD_VENDOR} ${BUILD_TYPE} &lt;a target=&quot;_blank&quot; href=&quot;http://192.168.1.39/nuwa/NB2/${BUILD_NUMBER}/build_log.html&quot; &gt;${BUILD_NUMBER} Report&lt;/a&gt;</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
