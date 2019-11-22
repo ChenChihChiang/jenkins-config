@@ -4,53 +4,7 @@
   <description>&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQF1JlfBsQyKtwPmya80clO0h700FfaOorKkaDvaZRF7XmKtpbuJoCxmgTYhUhVPdj3_2EhzaePxs/pubhtml?gid=1106823246&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_BEFORE_VERSION</name>
-          <description>source ota version</description>
-          <defaultValue>1.1429.10000.3</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_AFTER_VERSION</name>
-          <description>target ota version</description>
-          <defaultValue>1.1442.10000.3</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_LANG</name>
-          <description>language</description>
-          <defaultValue>zh-TW</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_MESSAGE</name>
-          <description>description</description>
-          <defaultValue>The purpose is from 1.1429.10000.3 update to 1.1442.10000.3</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_SKU</name>
-          <description>sku</description>
-          <defaultValue>10000</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_TYPE</name>
-          <description>OTA type
-please input full or diff</description>
-          <defaultValue>diff</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_UI_TITLE</name>
-          <description>title message</description>
-          <defaultValue>Software update for</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_PROJECT</name>
-          <description>NB1 or SD1</description>
-          <defaultValue>NB1</defaultValue>
-        </hudson.model.StringParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-  </properties>
+  <properties/>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
@@ -61,8 +15,15 @@ please input full or diff</description>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/script
-./generate_diff_ota.sh -a &quot;$OTA_AFTER_VERSION&quot; -b &quot;$OTA_BEFORE_VERSION&quot; -l &quot;$OTA_LANG&quot; -m &quot;$OTA_MESSAGE&quot; -p &quot;$OTA_PROJECT&quot; -s &quot;$OTA_SKU&quot; -t &quot;$OTA_TYPE&quot; -u &quot;$OTA_UI_TITLE&quot;
+      <command>echo &quot;delete 1WLCN MP out dir&quot;
+rm -rf nb1_1WLCN_MP/NB1/LA.UM.7.6/LINUX/android/out/
+
+echo &quot;delete 1KPTW MP out dir&quot;
+rm -rf nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out/
+
+#echo &quot;delete 100JP MP out dir&quot;
+#rm -rf nb1_100JP_MP/NB1/LA.UM.7.6/LINUX/android/out/
+
 </command>
     </hudson.tasks.Shell>
   </builders>
