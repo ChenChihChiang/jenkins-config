@@ -15,7 +15,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/script
+      <command>cd /home/jk/workspace/bsp
 
 echo &quot;delete 1WLCN MP out dir&quot;
 rm -rf nb1_1WLCN_MP/NB1/LA.UM.7.6/LINUX/android/out/
