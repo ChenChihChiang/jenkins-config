@@ -85,7 +85,7 @@ rm -rf nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out/
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>true</attachBuildLog>
+      <attachBuildLog>false</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
       <replyTo>wang.charles@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com,  wu.will@nuwarobotics.com,  tsai.aband@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
