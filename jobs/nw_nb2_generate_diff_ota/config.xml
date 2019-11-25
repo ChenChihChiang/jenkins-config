@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQF1JlfBsQyKtwPmya80clO0h700FfaOorKkaDvaZRF7XmKtpbuJoCxmgTYhUhVPdj3_2EhzaePxs/pubhtml?gid=1106823246&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_BEFORE_VERSION</name>
+          <description>source ota version</description>
+          <defaultValue>1.120.200JP.2</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_AFTER_VERSION</name>
+          <description>target ota version</description>
+          <defaultValue>1.125.200JP.2</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_LANG</name>
+          <description>language</description>
+          <defaultValue>ja-JP</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_MESSAGE</name>
+          <description>description</description>
+          <defaultValue>The purpose is from 1.120.200JP.2 update to 1.125.200JP.2</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_SKU</name>
+          <description>sku</description>
+          <defaultValue>200JP</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_TYPE</name>
+          <description>OTA type
+please input full or diff</description>
+          <defaultValue>diff</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_UI_TITLE</name>
+          <description>title message</description>
+          <defaultValue>Software update for</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>OTA_PROJECT</name>
+          <description>NB1 or SD1</description>
+          <defaultValue>SD1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>jenkins-9</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /nuwa_disk4/workspace/bsp/script
+./generate_diff_ota.sh -a &quot;$OTA_AFTER_VERSION&quot; -b &quot;$OTA_BEFORE_VERSION&quot; -l &quot;$OTA_LANG&quot; -m &quot;$OTA_MESSAGE&quot; -p &quot;$OTA_PROJECT&quot; -s &quot;$OTA_SKU&quot; -t &quot;$OTA_TYPE&quot; -u &quot;$OTA_UI_TITLE&quot;
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
+      <baseUrl></baseUrl>
+      <teamDomain></teamDomain>
+      <authToken></authToken>
+      <authTokenCredentialId></authTokenCredentialId>
+      <botUser>false</botUser>
+      <room></room>
+      <startNotification>true</startNotification>
+      <notifySuccess>true</notifySuccess>
+      <notifyAborted>true</notifyAborted>
+      <notifyNotBuilt>true</notifyNotBuilt>
+      <notifyUnstable>true</notifyUnstable>
+      <notifyRegression>true</notifyRegression>
+      <notifyFailure>true</notifyFailure>
+      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyRepeatedFailure>false</notifyRepeatedFailure>
+      <includeTestSummary>false</includeTestSummary>
+      <includeFailedTests>false</includeFailedTests>
+      <commitInfoChoice>NONE</commitInfoChoice>
+      <includeCustomMessage>false</includeCustomMessage>
+      <customMessage></customMessage>
+    </jenkins.plugins.slack.SlackNotifier>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
+      <recipientList>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>text/html</contentType>
+      <defaultSubject>[Daily_Build] $PROJECT_NAME trigger $BUILD_STATUS!</defaultSubject>
+      <defaultContent>&lt;p&gt;Dear all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; trigger &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Will build nw_nb1_All_userdebug_clean_master&lt;/p&gt;
+</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>true</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</replyTo>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
