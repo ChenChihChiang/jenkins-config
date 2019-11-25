@@ -10,27 +10,27 @@
         <hudson.model.StringParameterDefinition>
           <name>OTA_BEFORE_VERSION</name>
           <description>source ota version</description>
-          <defaultValue>1.120.200JP.2</defaultValue>
+          <defaultValue>1.40.10000.2</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_AFTER_VERSION</name>
           <description>target ota version</description>
-          <defaultValue>1.125.200JP.2</defaultValue>
+          <defaultValue>1.42.10000.2</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_LANG</name>
           <description>language</description>
-          <defaultValue>ja-JP</defaultValue>
+          <defaultValue>zh-TW</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_MESSAGE</name>
           <description>description</description>
-          <defaultValue>The purpose is from 1.120.200JP.2 update to 1.125.200JP.2</defaultValue>
+          <defaultValue>The purpose is from 1.40.10000.2 update to 1.42.10000.2</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_SKU</name>
           <description>sku</description>
-          <defaultValue>200JP</defaultValue>
+          <defaultValue>10000</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_TYPE</name>
