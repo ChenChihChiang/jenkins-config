@@ -37,11 +37,11 @@
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp
 
-echo &quot;delete 1WLCN MP out dir&quot;
-rm -rf nb1_1WLCN_MP/NB1/LA.UM.7.6/LINUX/android/out/
+##echo &quot;delete 1WLCN MP out dir&quot;
+##rm -rf nb1_1WLCN_MP/NB1/LA.UM.7.6/LINUX/android/out/
 
-echo &quot;delete 1KPTW MP out dir&quot;
-rm -rf nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out/
+##echo &quot;delete 1KPTW MP out dir&quot;
+##rm -rf nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out/
 
 #echo &quot;delete 100JP MP out dir&quot;
 #rm -rf nb1_100JP_MP/NB1/LA.UM.7.6/LINUX/android/out/
