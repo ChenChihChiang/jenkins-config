@@ -14,7 +14,7 @@
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
           <visibleItemCount>2</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>../nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out, ../nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out</value>
+          <value>../nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out ../nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_clean_releasebuild_dir</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
