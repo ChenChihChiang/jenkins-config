@@ -8,9 +8,10 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.TextParameterDefinition>
-          <name></name>
+          <name>REMOVE_FOLDER_CMD</name>
           <description></description>
-          <defaultValue></defaultValue>
+          <defaultValue>nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out
+nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out</defaultValue>
         </hudson.model.TextParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
