@@ -151,7 +151,7 @@
 &lt;p&gt;The details as follow:&lt;/p&gt;
 &lt;p&gt;$BUILD_URL&lt;/p&gt;
 
-${FILE,path=&quot;/nuwa_disk3/workspace/bsp/Daily/NB2/${BUILD_NUMBER}/build_log.html&quot;}
+${FILE,path=&quot;/nuwa_disk3/workspace/bsp/Daily/nuwa_report_log/NB2/${BUILD_NUMBER}/build_log.html&quot;}
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
