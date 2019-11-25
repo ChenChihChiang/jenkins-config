@@ -12,7 +12,10 @@
           <description></description>
           <defaultValue>nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out
 nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out
-nb1_1WLCN_MP/NB1/LA.UM.7.6/LINUX/android/out</defaultValue>
+nb1_1WLCN_MP/NB1/LA.UM.7.6/LINUX/android/out
+nb1_100JP_MP/NB1/LA.UM.7.6/LINUX/android/out
+nb1_10000_MR1/NB1/LA.UM.7.6/LINUX/android/out
+</defaultValue>
         </hudson.model.TextParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
