@@ -7,17 +7,11 @@
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+        <hudson.model.StringParameterDefinition>
           <name>REMOVE_FOLDER_CMD</name>
           <description></description>
-          <quoteValue>false</quoteValue>
-          <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>2</visibleItemCount>
-          <type>PT_TEXTBOX</type>
-          <value>rm -rf ../nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out ;, rm -rf ../nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out </value>
-          <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_clean_releasebuild_dir</projectName>
-        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+          <defaultValue>rm -rf ../nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out ; rm -rf ../nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
