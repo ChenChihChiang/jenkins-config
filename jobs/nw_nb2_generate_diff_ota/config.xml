@@ -45,8 +45,8 @@ please input full or diff</description>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_PROJECT</name>
-          <description>NB1 or SD1</description>
-          <defaultValue>SD1</defaultValue>
+          <description>NB1, NB2 or SD1 </description>
+          <defaultValue>NB2</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -61,7 +61,7 @@ please input full or diff</description>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /nuwa_disk4/workspace/bsp/script
+      <command>cd /nuwa_disk3/workspace/bsp/script
 ./generate_diff_ota.sh -a &quot;$OTA_AFTER_VERSION&quot; -b &quot;$OTA_BEFORE_VERSION&quot; -l &quot;$OTA_LANG&quot; -m &quot;$OTA_MESSAGE&quot; -p &quot;$OTA_PROJECT&quot; -s &quot;$OTA_SKU&quot; -t &quot;$OTA_TYPE&quot; -u &quot;$OTA_UI_TITLE&quot;
 </command>
     </hudson.tasks.Shell>
@@ -118,7 +118,7 @@ please input full or diff</description>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>true</attachBuildLog>
+      <attachBuildLog>false</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
       <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
