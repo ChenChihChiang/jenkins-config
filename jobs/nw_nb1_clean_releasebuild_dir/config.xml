@@ -4,7 +4,23 @@
   <description>&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQF1JlfBsQyKtwPmya80clO0h700FfaOorKkaDvaZRF7XmKtpbuJoCxmgTYhUhVPdj3_2EhzaePxs/pubhtml?gid=1106823246&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>REMOVE_FOLDER_CMD</name>
+          <description></description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>2</visibleItemCount>
+          <type>PT_MULTI_SELECT</type>
+          <value>rm -rf ../nb1_10000_MP/NB1/LA.UM.7.6/LINUX/android/out ;, rm -rf ../nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out </value>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>nw_nb1_clean_releasebuild_dir</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
@@ -30,7 +46,7 @@ rm -rf nb1_1KPTW_MP/NB1/LA.UM.7.6/LINUX/android/out/
 #echo &quot;delete 100JP MP out dir&quot;
 #rm -rf nb1_100JP_MP/NB1/LA.UM.7.6/LINUX/android/out/
 
-</command>
+echo $REMOVE_FOLDER_CMD</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
