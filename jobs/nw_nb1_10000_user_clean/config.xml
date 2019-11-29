@@ -22,9 +22,9 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
+              <string>nb1_10000</string>
               <string>nb1_100JP</string>
               <string>nb1_1WLCN</string>
-              <string>nb1_10000</string>
               <string>nb1_10F00</string>
             </a>
           </choices>
@@ -38,7 +38,7 @@
           <type>PT_CHECKBOX</type>
           <value>-c clean, -c noremove</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_100JP_user_clean</projectName>
+          <projectName>nw_nb1_10000_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_OTA</name>
@@ -50,7 +50,7 @@
           <value>-o</value>
           <defaultValue>-o</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_100JP_user_clean</projectName>
+          <projectName>nw_nb1_10000_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_NODOWNLOAD</name>
@@ -61,7 +61,7 @@
           <type>PT_CHECKBOX</type>
           <value>-n</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_100JP_user_clean</projectName>
+          <projectName>nw_nb1_10000_user_clean</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
