@@ -36,9 +36,22 @@ cd ./$BUILD_ID
 cp ../../apksigner.jar ./apksigner.jar
 cp ../../nuwatest.keystore ./nuwatest.keystore
 cp ../../upload/uploaded.apk ./$APK_NAME
-java -jar apksigner.jar sign --ks nuwatest.keystore --ks-key-alias 1 --ks-pass pass:nuwa8888 $APK_NAME</command>
+java -jar apksigner.jar sign --ks nuwatest.keystore --ks-key-alias 1 --ks-pass pass:nuwa8888 $APK_NAME
+
+#remove tool in local folder
+rm ./apksigner.jar
+rm ./nuwatest.keystore</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>build_result/${BUILD_ID}/*.apk</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
   <buildWrappers/>
 </project>
