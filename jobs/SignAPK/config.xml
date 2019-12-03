@@ -31,8 +31,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd ./build_result
-mkdir $BUILD_ID
-cd ./$BUILD_ID
+mkdir $BUILD_NUMBER
+cd ./$BUILD_NUMBER
 cp ../../apksigner.jar ./apksigner.jar
 cp ../../nuwatest.keystore ./nuwatest.keystore
 cp ../../upload/uploaded.apk ./$APK_NAME
@@ -44,8 +44,13 @@ rm ./nuwatest.keystore</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
+      <regexp></regexp>
+      <regexpForFailed></regexpForFailed>
+      <setForMatrix>false</setForMatrix>
+    </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>build_result/${BUILD_ID}/*.apk</artifacts>
+      <artifacts>build_result/${BUILD_NUMBER}/*.apk</artifacts>
       <allowEmptyArchive>false</allowEmptyArchive>
       <onlyIfSuccessful>false</onlyIfSuccessful>
       <fingerprint>false</fingerprint>
