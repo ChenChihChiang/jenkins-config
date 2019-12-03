@@ -28,11 +28,10 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <customWorkspace>/nuwa_disk2/workspace/signapk/</customWorkspace>
+  <customWorkspace>/nuwa_disk2/workspace/signapk/build_result/</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd ./build_result
-mkdir $BUILD_NUMBER
+      <command>mkdir $BUILD_NUMBER
 cd ./$BUILD_NUMBER
 cp ../../apksigner.jar ./apksigner.jar
 cp ../../nuwatest.keystore ./nuwatest.keystore
