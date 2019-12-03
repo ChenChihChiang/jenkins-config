@@ -7,11 +7,11 @@
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <hudson.model.TextParameterDefinition>
+        <hudson.model.StringParameterDefinition>
           <name>APK_NAME</name>
-          <description></description>
-          <defaultValue>請填寫APK NAME</defaultValue>
-        </hudson.model.TextParameterDefinition>
+          <description>請填寫APK NAME</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
         <hudson.model.FileParameterDefinition>
           <name>upload/uploaded.apk</name>
           <description>請上傳你的APK</description>
