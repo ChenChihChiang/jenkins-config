@@ -62,6 +62,21 @@
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_10000_user_MR1</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_ENV</name>
+          <description>dev=0
+uat=1
+staging=2
+prod=3</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>3</string>
+              <string>1</string>
+              <string>0</string>
+              <string>2</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
