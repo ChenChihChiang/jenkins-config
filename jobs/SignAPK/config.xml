@@ -8,8 +8,8 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.FileParameterDefinition>
-          <name></name>
-          <description></description>
+          <name>upload/uploaded.apk</name>
+          <description>請上傳你的APK</description>
         </hudson.model.FileParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
@@ -22,7 +22,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <customWorkspace>/nuwa_disk2/workspace/signapk</customWorkspace>
+  <customWorkspace>/nuwa_disk2/workspace/signapk/</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
       <command></command>
