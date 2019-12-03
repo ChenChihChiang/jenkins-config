@@ -7,6 +7,11 @@
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
+        <hudson.model.TextParameterDefinition>
+          <name>APK_NAME</name>
+          <description></description>
+          <defaultValue>請填寫APK NAME</defaultValue>
+        </hudson.model.TextParameterDefinition>
         <hudson.model.FileParameterDefinition>
           <name>upload/uploaded.apk</name>
           <description>請上傳你的APK</description>
@@ -25,7 +30,12 @@
   <customWorkspace>/nuwa_disk2/workspace/signapk/</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
-      <command></command>
+      <command>cd ./build_result
+mkdir $BUILD_ID
+cp ../apksigner.jar ./apksigner.jar
+cp ../nuwatest.keystore ./nuwatest.keystore
+cp ../upload/uploaded.apk ./$APK_NAME
+java -jar apksigner.jar sign --ks nuwatest.keystore --ks-key-alias 1 --ks-pass pass:nuwa8888 $APK_NAME</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
