@@ -2,7 +2,7 @@
 <project>
   <actions/>
   <description></description>
-  <displayName>signapk_ws</displayName>
+  <displayName>SignAPK_Tool</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
