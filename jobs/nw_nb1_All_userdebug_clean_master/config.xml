@@ -100,10 +100,10 @@ staging=2
 prod=3</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>uat</string>
-              <string>dev</string>
-              <string>staging</string>
-              <string>prod</string>
+              <string>1</string>
+              <string>3</string>
+              <string>0</string>
+              <string>2</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
