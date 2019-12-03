@@ -22,7 +22,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <customWorkspace>/home/jk/workspace/signapk</customWorkspace>
+  <customWorkspace>/nuwa_disk2/workspace/signapk</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
       <command></command>
