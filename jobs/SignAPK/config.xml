@@ -48,7 +48,7 @@ rm ./nuwatest.keystore</command>
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
       <regexp></regexp>
       <regexpForFailed></regexpForFailed>
-      <description>&lt;a target=&quot;_blank&quot; href=&quot;http://192.168.1.230:8080/job/SignAPK/lastSuccessfulBuild/artifact/build_result/${BUILD_NUMBER}/${APK_NAME}&quot; &gt;${APK_NAME}&lt;/a&gt;</description>
+      <description>${BUILD_USER} - &lt;a target=&quot;_blank&quot; href=&quot;http://192.168.1.230:8080/job/SignAPK/lastSuccessfulBuild/artifact/build_result/${BUILD_NUMBER}/${APK_NAME}&quot; &gt;${APK_NAME}&lt;/a&gt;</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.ArtifactArchiver>
