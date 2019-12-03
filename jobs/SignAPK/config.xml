@@ -32,9 +32,10 @@
     <hudson.tasks.Shell>
       <command>cd ./build_result
 mkdir $BUILD_ID
-cp ../apksigner.jar ./apksigner.jar
-cp ../nuwatest.keystore ./nuwatest.keystore
-cp ../upload/uploaded.apk ./$APK_NAME
+cd ./$BUILD_ID
+cp ../../apksigner.jar ./apksigner.jar
+cp ../../nuwatest.keystore ./nuwatest.keystore
+cp ../../upload/uploaded.apk ./$APK_NAME
 java -jar apksigner.jar sign --ks nuwatest.keystore --ks-key-alias 1 --ks-pass pass:nuwa8888 $APK_NAME</command>
     </hudson.tasks.Shell>
   </builders>
