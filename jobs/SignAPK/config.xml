@@ -2,7 +2,13 @@
 <project>
   <actions/>
   <description>此工具用來將上傳之APK，Sign上Nuwa Key。&#xd;
-請上傳你的APK，並提供APK Name。</description>
+請上傳你的APK，並提供APK Name。&#xd;
+&#xd;
+如果你安裝APK到機器人遇到&quot;Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES: xxxx.apk has no certificates at entry AndroidManifest.xml]&quot;&#xd;
+就代表你APK Sign的Key與機器人內不相符合，請用此Tool Sign Nuwa Key&#xd;
+&#xd;
+&#xd;
+請注意NB1上，第三方提供的APK不會Sign Nuwa Key.</description>
   <displayName>SignAPK_Tool</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
