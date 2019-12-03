@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description></description>
+  <description>此工具用來將上傳之APK，Sign上Nuwa Key。&#xd;
+請上傳你的APK，並提供APK Name。</description>
   <displayName>SignAPK_Tool</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
