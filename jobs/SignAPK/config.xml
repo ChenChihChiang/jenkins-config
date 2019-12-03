@@ -3,16 +3,7 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.FileParameterDefinition>
-          <name></name>
-          <description></description>
-        </hudson.model.FileParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-  </properties>
+  <properties/>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
