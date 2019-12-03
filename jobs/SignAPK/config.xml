@@ -8,7 +8,10 @@
 就代表你APK Sign的Key與機器人內不相符合，請用此Tool Sign Nuwa Key&lt;br&gt;&#xd;
 &#xd;
 &lt;br&gt;&#xd;
-請注意NB1上，第三方提供的APK不會Sign Nuwa Key.&lt;br&gt;</description>
+請注意NB1上，第三方提供的APK不會Sign Nuwa Key.&lt;br&gt;&#xd;
+&#xd;
+&lt;br&gt;&#xd;
+NOTICE : 此工具需要登入Jenkins</description>
   <displayName>SignAPK_Tool</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
