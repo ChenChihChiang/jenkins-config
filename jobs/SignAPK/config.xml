@@ -14,7 +14,7 @@
           <defaultValue></defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.FileParameterDefinition>
-          <name>upload/uploaded.apk</name>
+          <name>../upload/uploaded.apk</name>
           <description>請上傳你的APK</description>
         </hudson.model.FileParameterDefinition>
       </parameterDefinitions>
