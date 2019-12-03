@@ -51,7 +51,7 @@ rm ./nuwatest.keystore</command>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>build_result/${BUILD_NUMBER}/*.apk</artifacts>
+      <artifacts>${BUILD_NUMBER}/*.apk</artifacts>
       <allowEmptyArchive>false</allowEmptyArchive>
       <onlyIfSuccessful>false</onlyIfSuccessful>
       <fingerprint>false</fingerprint>
