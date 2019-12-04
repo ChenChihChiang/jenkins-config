@@ -19,7 +19,8 @@ NOTICE : 此工具需要登入Jenkins</description>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
           <name>APK_NAME</name>
-          <description>請填寫APK NAME</description>
+          <description>請填寫APK NAME&lt;br&gt;
+Ex : RubyEnglish_TW_2019-12-03_v1.0.1.0.794ff52_release.apk</description>
           <defaultValue></defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.FileParameterDefinition>
