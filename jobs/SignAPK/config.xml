@@ -42,10 +42,10 @@ NOTICE : 此工具需要登入Jenkins</description>
     <hudson.tasks.Shell>
       <command>mkdir $BUILD_NUMBER
 cd ./$BUILD_NUMBER
-cp ../../apksigner.jar ./apksigner.jar
-cp ../../nuwatest.keystore ./nuwatest.keystore
+#cp ../../apksigner.jar ./apksigner.jar
+#cp ../../nuwatest.keystore ./nuwatest.keystore
 cp ../../upload/uploaded.apk ./$APK_NAME
-java -jar apksigner.jar sign --ks nuwatest.keystore --ks-key-alias 1 --ks-pass pass:nuwa8888 $APK_NAME
+java -jar ../../apksigner.jar sign --ks ../../nuwatest.keystore --ks-key-alias 1 --ks-pass pass:nuwa8888 $APK_NAME
 
 #remove tool in local folder
 rm ./apksigner.jar
