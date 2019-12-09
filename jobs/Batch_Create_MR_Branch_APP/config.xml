@@ -28,7 +28,7 @@ Ex : GEN1_9/MR3</description>
           <description>只新增指定專案的branch(通常測試用)&lt;br&gt;
 Ex : RobotApps/SuggestionDownloader&lt;br&gt;
 預設&quot;ALL&quot;為全部產生</description>
-          <defaultValue>RobotApps/SuggestionDownloader</defaultValue>
+          <defaultValue>ALL</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
