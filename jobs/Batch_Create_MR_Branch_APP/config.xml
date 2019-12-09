@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <displayName>Batch_Create_MR_Branch_APP</displayName>
   <keepDependencies>false</keepDependencies>
@@ -13,7 +14,11 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <customWorkspace>/nuwa_disk2/workspace/auto_create_branch</customWorkspace>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command></command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers>
     <org.jenkinsci.plugins.builduser.BuildUser plugin="build-user-vars-plugin@1.5"/>
