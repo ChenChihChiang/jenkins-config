@@ -45,6 +45,9 @@ Ex : RobotApps/SuggestionDownloader&lt;br&gt;
 AUTO_BRANCH_SCRIPT_PATH=&quot;/nuwa_disk2/workspace/auto_create_branch/script/create_branch.sh&quot;
 GIT_SCRIPT_PATH=&quot;/nuwa_disk2/workspace/auto_create_branch/script/git_cmd.sh&quot;
 
+#cp /nuwa_disk2/WillWu/branch/git_cmd.sh ./
+#cp /nuwa_disk2/WillWu/branch/create_branch.sh ./
+
 #DO NOT MODIFY
 GIT_ACCOUNT=&quot;jk&quot;
 
