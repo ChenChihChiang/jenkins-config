@@ -19,8 +19,12 @@ Ex : GEN1_9/MR3</description>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>SOURCE_APP_XML</name>
-          <description>請輸入愈批次新增的APP List (repo manifest)&lt;br&gt;
-此項目通常不需修改</description>
+          <description>你要基於哪一份Manifest把所有的Git Project給開Branch出來??&lt;br&gt;
+此項目通常不需修改&lt;br&gt;
+&lt;br&gt;
+Base on GEN1_9/release 請輸入 31200006_APP.xml &lt;br&gt;
+Base on GEN1_9/RTM sorry, 目前沒辦法, 其實這項你只能選上面那個XD
+</description>
           <defaultValue>31200006_APP.xml</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
