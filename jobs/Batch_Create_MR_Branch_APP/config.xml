@@ -66,10 +66,18 @@ fi
 
 
 $AUTO_BRANCH_SCRIPT_PATH $GIT_ACCOUNT $SOURCE_APP_XML $BATCH_NEW_BRANCH_NAME $TARGET_GIT_PROJECT
+
 </command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
+      <regexp></regexp>
+      <regexpForFailed></regexpForFailed>
+      <description>${BUILD_USER} ${SOURCE_APP_XML}-${BATCH_NEW_BRANCH_NAME}</description>
+      <setForMatrix>false</setForMatrix>
+    </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
+  </publishers>
   <buildWrappers>
     <org.jenkinsci.plugins.builduser.BuildUser plugin="build-user-vars-plugin@1.5"/>
   </buildWrappers>
