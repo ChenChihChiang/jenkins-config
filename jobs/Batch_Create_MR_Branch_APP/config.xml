@@ -4,7 +4,31 @@
   <description></description>
   <displayName>Batch_Create_MR_Branch_APP</displayName>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BATCH_NEW_BRANCH_NAME</name>
+          <description>請輸入欲批次新增的Branch Name &lt;br&gt;
+Ex : GEN1_9/MR3</description>
+          <defaultValue>GEN1_9/test</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TARGET_GIT_PROJECT</name>
+          <description>只新增指定專案的branch(通常測試用)&lt;br&gt;
+Ex : RobotApps/SuggestionDownloader&lt;br&gt;
+留空白為全部產生</description>
+          <defaultValue>RobotApps/SuggestionDownloader</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SOURCE_APP_XML</name>
+          <description>請輸入愈批次新增的APP List (repo manifest)&lt;br&gt;
+此項目通常不需修改</description>
+          <defaultValue>31200006_APP.xml</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
@@ -16,7 +40,28 @@
   <customWorkspace>/nuwa_disk2/workspace/auto_create_branch</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
-      <command></command>
+      <command>#SOURCE_APP_XML=${1}
+#BATCH_NEW_BRANCH_NAME=${2}
+GIT_SCRIPT_PATH=&quot;/nuwa_disk2/WillWu/branch/git_cmd.sh&quot;
+
+if [ -z &quot;$SOURCE_APP_XML&quot; ]; then
+    echo &quot;SOURCE_APP_XML is empty, set to default 31200006_APP.xml&quot;
+    SOURCE_APP_XML=&quot;31200006_APP.xml&quot;
+fi
+
+if [ -z &quot;$BATCH_NEW_BRANCH_NAME&quot; ]; then
+    echo &quot;BATCH_NEW_BRANCH_NAME is empty, branch name must input, exit process.&quot;
+    #BATCH_NEW_BRANCH_NAME=&quot;GEN1_9/test&quot;
+    exit 0
+fi
+
+
+#xml need as input
+repo init -u ssh://jk@192.168.1.29:29418/platform/manifest -b NB1 -m ${SOURCE_APP_XML}
+repo sync -cj8 --no-tag
+
+
+repo forall -c &quot;. &quot;${GIT_SCRIPT_PATH}&quot; &quot;${BATCH_NEW_BRANCH_NAME}&quot;&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
