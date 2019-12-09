@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>根據Manifest上有的APP List，批次根據該manifest內的branch建立出指定名稱的branch</description>
+  <description>自動批次新增指定名稱Branch&lt;br&gt;&#xd;
+&lt;font color=&quot;red&quot;&gt;&lt;b&gt;請小心使用，按下去所有Branch就會一次開啟唷!!!!&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&#xd;
+根據Manifest上有的APP List，批次根據該manifest內的branch建立出指定名稱的branch&lt;br&gt;</description>
   <displayName>Batch_Create_MR_Branch_APP</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
