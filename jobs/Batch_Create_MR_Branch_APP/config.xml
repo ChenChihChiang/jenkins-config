@@ -78,7 +78,7 @@ $AUTO_BRANCH_SCRIPT_PATH $GIT_ACCOUNT $SOURCE_APP_XML $BATCH_NEW_BRANCH_NAME $TA
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
       <regexp></regexp>
       <regexpForFailed></regexpForFailed>
-      <description>${BUILD_USER} ${SOURCE_APP_XML}-${BATCH_NEW_BRANCH_NAME}</description>
+      <description>${BUILD_USER} [${TARGET_GIT_PROJECT}]${SOURCE_APP_XML}-${BATCH_NEW_BRANCH_NAME}</description>
       <setForMatrix>false</setForMatrix>
     </hudson.plugins.descriptionsetter.DescriptionSetterPublisher>
   </publishers>
