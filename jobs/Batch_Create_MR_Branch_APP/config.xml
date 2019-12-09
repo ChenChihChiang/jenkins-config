@@ -6,7 +6,7 @@
 manifest上有幾個git project，每一個都會被開出branch&lt;br&gt;&#xd;
 &#xd;
 &lt;font color=&quot;red&quot;&gt;&lt;b&gt;開完不要忘記去改manifest唷~~~~&lt;/b&gt;&lt;/font&gt;&lt;br&gt;</description>
-  <displayName>Batch_Create_MR_Branch_APP</displayName>
+  <displayName>Batch_Create_APP_MR_Branch</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
