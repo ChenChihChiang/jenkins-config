@@ -50,9 +50,13 @@ GIT_ACCOUNT=&quot;jk&quot;
 
 if [ -z &quot;$BATCH_NEW_BRANCH_NAME&quot; ]; then
     echo &quot;BATCH_NEW_BRANCH_NAME is empty, branch name must input, exit process.&quot;
-    #BATCH_NEW_BRANCH_NAME=&quot;GEN1_9/test&quot;
     exit 0
 fi
+if [ -z &quot;$SOURCE_APP_XML&quot; ]; then
+    echo &quot;SOURCE_APP_XML is empty, manifest xml must input, exit process.&quot;
+    exit 0
+fi
+
 
 $AUTO_BRANCH_SCRIPT_PATH $GIT_ACCOUNT $SOURCE_APP_XML $BATCH_NEW_BRANCH_NAME $TARGET_GIT_PROJECT
 </command>
