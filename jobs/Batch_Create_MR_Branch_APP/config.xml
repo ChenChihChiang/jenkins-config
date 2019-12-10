@@ -34,6 +34,16 @@ Ex : RobotApps/SuggestionDownloader&lt;br&gt;
 預設&quot;ALL&quot;為全部產生</description>
           <defaultValue>ALL</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>CLEAN_LOCAL_CODEBASE</name>
+          <description>清除local端的code base，重新sync</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NO</string>
+              <string>YES</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -48,16 +58,24 @@ Ex : RobotApps/SuggestionDownloader&lt;br&gt;
   <customWorkspace>/nuwa_disk2/workspace/auto_create_branch</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
-      <command>#SOURCE_APP_XML=${1}
+      <command>#DO NOT MODIFY
+GIT_ACCOUNT=&quot;jk&quot;
+
+#SOURCE_APP_XML=${1}
 #BATCH_NEW_BRANCH_NAME=${2}
 AUTO_BRANCH_SCRIPT_PATH=&quot;/nuwa_disk2/workspace/auto_create_branch/script/create_branch.sh&quot;
 GIT_SCRIPT_PATH=&quot;/nuwa_disk2/workspace/auto_create_branch/script/git_cmd.sh&quot;
+CODE_BASE_PATH=&quot;/nuwa_disk2/workspace/auto_create_branch/LA.UM.7.6&quot;
 
 #cp /nuwa_disk2/WillWu/branch/git_cmd.sh ./
 #cp /nuwa_disk2/WillWu/branch/create_branch.sh ./
 
-#DO NOT MODIFY
-GIT_ACCOUNT=&quot;jk&quot;
+
+if [ &quot;${CLEAN_LOCAL_CODEBASE}&quot; == &quot;YES&quot; ]; then
+    echo &quot;Request clean code base&quot;
+    rm -rf $CODE_BASE_PATH
+fi
+
 
 if [ -z &quot;$BATCH_NEW_BRANCH_NAME&quot; ]; then
     echo &quot;BATCH_NEW_BRANCH_NAME is empty, branch name must input, exit process.&quot;
