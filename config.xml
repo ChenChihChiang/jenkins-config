@@ -1452,6 +1452,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Batch_Create_MR_Branch_APP</string>
+        <string>SignAPK</string>
       </jobNames>
       <jobFilters/>
       <columns>
