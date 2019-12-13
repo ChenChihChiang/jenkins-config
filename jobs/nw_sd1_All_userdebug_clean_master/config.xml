@@ -73,6 +73,17 @@
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_sd1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>BUILD_ASSIGN_XML</name>
+          <description>You can assign a xml</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>2</visibleItemCount>
+          <type>PT_CHECKBOX</type>
+          <value>-x 10100019_100WW, -x 10100019_BUILD</value>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>nw_sd1_All_userdebug_clean_master</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>BUILD_ENV</name>
           <description>dev=0
@@ -88,17 +99,6 @@ prod=3</description>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
-        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
-          <name>BUILD_ASSIGN_XML</name>
-          <description>You can assign a xml</description>
-          <quoteValue>false</quoteValue>
-          <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>2</visibleItemCount>
-          <type>PT_CHECKBOX</type>
-          <value>-x 10100019_100WW, -x 10100019_BUILD</value>
-          <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_sd1_All_userdebug_clean_master</projectName>
-        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
