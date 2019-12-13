@@ -113,7 +113,7 @@ prod=3</description>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /nuwa_disk4/workspace/bsp/script
-./SD1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR $BUILD_MP -e $BUILD_ENV
+./SD1.sh $BUILD_CLEAN $BUILD_OTA $BUILD_NODOWNLOAD -j $BUILD_NUMBER -p $BUILD_TYPE -v $BUILD_VENDOR $BUILD_MP $BUILD_ASSIGN_XML -e $BUILD_ENV
 </command>
     </hudson.tasks.Shell>
   </builders>
