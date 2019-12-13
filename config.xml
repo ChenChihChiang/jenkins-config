@@ -1402,6 +1402,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>nw_sd1_100WW_user_pack</string>
         <string>nw_sd1_200JP_user_pack</string>
         <string>nw_sd1_20F00_eng_pack</string>
         <string>nw_sd1_All_userdebug_clean_master</string>
