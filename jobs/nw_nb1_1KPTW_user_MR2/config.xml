@@ -23,7 +23,7 @@
           <description></description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>nb1_10000</string>
+              <string>nb1_1KPTW</string>
               <string>nb1_10F00</string>
             </a>
           </choices>
@@ -37,7 +37,7 @@
           <type>PT_CHECKBOX</type>
           <value>-c clean, -c noremove</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_10000_user_MR2</projectName>
+          <projectName>nw_nb1_1KPTW_user_MR2</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_OTA</name>
@@ -49,7 +49,7 @@
           <value>-o</value>
           <defaultValue>-o</defaultValue>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_10000_user_MR2</projectName>
+          <projectName>nw_nb1_1KPTW_user_MR2</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
           <name>BUILD_NODOWNLOAD</name>
@@ -60,7 +60,7 @@
           <type>PT_CHECKBOX</type>
           <value>-n</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
-          <projectName>nw_nb1_10000_user_MR2</projectName>
+          <projectName>nw_nb1_1KPTW_user_MR2</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>BUILD_ENV</name>
@@ -88,7 +88,7 @@ prod=3</description>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>00 18 * * 1,2,3,4,5,7</spec>
+      <spec>00 15 * * 1,2,3,5,7</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
@@ -163,7 +163,7 @@ prod=3</description>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
               <properties>BUILD_CLEAN=-c noremove
-BUILD_MP=-m 31200006_10000_MR2</properties>
+BUILD_MP=-m 31200006_1KPTW_MR2</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
           <projects>nw_nb1_All_userdebug_clean_master</projects>
