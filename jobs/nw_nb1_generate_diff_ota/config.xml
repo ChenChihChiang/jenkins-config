@@ -135,8 +135,6 @@ please input full or diff</description>
 
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; trigger &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Will generate diff image &lt;/p&gt;
-
 &lt;p&gt;From $OTA_BEFORE_VERSION update to $OTA_AFTER_VERSION&lt;/p&gt;
 </defaultContent>
       <attachmentsPattern></attachmentsPattern>
