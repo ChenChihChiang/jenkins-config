@@ -17,11 +17,6 @@
           <description>target ota version</description>
           <defaultValue>1.1442.10000.3</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_LANG</name>
-          <description>language</description>
-          <defaultValue>zh-TW</defaultValue>
-        </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>OTA_LANG</name>
           <description>language</description>
