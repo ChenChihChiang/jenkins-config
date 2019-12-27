@@ -22,16 +22,37 @@
           <description>language</description>
           <defaultValue>zh-TW</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>OTA_LANG</name>
+          <description>language</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>zh-TW</string>
+              <string>zh-CN</string>
+              <string>ja-JP</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_MESSAGE</name>
           <description>description</description>
           <defaultValue>The purpose is from 1.1429.10000.3 update to 1.1442.10000.3</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>OTA_SKU</name>
           <description>sku</description>
-          <defaultValue>10000</defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>10000</string>
+              <string>1KPTW</string>
+              <string>100JP</string>
+              <string>1WLCN</string>
+              <string>100CN</string>
+              <string>1KPCN</string>
+              <string>100WW</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_TYPE</name>
           <description>OTA type
