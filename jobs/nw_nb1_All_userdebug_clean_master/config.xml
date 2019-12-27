@@ -75,9 +75,9 @@
           <description></description>
           <quoteValue>false</quoteValue>
           <saveJSONParameterToFile>false</saveJSONParameterToFile>
-          <visibleItemCount>15</visibleItemCount>
+          <visibleItemCount>17</visibleItemCount>
           <type>PT_CHECKBOX</type>
-          <value>-m 31200006_10000_MP, -m 31200006_10000_MR1, -m 31200006_10000_MR2, -m 31200006_1KPTW_MP, -m 31200006_1KPTW_MR1, -m 31200006_1KPTW_MR2, -m 31200006_1WDTW_MP, -m 31200006_1WDTW_MR1, -m 31200006_1WDTW_MR2, -m 31200006_1WLCN_MP, -m 31200006_1WLCN_MR1, -m 31200006_1WLCN_MR2, -m 31200006_100JP_MP, -m 31200006_100JP_MR1, -m 31200006_100JP_MR2</value>
+          <value>-m 31200006_10000_MP, -m 31200006_10000_MR1, -m 31200006_10000_MR2, -m 31200006_10000_MR3, -m 31200006_1KPTW_MP, -m 31200006_1KPTW_MR1, -m 31200006_1KPTW_MR2, -m 31200006_1KPTW_MR3, -m 31200006_1WDTW_MP, -m 31200006_1WDTW_MR1, -m 31200006_1WDTW_MR2, -m 31200006_1WLCN_MP, -m 31200006_1WLCN_MR1, -m 31200006_1WLCN_MR2, -m 31200006_100JP_MP, -m 31200006_100JP_MR1, -m 31200006_100JP_MR2</value>
           <multiSelectDelimiter>,</multiSelectDelimiter>
           <projectName>nw_nb1_All_userdebug_clean_master</projectName>
         </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
