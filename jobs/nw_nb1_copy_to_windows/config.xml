@@ -4,7 +4,17 @@
   <description>&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQF1JlfBsQyKtwPmya80clO0h700FfaOorKkaDvaZRF7XmKtpbuJoCxmgTYhUhVPdj3_2EhzaePxs/pubhtml?gid=1106823246&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>ARG1</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
   <assignedNode>jenkins-239</assignedNode>
   <canRoam>false</canRoam>
