@@ -94,7 +94,7 @@ prod=3</description>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
+      <command>echo &quot;ARG1=$ARG1&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
