@@ -86,7 +86,7 @@ echo &quot;copy file use $((d2-d1)) sec&quot;
 &lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; trigger &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Copy ${source} to ${target}&lt;/p&gt;
-</defaultContent>
+&lt;p&gt;Copy file use 98 sec&lt;/p&gt;</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
