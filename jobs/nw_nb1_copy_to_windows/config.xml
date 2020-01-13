@@ -10,7 +10,7 @@
         <hudson.model.StringParameterDefinition>
           <name>source</name>
           <description></description>
-          <defaultValue>2</defaultValue>
+          <defaultValue></defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>target</name>
