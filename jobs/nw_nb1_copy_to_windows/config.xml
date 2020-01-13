@@ -12,6 +12,11 @@
           <description></description>
           <defaultValue>2</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>target</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -26,7 +31,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo ${source}
+      <command>echo
+echo &quot;copy ${source} to ${target}&quot;
+echo
 </command>
     </hudson.tasks.Shell>
   </builders>
