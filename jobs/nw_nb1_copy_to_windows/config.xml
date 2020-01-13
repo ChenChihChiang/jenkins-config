@@ -8,7 +8,7 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>ARG1</name>
+          <name>source</name>
           <description></description>
           <defaultValue>2</defaultValue>
         </hudson.model.StringParameterDefinition>
@@ -26,7 +26,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;ARG1=$ARG1&quot;
+      <command>echo &quot;source=$source&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
