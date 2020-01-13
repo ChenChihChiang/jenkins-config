@@ -31,8 +31,11 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
-cp -a $source $target</command>
+      <command>d1=$(date +&quot;%s&quot;)
+cp -a $source $target
+d2=$(date +&quot;%s&quot;)
+echo &quot;copy file use $((d2-d1)) sec&quot;
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
