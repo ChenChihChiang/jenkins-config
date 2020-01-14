@@ -39,7 +39,7 @@
       <command>d1=$(date +&quot;%s&quot;)
 echo $folder
 mkdir $target/$folder
-cp -a $source/*.[edbhimx]* $target
+cp -a $source/*/*.[edbhimx]* $target/$folder
 d2=$(date +&quot;%s&quot;)
 use_time=$((d2-d1))
 echo &quot;copy file use $use_time sec&quot;
