@@ -41,8 +41,6 @@
 mkdir $target/$folder
 cp -a $source/*/*.[edbhimx]* $target/$folder
 cp -a $source/*/fw $target/$folder
-cp -a $source/*/asset_info $target/$folder
-cp -a $source/*/nuwa_app_log $target/$folder
 
 d2=$(date +&quot;%s&quot;)
 use_time=$((d2-d1))
