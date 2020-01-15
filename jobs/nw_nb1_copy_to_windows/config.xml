@@ -38,7 +38,7 @@
     <hudson.tasks.Shell>
       <command>d1=$(date +&quot;%s&quot;)
 
-mkdir $target/$folder
+mkdir -p $target/$folder
 cp -a $source/*/*.[aedbhimx]* $target/$folder
 cp -a $source/*/fw $target/$folder
 
