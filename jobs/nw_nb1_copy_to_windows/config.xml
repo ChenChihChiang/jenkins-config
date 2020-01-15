@@ -39,7 +39,7 @@
       <command>d1=$(date +&quot;%s&quot;)
 
 mkdir -p $target/$folder
-cp -a $source/*/*.[aedbhimx]* $target/$folder
+cp -a $source/*/*.[edbhimx]* $target/$folder
 cp -a $source/*/fw $target/$folder
 
 d2=$(date +&quot;%s&quot;)
