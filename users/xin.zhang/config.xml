@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
   <fullName>xin.zhang</fullName>
+  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
       <apiToken>{AQAAABAAAAAwXiewyonyI5RTXYP06DcvoEcMsMZbfnszxGrCimF9mcm51pha96NQpj0xMm3dPo4cb0xhicCo8bUoLm7snWWBsw==}</apiToken>
@@ -8,10 +9,20 @@
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.14">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.20">
+      <emailAddress>xin.zhang@nuwarobotics.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
     <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.61">
       <triggers/>
     </hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1579155932753</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
     <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -28,20 +39,14 @@
     <hudson.model.PaneStatusProperties>
       <collapsed/>
     </hudson.model.PaneStatusProperties>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$/C0JqkZ1EDg3smoU6EfcTeP.zYJtkcQaRwRXzz/7dRAyLLRZQthmC</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
     <hudson.search.UserSearchProperty>
       <insensitiveSearch>true</insensitiveSearch>
     </hudson.search.UserSearchProperty>
-    <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$800jvXSa3Qcf7NE7Bfur0uKXZQbtywwy.JtGXzcF9I48JWQZFT.Iq</passwordHash>
-    </hudson.security.HudsonPrivateSecurityRealm_-Details>
-    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.20">
-      <emailAddress>xin.zhang@nuwarobotics.com</emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
-    <jenkins.security.LastGrantedAuthoritiesProperty>
-      <roles>
-        <string>authenticated</string>
-      </roles>
-      <timestamp>1579155932753</timestamp>
-    </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
