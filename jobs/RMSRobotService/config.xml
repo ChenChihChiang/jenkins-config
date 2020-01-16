@@ -53,8 +53,17 @@ echo BUILD_TIME=$TIME &gt;&gt; ./env.properties
     </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>RMSRobotService</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>xin.zhang@nuwarobotics.com,</recipientList>
+      <recipientList>xin.zhang@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
