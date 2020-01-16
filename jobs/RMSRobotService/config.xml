@@ -33,7 +33,23 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>./env.sh</command>
+      <command>
+VIDEO_NAME=`cat ./build.gradle | grep &quot;versionName&quot; | awk &apos;{print $3}&apos; | sed -e &apos;s/&quot;//g&apos;`
+
+TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
+
+#echo $VIDEO_NAME
+
+GIT_HASH=`git rev-parse HEAD`
+HEAD=${GIT_HASH:0:6}
+
+
+rm -rf ./env.properties
+
+echo VIDEO_VERSION=$TIME&quot;_&quot;$VIDEO_NAME&quot;_&quot;$HEAD &gt;&gt; ./env.properties
+
+echo BUILD_TIME=$TIME &gt;&gt; ./env.properties
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
