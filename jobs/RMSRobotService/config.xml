@@ -95,13 +95,13 @@
       <authTokenCredentialId></authTokenCredentialId>
       <botUser>false</botUser>
       <room></room>
-      <startNotification>true</startNotification>
+      <startNotification>false</startNotification>
       <notifySuccess>false</notifySuccess>
       <notifyAborted>false</notifyAborted>
       <notifyNotBuilt>false</notifyNotBuilt>
       <notifyUnstable>false</notifyUnstable>
       <notifyRegression>false</notifyRegression>
-      <notifyFailure>true</notifyFailure>
+      <notifyFailure>false</notifyFailure>
       <notifyBackToNormal>false</notifyBackToNormal>
       <notifyRepeatedFailure>false</notifyRepeatedFailure>
       <includeTestSummary>false</includeTestSummary>
