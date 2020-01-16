@@ -65,7 +65,7 @@ cd /var/jenkins/workspace/RMSRobotService/app/build/outputs/apk/
   </builders>
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>xin.zhang@nuwarobotics.com;wang.roy@nuwarobotics.com</recipientList>
+      <recipientList>xin.zhang@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
