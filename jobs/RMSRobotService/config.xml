@@ -34,19 +34,13 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
-TMP_NAME=`cat app/build.gradle | grep  versionName | awk &apos;{print $2}&apos; | grep -v fileName | sed -e &apos;s/&quot;//g&apos; | sed -e &apos;s/v//g&apos;`
-
-TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
-
-GIT_HASH=`git rev-parse HEAD`
-HEAD=${GIT_HASH:0:6}
-
-rm -rf ./env.properties
-
-echo TMP_VERSION=$TMP_NAME&quot;_&quot;$TIME&quot;_&quot;$HEAD &gt;&gt; ./env.properties
-
-echo BUILD_TIME=$TIME &gt;&gt; ./env.properties
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
+cat /var/jenkins/workspace/RMSRobotService/env.properties
+cd $WORKSPACE
+./gradlew clean assembleRelease
+cd /var/jenkins/workspace/RMSRobotService/signed
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release.apk ../app/build/outputs/apk/app-release-signed.apk
 </command>
     </hudson.tasks.Shell>
   </builders>
