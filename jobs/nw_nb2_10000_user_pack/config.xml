@@ -150,7 +150,7 @@ mv out out_eng_20F00
               <properties>BUILD_CLEAN=</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
-          <projects>nw_nb2_All_userdebug_clean_master,</projects>
+          <projects>nw_nb2_All_userdebug_clean_master</projects>
           <condition>FAILED_OR_BETTER</condition>
           <triggerWithNoParameters>false</triggerWithNoParameters>
           <triggerFromChildProjects>false</triggerFromChildProjects>
