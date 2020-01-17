@@ -66,11 +66,6 @@ java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/re
     </org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers>
-    <hudson.tasks.Mailer plugin="mailer@1.20">
-      <recipients>xin.zhang@nuwarobotics.com</recipients>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
       <recipientList>xin.zhang@nuwarobotics.com</recipientList>
       <configuredTriggers>
