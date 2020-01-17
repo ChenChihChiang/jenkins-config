@@ -34,23 +34,15 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
-TMP_NAME=`cat ./build.gradle | grep &quot;versionName&quot; | awk &apos;{print $3}&apos; | sed -e &apos;s/&quot;//g&apos;`
-
-TIME=`date +&quot;%Y-%m-%d_%H%M&quot;`
-
-#echo $VIDEO_NAME
-
-GIT_HASH=`git rev-parse HEAD`
-HEAD=${GIT_HASH:0:6}
-
-
-rm -rf ./env.properties
-
-echo TMP_VERSION=$TIME&quot;_&quot;$TMP_NAME&quot;_&quot;$HEAD &gt;&gt; ./env.properties
-
-echo BUILD_TIME=$TIME &gt;&gt; ./env.properties
-</command>
+      <command>ANDROID_HOME=/usr/local/Android-SDK
+export ANDROID_HOME
+rm -rf /var/jenkins/workspace/RMSRobotService/app/build/outputs/apk/*
+cd $WORKSPACE
+./gradlew assembleUatRelease
+cd /var/jenkins/workspace/RMSRobotService/app/build/outputs/apk/
+mv RMSRobotService*release.apk RMSRobotService_release.apk
+#cd /var/jenkins/workspace/RobotApps-MicroCoding-release/signed/
+#java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/MicroCoding_release.apk ../app/build/outputs/apk/MicroCoding_signed.apk</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
