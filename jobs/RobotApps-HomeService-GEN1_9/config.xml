@@ -202,7 +202,7 @@ mv homeservice-common_* homeservice-common_release.aar
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>tsai.ares@nuwarobotics.com</recipientList>
+      <recipientList>xin.zhang@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
