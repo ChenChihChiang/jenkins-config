@@ -3,45 +3,7 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.8.0">
-          <name>Git Branch</name>
-          <description>Git Branch</description>
-          <uuid>29f44392-39ce-4f86-9e1f-f8f2295e35ce</uuid>
-          <type>PT_BRANCH_TAG</type>
-          <branch></branch>
-          <tagFilter>*</tagFilter>
-          <branchFilter>.*</branchFilter>
-          <sortMode>NONE</sortMode>
-          <defaultValue>*/release</defaultValue>
-          <selectedValue>NONE</selectedValue>
-          <quickFilterEnabled>false</quickFilterEnabled>
-        </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>Build Type</name>
-          <description>构建类型</description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>Release</string>
-              <string>Debug</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>Is Jenkins</name>
-          <description></description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>true</string>
-              <string>false</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-  </properties>
+  <properties/>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
