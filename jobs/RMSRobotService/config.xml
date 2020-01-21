@@ -9,13 +9,13 @@
         <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition plugin="git-parameter@0.8.0">
           <name>Git Branch</name>
           <description>Git Branch</description>
-          <uuid>63be1f0c-4ce5-4af8-a080-fb34f80d9572</uuid>
-          <type>PT_BRANCH</type>
+          <uuid>0f81a1ba-d4b0-45b7-a4cf-e624b07cdb46</uuid>
+          <type>PT_BRANCH_TAG</type>
           <branch></branch>
           <tagFilter>*</tagFilter>
           <branchFilter>.*</branchFilter>
           <sortMode>NONE</sortMode>
-          <defaultValue></defaultValue>
+          <defaultValue>*/release</defaultValue>
           <selectedValue>NONE</selectedValue>
           <quickFilterEnabled>false</quickFilterEnabled>
         </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
