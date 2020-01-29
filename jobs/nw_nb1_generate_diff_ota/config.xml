@@ -45,6 +45,7 @@
               <string>100CN</string>
               <string>1KPCN</string>
               <string>100WW</string>
+              <string>1WDTW</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
