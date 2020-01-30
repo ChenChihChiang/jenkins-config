@@ -71,6 +71,18 @@ please input full or diff</description>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>OTA_PATH_INPUT</name>
+          <description>example:
+/nuwa_disk2/workspace/bsp/nb1_10000_MR3/NB1/LA.UM.7.6/LINUX/android/OTA</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string></string>
+              <string>nb1_10000_MP</string>
+              <string>nb1_10000_MR3</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
