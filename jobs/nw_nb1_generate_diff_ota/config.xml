@@ -73,8 +73,8 @@ please input full or diff</description>
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>OTA_PATH_INPUT</name>
-          <description>example:
-/nuwa_disk2/workspace/bsp/nb1_10000_MR3/NB1/LA.UM.7.6/LINUX/android/OTA</description>
+          <description>default --&gt; /workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android/OTA
+example --&gt; /nuwa_disk2/workspace/bsp/nb1_10000_MR3/NB1/LA.UM.7.6/LINUX/android/OTA</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string></string>
