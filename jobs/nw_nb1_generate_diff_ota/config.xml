@@ -78,8 +78,13 @@ please input full or diff</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string></string>
-              <string>nb1_10000_MP</string>
               <string>nb1_10000_MR3</string>
+              <string>nb1_100CN_MP</string>
+              <string>nb1_100JP_MP</string>
+              <string>nb1_100WW_MP</string>
+              <string>nb1_1KPTW_MR3</string>
+              <string>nb1_1WDTW_MP</string>
+              <string>nb1_1WLCN_MP</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
