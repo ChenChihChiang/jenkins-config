@@ -79,6 +79,7 @@ please input full or diff</description>
             <a class="string-array">
               <string></string>
               <string>nb1_10000_MR3</string>
+              <string>nb1_10000_MR4</string>
               <string>nb1_100CN_MP</string>
               <string>nb1_100JP_MP</string>
               <string>nb1_100WW_MP</string>
