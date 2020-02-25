@@ -79,7 +79,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /nuwa_disk4/workspace/bsp/Daily/SD1/LA.UM.7.6/LINUX/android
-mv out out_eng_20F00</command>
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -140,13 +140,14 @@ mv out out_eng_20F00</command>
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
-    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.35.1">
+    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.36">
       <configs>
         <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
               <properties>BUILD_CLEAN=</properties>
+              <textParamValueOnNewLine>false</textParamValueOnNewLine>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
           <projects>nw_sd1_All_userdebug_clean_master</projects>
