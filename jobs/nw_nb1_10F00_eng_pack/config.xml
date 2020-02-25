@@ -79,7 +79,6 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/Daily/NB1/LA.UM.7.6/LINUX/android
-mv out out_user_100CN
 </command>
     </hudson.tasks.Shell>
   </builders>
@@ -141,7 +140,7 @@ mv out out_user_100CN
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
-    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.35.1">
+    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.36">
       <configs>
         <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
           <configs>
@@ -149,6 +148,7 @@ mv out out_user_100CN
             <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
               <properties>BUILD_CLEAN=
 BUILD_OTA=</properties>
+              <textParamValueOnNewLine>false</textParamValueOnNewLine>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
           <projects>nw_nb1_All_userdebug_clean_master</projects>
