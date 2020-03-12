@@ -32,6 +32,7 @@
               <string>nb1_1FDTW</string>
               <string>nb1_1KPTW</string>
               <string>nb1_1KPCN</string>
+              <string>nb1_100KR</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
