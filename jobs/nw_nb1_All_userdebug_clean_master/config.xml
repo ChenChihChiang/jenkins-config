@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description></description>
+  <description>Build Schedule&lt;br&gt;&#xd;
+https://docs.google.com/spreadsheets/d/1zw7eiVajbBmtSWFc7sngrDt9_lcDfBEYg6r_C4kgdp8/edit#gid=1990890695&lt;br&gt;&#xd;
+</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
