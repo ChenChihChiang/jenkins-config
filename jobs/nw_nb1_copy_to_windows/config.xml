@@ -72,7 +72,7 @@ echo &quot;copy file use $use_time sec&quot;
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</recipientList>
+      <recipientList>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, liao.ron@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -102,7 +102,7 @@ echo &quot;copy file use $use_time sec&quot;
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
       <attachBuildLog>false</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
-      <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com</replyTo>
+      <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, liao.ron@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
