@@ -35,9 +35,25 @@
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_SKU</name>
-          <description>sku</description>
+          <description>10000
+1KPTW
+100JP
+1WLCN
+100CN
+1KPCN
+100WW
+1WDTW</description>
           <defaultValue>10000</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>OTA_SKU</name>
+          <description>sku</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>sku</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_TYPE</name>
           <description>OTA type
