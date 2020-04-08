@@ -17,11 +17,17 @@
           <description>target ota version</description>
           <defaultValue>1.42.10000.2</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>OTA_LANG</name>
           <description>language</description>
-          <defaultValue>zh-TW</defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>zh-TW</string>
+              <string>zh-CN</string>
+              <string>ja-JP</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>OTA_MESSAGE</name>
           <description>description</description>
