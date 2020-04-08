@@ -33,24 +33,19 @@
           <description>description</description>
           <defaultValue>The purpose is from 1.40.10000.2 update to 1.42.10000.2</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>OTA_SKU</name>
-          <description>10000
-1KPTW
-100JP
-1WLCN
-100CN
-1KPCN
-100WW
-1WDTW</description>
-          <defaultValue>10000</defaultValue>
-        </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>OTA_SKU</name>
           <description>sku</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>sku</string>
+              <string>10000</string>
+              <string>1KPTW</string>
+              <string>100JP</string>
+              <string>1WLCN</string>
+              <string>100CN</string>
+              <string>1KPCN</string>
+              <string>100WW</string>
+              <string>1WDTW</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
