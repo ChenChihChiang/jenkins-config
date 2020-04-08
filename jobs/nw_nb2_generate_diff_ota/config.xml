@@ -60,11 +60,15 @@ please input full or diff</description>
           <description>title message</description>
           <defaultValue>Software update for</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>OTA_PROJECT</name>
           <description>NB1, NB2 or SD1 </description>
-          <defaultValue>NB2</defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NB2</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
