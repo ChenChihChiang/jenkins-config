@@ -31,13 +31,13 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <authToken>copytowindows</authToken>
+  <authToken>copyto29fileserver</authToken>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
       <command>cd /home/jk/workspace/bsp/script
-./nuwa_copy_to_windows.sh -f &quot;$folder&quot; -s &quot;$source&quot; -t &quot;$target&quot;
+./nuwa_copy_to_29_fileserver.sh -f &quot;$folder&quot; -s &quot;$source&quot; -t &quot;$target&quot;
 </command>
     </hudson.tasks.Shell>
   </builders>
