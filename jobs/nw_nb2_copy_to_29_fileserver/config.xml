@@ -36,7 +36,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/nuwa_disk3/workspace/bsp/script
+      <command>cd /nuwa_disk3/workspace/bsp/script
 ./nuwa_copy_to_29_fileserver.sh -f &quot;$folder&quot; -s &quot;$source&quot; -t &quot;$target&quot;
 </command>
     </hudson.tasks.Shell>
