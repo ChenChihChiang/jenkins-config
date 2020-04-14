@@ -78,8 +78,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /nuwa_disk4/workspace/bsp/Daily/SD1/LA.UM.7.6/LINUX/android
-</command>
+      <command></command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
