@@ -1419,6 +1419,7 @@
         <string>nw_sd1_200JP_user_pack</string>
         <string>nw_sd1_20F00_eng_pack</string>
         <string>nw_sd1_All_userdebug_clean_master</string>
+        <string>nw_sd1_copy_to_29_fileserver</string>
         <string>nw_sd1_generate_diff_ota</string>
       </jobNames>
       <jobFilters/>
