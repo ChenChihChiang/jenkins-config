@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQF1JlfBsQyKtwPmya80clO0h700FfaOorKkaDvaZRF7XmKtpbuJoCxmgTYhUhVPdj3_2EhzaePxs/pubhtml?gid=1106823246&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot;&gt;&lt;/iframe&gt;&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>source</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>target</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>folder</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>jenkins-239</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <authToken>copyto29fileserver</authToken>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /home/jk/workspace/bsp/script
+./nuwa_copy_to_29_fileserver.sh -f &quot;$folder&quot; -s &quot;$source&quot; -t &quot;$target&quot;
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <jenkins.plugins.slack.SlackNotifier plugin="slack@2.2">
+      <baseUrl></baseUrl>
+      <teamDomain></teamDomain>
+      <authToken></authToken>
+      <authTokenCredentialId></authTokenCredentialId>
+      <botUser>false</botUser>
+      <room></room>
+      <startNotification>true</startNotification>
+      <notifySuccess>true</notifySuccess>
+      <notifyAborted>true</notifyAborted>
+      <notifyNotBuilt>true</notifyNotBuilt>
+      <notifyUnstable>true</notifyUnstable>
+      <notifyRegression>true</notifyRegression>
+      <notifyFailure>true</notifyFailure>
+      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyRepeatedFailure>false</notifyRepeatedFailure>
+      <includeTestSummary>false</includeTestSummary>
+      <includeFailedTests>false</includeFailedTests>
+      <commitInfoChoice>NONE</commitInfoChoice>
+      <includeCustomMessage>false</includeCustomMessage>
+      <customMessage></customMessage>
+    </jenkins.plugins.slack.SlackNotifier>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
+      <recipientList>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, liao.ron@nuwarobotics.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>text/html</contentType>
+      <defaultSubject>[Daily_Build] $PROJECT_NAME trigger $BUILD_STATUS!</defaultSubject>
+      <defaultContent>&lt;p&gt;Dear all,&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;$PROJECT_NAME&lt;/strong&gt; trigger &lt;span style=&quot;color:#ff0000&quot;&gt;$BUILD_STATUS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy ${source} to ${target}&lt;/p&gt;
+&lt;p&gt;use $use_time sec&lt;/p&gt;</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>false</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo>wang.charles@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, wu.charlie@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, liao.ron@nuwarobotics.com</replyTo>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
