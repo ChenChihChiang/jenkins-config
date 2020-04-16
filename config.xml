@@ -1092,6 +1092,7 @@
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>apps_build</string>
+        <string>disk_usage_80</string>
         <string>ff_kw1_user_clean</string>
         <string>ff_kw1_user_pack</string>
         <string>ff_kw1_userdebug_clean</string>
