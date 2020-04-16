@@ -83,7 +83,7 @@ Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/p&gt;
       <attachmentsPattern></attachmentsPattern>
       <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
-      <attachBuildLog>false</attachBuildLog>
+      <attachBuildLog>true</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
       <replyTo>wang.daniel@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
