@@ -12,14 +12,14 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>00 16 * * 6</spec>
+      <spec>0 0 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/jk/workspace/bsp/ff_kw1_user/jenkins/
-./build.sh -p1 -v5 -s2 -l1 -e3 -c -o
+      <command>cd /home/jk/workspace/
+./disk.usage.sh 29 data3 80
 </command>
     </hudson.tasks.Shell>
   </builders>
@@ -31,14 +31,14 @@
       <authTokenCredentialId></authTokenCredentialId>
       <botUser>false</botUser>
       <room></room>
-      <startNotification>true</startNotification>
-      <notifySuccess>true</notifySuccess>
-      <notifyAborted>true</notifyAborted>
-      <notifyNotBuilt>true</notifyNotBuilt>
-      <notifyUnstable>true</notifyUnstable>
-      <notifyRegression>true</notifyRegression>
+      <startNotification>false</startNotification>
+      <notifySuccess>false</notifySuccess>
+      <notifyAborted>false</notifyAborted>
+      <notifyNotBuilt>false</notifyNotBuilt>
+      <notifyUnstable>false</notifyUnstable>
+      <notifyRegression>false</notifyRegression>
       <notifyFailure>true</notifyFailure>
-      <notifyBackToNormal>true</notifyBackToNormal>
+      <notifyBackToNormal>false</notifyBackToNormal>
       <notifyRepeatedFailure>false</notifyRepeatedFailure>
       <includeTestSummary>false</includeTestSummary>
       <includeFailedTests>false</includeFailedTests>
@@ -47,7 +47,7 @@
       <customMessage></customMessage>
     </jenkins.plugins.slack.SlackNotifier>
     <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.61">
-      <recipientList>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com</recipientList>
+      <recipientList>wang.daniel@nuwarobotics.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
           <email>
@@ -85,7 +85,7 @@ Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)&lt;/span&gt;&lt;/p&gt;
       <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
       <attachBuildLog>false</attachBuildLog>
       <compressBuildLog>false</compressBuildLog>
-      <replyTo>wang.charles@nuwarobotics.com, lee.wj@nuwarobotics.com, chang.founder@nuwarobotics.com, tsai.leo@nuwarobotics.com, tsai.ares@nuwarobotics.com, liu.leon@nuwarobotics.com,  yeh.antony@nuwarobotics.com, su.calvin@nuwarobotics.com, hsu.robert@nuwarobotics.com, chung.lion@nuwarobotics.com, wang.roy@nuwarobotics.com, wang.keith@nuwarobotics.com, lu.nick@nuwarobotics.com, lin.shadow@nuwarobotics.com, chen.weilen@nuwarobotics.com, lee.ada@nuwarobotics.com, wu.charlie@nuwarobotics.com, bai.white@nuwarobotics.com, hsieh.alicia@nuwarobotics.com, chang.shunyi@nuwarobotics.com, liao.ron@nuwarobotics.com, wang.daniel@nuwarobotics.com, lin.benson@nuwarobotics.com, chang.alan@nuwarobotics.com, lai.hc@nuwarobotics.com, wu.will@nuwarobotics.com, hsieh.luka@nuwarobotics.com</replyTo>
+      <replyTo>wang.daniel@nuwarobotics.com</replyTo>
       <saveOutput>false</saveOutput>
       <disabled>false</disabled>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
